@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>知乎教我python绘图 | 欢迎回来 ！</title>
+    <meta name="description" content="lcsx">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.ee874cfe.css" as="style"><link rel="preload" href="/blog/assets/js/app.09e88087.js" as="script"><link rel="preload" href="/blog/assets/js/2.5d6d69d5.js" as="script"><link rel="preload" href="/blog/assets/js/50.11bfcbd5.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.9545c010.js"><link rel="prefetch" href="/blog/assets/js/11.c121cceb.js"><link rel="prefetch" href="/blog/assets/js/12.d8c9c1bd.js"><link rel="prefetch" href="/blog/assets/js/13.858fecce.js"><link rel="prefetch" href="/blog/assets/js/14.10c2aaa2.js"><link rel="prefetch" href="/blog/assets/js/15.1a4adff1.js"><link rel="prefetch" href="/blog/assets/js/16.69d675fe.js"><link rel="prefetch" href="/blog/assets/js/17.ea7dd094.js"><link rel="prefetch" href="/blog/assets/js/18.053f4e8c.js"><link rel="prefetch" href="/blog/assets/js/19.f6d1f87f.js"><link rel="prefetch" href="/blog/assets/js/20.ff3ffefa.js"><link rel="prefetch" href="/blog/assets/js/21.6efdf0ff.js"><link rel="prefetch" href="/blog/assets/js/22.324e8463.js"><link rel="prefetch" href="/blog/assets/js/23.2e0c31c4.js"><link rel="prefetch" href="/blog/assets/js/24.5a3dca30.js"><link rel="prefetch" href="/blog/assets/js/25.3b2d9b9f.js"><link rel="prefetch" href="/blog/assets/js/26.c34a5d16.js"><link rel="prefetch" href="/blog/assets/js/27.b6134063.js"><link rel="prefetch" href="/blog/assets/js/28.bf3c2608.js"><link rel="prefetch" href="/blog/assets/js/29.d3af9c62.js"><link rel="prefetch" href="/blog/assets/js/3.39e077d4.js"><link rel="prefetch" href="/blog/assets/js/30.bb079fbc.js"><link rel="prefetch" href="/blog/assets/js/31.e2041594.js"><link rel="prefetch" href="/blog/assets/js/32.5ee57ad4.js"><link rel="prefetch" href="/blog/assets/js/33.79f9ff37.js"><link rel="prefetch" href="/blog/assets/js/34.bd04b9df.js"><link rel="prefetch" href="/blog/assets/js/35.71548143.js"><link rel="prefetch" href="/blog/assets/js/36.0a93475f.js"><link rel="prefetch" href="/blog/assets/js/37.91bdc250.js"><link rel="prefetch" href="/blog/assets/js/38.90858741.js"><link rel="prefetch" href="/blog/assets/js/39.8f381891.js"><link rel="prefetch" href="/blog/assets/js/4.aecd194a.js"><link rel="prefetch" href="/blog/assets/js/40.cf59ef77.js"><link rel="prefetch" href="/blog/assets/js/41.b9a6ffe3.js"><link rel="prefetch" href="/blog/assets/js/42.1f224073.js"><link rel="prefetch" href="/blog/assets/js/43.5b480eab.js"><link rel="prefetch" href="/blog/assets/js/44.696ba103.js"><link rel="prefetch" href="/blog/assets/js/45.a7f44d79.js"><link rel="prefetch" href="/blog/assets/js/46.4e85fe28.js"><link rel="prefetch" href="/blog/assets/js/47.8a9aa7da.js"><link rel="prefetch" href="/blog/assets/js/48.04324fe0.js"><link rel="prefetch" href="/blog/assets/js/49.0f839c66.js"><link rel="prefetch" href="/blog/assets/js/5.6106f207.js"><link rel="prefetch" href="/blog/assets/js/51.82d8487d.js"><link rel="prefetch" href="/blog/assets/js/52.e904bad2.js"><link rel="prefetch" href="/blog/assets/js/53.3f00d869.js"><link rel="prefetch" href="/blog/assets/js/54.70d26d6c.js"><link rel="prefetch" href="/blog/assets/js/55.2f933ad0.js"><link rel="prefetch" href="/blog/assets/js/56.85972735.js"><link rel="prefetch" href="/blog/assets/js/57.b214059e.js"><link rel="prefetch" href="/blog/assets/js/58.a51c7fbb.js"><link rel="prefetch" href="/blog/assets/js/59.6ed363ea.js"><link rel="prefetch" href="/blog/assets/js/6.69c66181.js"><link rel="prefetch" href="/blog/assets/js/60.8c8e72a1.js"><link rel="prefetch" href="/blog/assets/js/61.cd10cc0a.js"><link rel="prefetch" href="/blog/assets/js/62.b3bff3dc.js"><link rel="prefetch" href="/blog/assets/js/63.93753e25.js"><link rel="prefetch" href="/blog/assets/js/64.0c3cfd75.js"><link rel="prefetch" href="/blog/assets/js/65.d53b9bb8.js"><link rel="prefetch" href="/blog/assets/js/66.d46b2746.js"><link rel="prefetch" href="/blog/assets/js/67.285c4dd3.js"><link rel="prefetch" href="/blog/assets/js/7.dcdaa74b.js"><link rel="prefetch" href="/blog/assets/js/8.516b6e0b.js"><link rel="prefetch" href="/blog/assets/js/9.1b87dd6a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ee874cfe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" alt="欢迎回来 ！" class="logo"> <span class="site-name can-hide">欢迎回来 ！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/Python/zhihu/basis.html" class="sidebar-link">基础不牢 地动山摇</a></li><li><a href="/blog/Python/zhihu/confidenceInterval.html" class="sidebar-link">置信区间</a></li><li><a href="/blog/Python/zhihu/HypothesisTesting.html" class="sidebar-link">假设检验</a></li><li><a href="/blog/Python/zhihu/t1.html" class="sidebar-link">案例</a></li><li><a href="/blog/Python/zhihu/t3.html" class="sidebar-link">相关配对t检验</a></li><li><a href="/blog/Python/zhihu/t2.html" class="sidebar-link">独立双样本t检验</a></li><li><a href="/blog/Python/zhihu/correlationAnalysis.html" class="sidebar-link">相关分析+Excel分析&amp;绘图</a></li><li><a href="/blog/Python/zhihu/introductionDataAnalysis.html" class="sidebar-link">描述统计分析</a></li><li><a href="/blog/Python/zhihu/DataAnalysis.html" class="sidebar-link">数据分析的基本过程</a></li><li><a href="/blog/Python/zhihu/MachineLearning.html" class="sidebar-link">机器学习 入门</a></li><li><a href="/blog/Python/zhihu/draw.html" class="active sidebar-link">知乎教我python绘图</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/draw.html#绘图包matplotlib使用" class="sidebar-link">绘图包Matplotlib使用</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/draw.html#pandas绘图" class="sidebar-link">pandas绘图</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/draw.html#notebook制作数据分析报告" class="sidebar-link">notebook制作数据分析报告</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="知乎教我python绘图"><a href="#知乎教我python绘图" class="header-anchor">#</a> 知乎教我python绘图</h1> <p></p><div class="table-of-contents"><ul><li><a href="#知乎教我python绘图">知乎教我python绘图</a><ul><li><a href="#绘图包matplotlib使用">绘图包Matplotlib使用</a><ul><li><a href="#plot折线图">plot折线图</a></li><li><a href="#多条折线">多条折线</a></li><li><a href="#在图上添加文本">在图上添加文本</a><ul><li><a href="#中文文字报错">中文文字报错</a></li><li><a href="#注释带中文">注释带中文</a></li></ul></li><li><a href="#绘多个图">绘多个图</a></li></ul></li><li><a href="#pandas绘图">pandas绘图</a><ul><li><a href="#dataframe设置date类型位索引">dataframe设置date类型位索引</a></li><li><a href="#根据时间类型的值，进行切片操作">根据时间类型的值，进行切片操作</a></li><li><a href="#散点图">散点图</a></li><li><a href="#直方图">直方图</a></li><li><a href="#多个对比折线图">多个对比折线图</a></li><li><a href="#多个箱线图">多个箱线图</a></li></ul></li><li><a href="#notebook制作数据分析报告">notebook制作数据分析报告</a></li></ul></li></ul></div><p></p> <h2 id="绘图包matplotlib使用"><a href="#绘图包matplotlib使用" class="header-anchor">#</a> 绘图包Matplotlib使用</h2> <h3 id="plot折线图"><a href="#plot折线图" class="header-anchor">#</a> plot折线图</h3> <p>设置线条属性,文档：https://matplotlib.org/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token triple-quoted-string string">'''
+第1步：定义x和y坐标轴上的点
+'''</span>
+<span class="token comment">#x坐标轴上点的数值</span>
+x<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+<span class="token comment">#y坐标轴上点的数值</span>
+y<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">]</span>
+
+<span class="token triple-quoted-string string">'''
+第2步：使用plot绘制线条
+第1个参数是x的坐标值，第2个参数是y的坐标值
+'''</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+第3步：显示图形
+'''</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-python extra-class"><pre class="language-python"><code><span class="token triple-quoted-string string">'''
+color：线条颜色，值r表示红色（red）
+marker：点的形状，值o表示点为圆圈标记（circle marker）
+linestyle：线条的形状，值dashed表示用虚线连接各点
+'''</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'r'</span><span class="token punctuation">,</span>marker<span class="token operator">=</span><span class="token string">'o'</span><span class="token punctuation">,</span>linestyle<span class="token operator">=</span><span class="token string">'dashed'</span><span class="token punctuation">)</span>
+<span class="token comment">#plt.plot(x, y, 'ro')</span>
+<span class="token triple-quoted-string string">'''
+axis：坐标轴范围
+语法为axis[xmin, xmax, ymin, ymax]，
+也就是axis[x轴最小值, x轴最大值, y轴最小值, y轴最大值]
+'''</span>
+plt<span class="token punctuation">.</span>axis<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre></div><p><strong>如果matplotlib参入的参数只能是列表的话，这对数据处理很不利。一般，我们传入的是numpy的数组。实际上，所有参入的值内部都会转换为numpy的数组。</strong></p> <h3 id="多条折线"><a href="#多条折线" class="header-anchor">#</a> 多条折线</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+
+<span class="token triple-quoted-string string">'''
+arange用于生成一个等差数组，arange([start, ]stop, [step, ]
+使用见文档：https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html
+'''</span>
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+t <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">0.2</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+使用数组同时绘制多个线性
+'''</span>
+<span class="token comment">#线条1</span>
+x1<span class="token operator">=</span>y1<span class="token operator">=</span>t
+
+<span class="token triple-quoted-string string">'''
+运算符**，表示幂 - 返回x的y次幂，例如10**20表示10的20次方
+详细见文档《Python3运算符》：http://www.runoob.com/python3/python3-basic-operators.html
+'''</span>
+<span class="token comment">#线条2</span>
+x2<span class="token operator">=</span>x1
+y2<span class="token operator">=</span>t<span class="token operator">**</span><span class="token number">2</span>
+
+<span class="token comment">#线条3</span>
+x3<span class="token operator">=</span>x1
+y3<span class="token operator">=</span>t<span class="token operator">**</span><span class="token number">3</span>
+
+<span class="token comment">#使用plot绘制线条</span>
+linesList<span class="token operator">=</span>plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x1<span class="token punctuation">,</span> y1<span class="token punctuation">,</span>  
+         x2<span class="token punctuation">,</span> y2<span class="token punctuation">,</span>  
+         x3<span class="token punctuation">,</span> y3 <span class="token punctuation">)</span>
+
+<span class="token comment">#用setp方法可以同时设置多个线条的属性</span>
+plt<span class="token punctuation">.</span>setp<span class="token punctuation">(</span>linesList<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'r'</span><span class="token punctuation">)</span>
+
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'返回的数据类型'</span><span class="token punctuation">,</span><span class="token builtin">type</span><span class="token punctuation">(</span>linesList<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'数据大小：'</span><span class="token punctuation">,</span><span class="token builtin">len</span><span class="token punctuation">(</span>linesList<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="在图上添加文本"><a href="#在图上添加文本" class="header-anchor">#</a> 在图上添加文本</h3> <p><a href="https://matplotlib.org/tutorials/text/text_intro.html" target="_blank" rel="noopener noreferrer">在图上添加文本文档地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h4 id="中文文字报错"><a href="#中文文字报错" class="header-anchor">#</a> 中文文字报错</h4> <p>下载好字体，放入下面的地址</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> matplotlib
+<span class="token keyword">print</span><span class="token punctuation">(</span>matplotlib<span class="token punctuation">.</span>matplotlib_fname<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># C:\Users\46957\AppData\Local\Programs\Python\Python37\lib\site-packages\matplotlib\mpl-data\matplotlibrc</span>
+</code></pre></div><h4 id="注释带中文"><a href="#注释带中文" class="header-anchor">#</a> 注释带中文</h4> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token comment">#找到 matplotlib 加载的配置文件路径</span>
+<span class="token keyword">import</span> matplotlib
+
+matplotlib<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span>
+<span class="token comment"># print(matplotlib.matplotlib_fname())</span>
+<span class="token comment"># 在图上添加文本</span>
+
+<span class="token triple-quoted-string string">'''
+第1步：定义x和y坐标轴上的点
+'''</span>
+<span class="token comment">#x坐标轴上点的数值</span>
+x<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+<span class="token comment">#y坐标轴上点的数值</span>
+y<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">]</span>
+
+<span class="token triple-quoted-string string">'''
+第2步：使用plot绘制线条
+第1个参数是x的坐标值，第2个参数是y的坐标值
+'''</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+添加文本
+'''</span>
+
+<span class="token comment">#x轴文本</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'x坐标轴'</span><span class="token punctuation">)</span>
+<span class="token comment">#y轴文本</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'y坐标轴'</span><span class="token punctuation">)</span>
+<span class="token comment">#标题</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'标题'</span><span class="token punctuation">)</span>
+<span class="token comment">#添加注释</span>
+<span class="token triple-quoted-string string">'''
+添加注释：
+参数名xy：箭头注释中箭头所在位置，
+参数名xytext：注释文本所在位置，
+arrowprops在xy和xytext之间绘制箭头,
+shrink表示注释点与注释文本之间的图标距离
+'''</span>
+
+plt<span class="token punctuation">.</span>annotate<span class="token punctuation">(</span><span class="token string">'我是注释'</span><span class="token punctuation">,</span> xy<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> xytext<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            arrowprops<span class="token operator">=</span><span class="token builtin">dict</span><span class="token punctuation">(</span>facecolor<span class="token operator">=</span><span class="token string">'black'</span><span class="token punctuation">,</span> shrink<span class="token operator">=</span><span class="token number">0.01</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">'''
+第3步：显示图形
+'''</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="绘多个图"><a href="#绘多个图" class="header-anchor">#</a> 绘多个图</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+
+<span class="token comment"># 多个图绘图</span>
+
+<span class="token comment">#创建画板1</span>
+fig <span class="token operator">=</span> plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> 
+
+<span class="token comment">#第2步：创建画纸（子图）</span>
+<span class="token triple-quoted-string string">'''
+subplot()方法里面传入的三个数字
+前两个数字代表要生成几行几列的子图矩阵,第三个数字代表选中的子图位置
+subplot(211)生成一个2行1列的子图矩阵，当前是第一个子图
+'''</span>
+<span class="token comment">#创建画纸，并选择画纸1</span>
+<span class="token comment">#等价于ax1=fig.add_subplot(211)</span>
+ax1<span class="token operator">=</span>plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>   
+<span class="token comment">#在画纸上绘图</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">#选择画纸2</span>
+ax2<span class="token operator">=</span>plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token comment">#在画纸2上绘图</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 如果没有指明画板figure()和子图subplot，会默认创建一个画板figure(1) 和一个子图subplot(111)</span>
+</code></pre></div><h2 id="pandas绘图"><a href="#pandas绘图" class="header-anchor">#</a> pandas绘图</h2> <p>基于matplotlib封装的，可以使用数据框作为数据dataFrame</p> <p>代码里也有小知识点啊：</p> <h3 id="dataframe设置date类型位索引"><a href="#dataframe设置date类型位索引" class="header-anchor">#</a> dataframe设置date类型位索引</h3> <h3 id="根据时间类型的值，进行切片操作"><a href="#根据时间类型的值，进行切片操作" class="header-anchor">#</a> 根据时间类型的值，进行切片操作</h3> <h3 id="散点图"><a href="#散点图" class="header-anchor">#</a> 散点图</h3> <h3 id="直方图"><a href="#直方图" class="header-anchor">#</a> 直方图</h3> <h3 id="多个对比折线图"><a href="#多个对比折线图" class="header-anchor">#</a> 多个对比折线图</h3> <h3 id="多个箱线图"><a href="#多个箱线图" class="header-anchor">#</a> 多个箱线图</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#导入包</span>
+<span class="token comment">#数据分析包</span>
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+<span class="token triple-quoted-string string">'''
+互联数据获取包
+注意：在安装包的名称是连接符‘-’也就是pandas-datareader。
+但是在notebook里导入包的连接符是下划线‘_’，也就是pandas_datareader
+这里一定要注意安装和导入包这两个连接符是不一样的，不然无法导入使用
+'''</span>
+<span class="token keyword">from</span> pandas_datareader <span class="token keyword">import</span> data
+
+<span class="token comment"># 存在的问题：由于是从国外获取股票数据，会由于网络不稳定，获取数据失败，多运行几次这个cell就好了</span>
+<span class="token triple-quoted-string string">'''
+获取国内股票数据的方式是：“股票代码”+“对应股市”（港股为.hk，A股为.ss）
+例如腾讯是港股是：0700.hk
+'''</span>
+<span class="token comment">#字典：6家公司的股票</span>
+gafataDict<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'谷歌'</span><span class="token punctuation">:</span><span class="token string">'GOOG'</span><span class="token punctuation">,</span><span class="token string">'亚马逊'</span><span class="token punctuation">:</span><span class="token string">'AMZN'</span><span class="token punctuation">,</span><span class="token string">'Facebook'</span><span class="token punctuation">:</span><span class="token string">'FB'</span><span class="token punctuation">,</span>
+            <span class="token string">'苹果'</span><span class="token punctuation">:</span><span class="token string">'AAPL'</span><span class="token punctuation">,</span><span class="token string">'阿里巴巴'</span><span class="token punctuation">:</span><span class="token string">'BABA'</span><span class="token punctuation">,</span><span class="token string">'腾讯'</span><span class="token punctuation">:</span><span class="token string">'0700.hk'</span><span class="token punctuation">}</span>
+
+<span class="token triple-quoted-string string">'''
+定义函数
+函数功能：计算股票涨跌幅=（现在股价-买入价格）/买入价格
+输入参数：column是收盘价这一列的数据
+返回数据：涨跌幅
+'''</span>
+<span class="token keyword">def</span> <span class="token function">change</span><span class="token punctuation">(</span>column<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment">#买入价格</span>
+    buyPrice<span class="token operator">=</span>column<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    <span class="token comment">#现在股价</span>
+    <span class="token comment">#column.size是总共数据条数，序号是从0开始的，所以最后一条数据的序号是总数目-1</span>
+    curPrice<span class="token operator">=</span>column<span class="token punctuation">[</span>column<span class="token punctuation">.</span>size<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+    <span class="token comment">#累计涨跌幅</span>
+    priceChange<span class="token operator">=</span><span class="token punctuation">(</span>curPrice<span class="token operator">-</span>buyPrice<span class="token punctuation">)</span><span class="token operator">/</span>buyPrice
+    <span class="token comment">#判断股票是上涨，还是下跌</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>priceChange<span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'股票累计上涨='</span><span class="token punctuation">,</span>priceChange<span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token string">'%'</span><span class="token punctuation">)</span>
+    <span class="token keyword">elif</span><span class="token punctuation">(</span>priceChange<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'股票累没有变化='</span><span class="token punctuation">,</span>priceChange<span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token string">'%'</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'股票累计下跌'</span><span class="token punctuation">,</span>priceChange<span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token string">'%'</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">#返回数据</span>
+    <span class="token keyword">return</span> priceChange
+
+
+
+<span class="token triple-quoted-string string">'''
+get_data_yahoo表示从雅虎数据源获取股票数据，官网使用操作文档：
+http://pandas-datareader.readthedocs.io/en/latest/remote_data.html
+可能存在的问题：
+1）由于是从国外获取股票数据，会由于网络不稳定，获取数据失败，多运行几次这个cell就好了
+2）如果多运行几次还是无法获的股票数据，使用这个链接里的方法：https://pypi.org/project/fix-yahoo-finance/0.0.21/
+3）如果经过上面2个方法还不行，打开这个官网使用文档（http://pandas-datareader.readthedocs.io/en/latest/remote_data.html），
+换其他的财经数据源试试
+'''</span>
+<span class="token comment"># 获取哪段时间范围的股票数据</span>
+start_date <span class="token operator">=</span> <span class="token string">'2017-01-01'</span>
+end_date <span class="token operator">=</span> <span class="token string">'2017-06-29'</span>
+<span class="token comment">#从雅虎财经数据源（get_data_yahoo）获取阿里巴巴股票数据</span>
+<span class="token comment"># babaDf=data.get_data_yahoo(gafataDict['阿里巴巴'],start_date, end_date)</span>
+<span class="token comment">#或者从Morningstar数据源获取阿里巴巴数据</span>
+<span class="token comment">#babaDf=data.DataReader(gafataDict['阿里巴巴'],'morningstar',start_date, end_date)</span>
+<span class="token triple-quoted-string string">'''
+4) 如果经过上面2步，还是无法获取股票数据，可以把这一关网盘里的excel文件采用下面方法导入进来：
+下面以导入阿里巴巴股票excel文件为例的代码，其他公司股票数据读取和这个类似：
+#文件路径（在本地运行时替换成你自己的实际数据路径）该excel文件《阿里巴巴2017年股票数据.xlsx》和这个notebook在一个网盘目录下：
+fileNameStr='C:\houzi\阿里巴巴2017年股票数据.xlsx'
+#读取excel文件里的数据
+xl = pd.ExcelFile(fileNameStr)
+#获取指定工作表（Sheet）名称的数据
+patientDf = xl.parse('Sheet1')
+'''</span>
+fileNameStr<span class="token operator">=</span><span class="token string">'./data/阿里巴巴2017年股票数据.xlsx'</span>
+xl <span class="token operator">=</span> pd<span class="token punctuation">.</span>ExcelFile<span class="token punctuation">(</span>fileNameStr<span class="token punctuation">)</span>
+babaDf <span class="token operator">=</span> xl<span class="token punctuation">.</span>parse<span class="token punctuation">(</span><span class="token string">'Sheet1'</span><span class="token punctuation">)</span>
+<span class="token comment"># print(babaDf)</span>
+babaDf<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span>babaDf<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">#将数据类型转换为日期类型</span>
+babaDf <span class="token operator">=</span> babaDf<span class="token punctuation">.</span>set_index<span class="token punctuation">(</span><span class="token string">'Date'</span><span class="token punctuation">)</span> <span class="token comment"># 将Date设置为index</span>
+<span class="token comment"># print(babaDf[start_date:end_date])  #时间截取</span>
+babaDf <span class="token operator">=</span> babaDf<span class="token punctuation">[</span>start_date<span class="token punctuation">:</span>end_date<span class="token punctuation">]</span>
+
+
+<span class="token triple-quoted-string string">'''
+累计涨幅
+'''</span>
+<span class="token comment">#获取收盘价Close这一列的数据</span>
+closeCol<span class="token operator">=</span>babaDf<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span>
+<span class="token comment"># print(closeCol[0])</span>
+<span class="token comment">#调用函数，获取涨跌幅</span>
+babaChange<span class="token operator">=</span>change<span class="token punctuation">(</span>closeCol<span class="token punctuation">)</span>
+<span class="token comment"># print(babaChange)</span>
+
+
+
+<span class="token comment"># 数据可视化</span>
+<span class="token comment">#导入可视化包</span>
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">import</span> matplotlib
+matplotlib<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span>
+<span class="token comment"># 折线图：绘制股票走势</span>
+
+<span class="token triple-quoted-string string">'''
+横轴x是股票时间，默认就可以了
+纵轴y是收盘价Close这一列数据
+plot默认是线条图
+'''</span>
+<span class="token comment"># babaDf.plot(x='Date',y='Close')  #如果没有这句代码的话babaDf = babaDf.set_index('Date') ，x需要设置指定‘date’</span>
+babaDf<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>y<span class="token operator">=</span><span class="token string">'Close'</span><span class="token punctuation">)</span>  <span class="token comment"># 这里x的值默认是index的索引了</span>
+<span class="token comment">#x坐标轴文本</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'时间'</span><span class="token punctuation">)</span>
+<span class="token comment">#y坐标轴文本</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'股价（美元）'</span><span class="token punctuation">)</span>
+<span class="token comment">#图片标题</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'2017年阿里巴巴股价走势'</span><span class="token punctuation">)</span>
+<span class="token comment">#显示网格</span>
+plt<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token comment">#显示图形</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+
+<span class="token triple-quoted-string string">'''
+我们给plot传入的横轴x坐标轴数据成交量这一列的数据，
+纵轴y坐标轴数据是收盘价这一列的数据，
+同时增加了一个参数叫kind这个值表示绘制图形的类型，这里的值等于scatter表示绘制散点图。
+kind取值（图形类型）参考官方文档：http://pandas.pydata.org/pandas-docs/stable/visualization.html
+'''</span>
+babaDf<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">'Volume'</span><span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">'Close'</span><span class="token punctuation">,</span>kind<span class="token operator">=</span><span class="token string">'scatter'</span><span class="token punctuation">)</span>
+<span class="token comment">#x坐标轴文本</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'成交量'</span><span class="token punctuation">)</span>
+<span class="token comment">#y坐标轴文本</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'股价（美元）'</span><span class="token punctuation">)</span>
+<span class="token comment">#图片标题</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'成交量和股价'</span><span class="token punctuation">)</span>
+<span class="token comment">#显示网格</span>
+plt<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token comment">#显示图形</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+
+<span class="token comment">#得到相关系数矩阵</span>
+<span class="token triple-quoted-string string">'''
+得到相关系数矩阵，不知道什么是相关系数矩阵的可以回顾这个课程：
+《机器学习入门：简单线性回归》：https://www.zhihu.com/lives/934023671148949504
+'''</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>babaDf<span class="token punctuation">.</span>corr<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+fileNameStr2<span class="token operator">=</span><span class="token string">'./data/腾讯2017年股票数据.xlsx'</span>
+xl2 <span class="token operator">=</span> pd<span class="token punctuation">.</span>ExcelFile<span class="token punctuation">(</span>fileNameStr2<span class="token punctuation">)</span>
+txDf <span class="token operator">=</span> xl2<span class="token punctuation">.</span>parse<span class="token punctuation">(</span><span class="token string">'Sheet1'</span><span class="token punctuation">)</span>
+
+txDf<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span>txDf<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">#将数据类型转换为日期类型</span>
+txDf <span class="token operator">=</span> txDf<span class="token punctuation">.</span>set_index<span class="token punctuation">(</span><span class="token string">'Date'</span><span class="token punctuation">)</span> <span class="token comment"># 将Date设置为index</span>
+txDf <span class="token operator">=</span> txDf<span class="token punctuation">[</span>start_date<span class="token punctuation">:</span>end_date<span class="token punctuation">]</span>
+<span class="token comment">#腾讯是港股，所以这里的收盘价是港币，按照今天的汇率将其转化为美元</span>
+exchange<span class="token operator">=</span><span class="token number">0.1278</span> <span class="token comment">#港币兑换美元的汇率，这个值可以根据在网上查到当天的最新汇率</span>
+<span class="token comment">#为了方便后期多家公司的股价比较，增加新的一列收盘价（美元）</span>
+txDf<span class="token punctuation">[</span><span class="token string">'Close_dollar'</span><span class="token punctuation">]</span><span class="token operator">=</span> txDf<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token operator">*</span> exchange
+<span class="token comment"># print(txDf)</span>
+
+
+<span class="token comment"># 走势图比较</span>
+ax1<span class="token operator">=</span>babaDf<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>y<span class="token operator">=</span><span class="token string">'Close'</span><span class="token punctuation">)</span>
+<span class="token comment">#通过指定画纸ax，在同一张画纸上绘图</span>
+<span class="token comment">#腾讯</span>
+txDf<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>ax<span class="token operator">=</span>ax1<span class="token punctuation">,</span>y<span class="token operator">=</span><span class="token string">'Close_dollar'</span><span class="token punctuation">)</span>
+<span class="token comment">#x坐标轴文本</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'时间'</span><span class="token punctuation">)</span>
+<span class="token comment">#y坐标轴文本</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'股价（美元）'</span><span class="token punctuation">)</span>
+<span class="token comment">#图片标题</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'2018年GAFATA股价累计涨幅比较'</span><span class="token punctuation">)</span>
+<span class="token comment">#显示网格</span>
+plt<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+
+
+<span class="token comment">#2家公司股票收盘价平均值</span>
+gafataMeanList<span class="token operator">=</span><span class="token punctuation">[</span>
+           babaDf<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token comment">#阿里巴巴</span>
+           txDf<span class="token punctuation">[</span><span class="token string">'Close_dollar'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#腾讯</span>
+           <span class="token punctuation">]</span>
+
+<span class="token comment">#创建pandas一维数组Series</span>
+gafataMeanSer<span class="token operator">=</span>pd<span class="token punctuation">.</span>Series<span class="token punctuation">(</span>gafataMeanList<span class="token punctuation">,</span>
+                       index<span class="token operator">=</span><span class="token punctuation">[</span>
+                             <span class="token string">'阿里巴巴'</span><span class="token punctuation">,</span>
+                             <span class="token string">'腾讯'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+gafataMeanSer<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kind<span class="token operator">=</span><span class="token string">'bar'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'GAFATA'</span><span class="token punctuation">)</span>
+<span class="token comment">#图片标题</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'2017年GAFATA股价平均值'</span><span class="token punctuation">)</span>
+<span class="token comment">#x坐标轴文本</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'公司名称'</span><span class="token punctuation">)</span>
+<span class="token comment">#y坐标轴文本</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'股价平均值（美元）'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+
+
+<span class="token comment"># 四分位数绘制的箱线图</span>
+<span class="token comment">#存放2家公司的收盘价</span>
+closeDf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#合并2家公司的收盘价，横向</span>
+closeDf<span class="token operator">=</span>pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>closeDf<span class="token punctuation">,</span>
+                      babaDf<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">#阿里巴巴</span>
+                      txDf<span class="token punctuation">[</span><span class="token string">'Close_dollar'</span><span class="token punctuation">]</span><span class="token comment">#腾讯 </span>
+                 <span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token comment">#重命名列名为公司名称</span>
+closeDf<span class="token punctuation">.</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'阿里巴巴'</span><span class="token punctuation">,</span><span class="token string">'腾讯'</span><span class="token punctuation">]</span>
+<span class="token comment"># print(closeDf.head())</span>
+<span class="token comment">#                   阿里巴巴       阿里巴巴</span>
+<span class="token comment"># 2017-01-03   88.599998  24.205319</span>
+<span class="token comment"># 2017-01-04   90.510002  24.154200</span>
+<span class="token comment"># 2017-01-05   94.370003  24.703740</span>
+<span class="token comment"># 2017-01-06   93.889999  24.933781</span>
+<span class="token comment"># 2017-01-09   94.720001  24.997681</span>
+
+
+<span class="token comment">#箱线图</span>
+closeDf<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>kind<span class="token operator">=</span><span class="token string">'box'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>grid<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="notebook制作数据分析报告"><a href="#notebook制作数据分析报告" class="header-anchor">#</a> notebook制作数据分析报告</h2></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/Python/zhihu/MachineLearning.html" class="prev">
+        机器学习 入门
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.09e88087.js" defer></script><script src="/blog/assets/js/2.5d6d69d5.js" defer></script><script src="/blog/assets/js/50.11bfcbd5.js" defer></script>
+  </body>
+</html>

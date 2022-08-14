@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>机器学习 入门 | 欢迎回来 ！</title>
+    <meta name="description" content="lcsx">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.ee874cfe.css" as="style"><link rel="preload" href="/blog/assets/js/app.09e88087.js" as="script"><link rel="preload" href="/blog/assets/js/2.5d6d69d5.js" as="script"><link rel="preload" href="/blog/assets/js/3.39e077d4.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.9545c010.js"><link rel="prefetch" href="/blog/assets/js/11.c121cceb.js"><link rel="prefetch" href="/blog/assets/js/12.d8c9c1bd.js"><link rel="prefetch" href="/blog/assets/js/13.858fecce.js"><link rel="prefetch" href="/blog/assets/js/14.10c2aaa2.js"><link rel="prefetch" href="/blog/assets/js/15.1a4adff1.js"><link rel="prefetch" href="/blog/assets/js/16.69d675fe.js"><link rel="prefetch" href="/blog/assets/js/17.ea7dd094.js"><link rel="prefetch" href="/blog/assets/js/18.053f4e8c.js"><link rel="prefetch" href="/blog/assets/js/19.f6d1f87f.js"><link rel="prefetch" href="/blog/assets/js/20.ff3ffefa.js"><link rel="prefetch" href="/blog/assets/js/21.6efdf0ff.js"><link rel="prefetch" href="/blog/assets/js/22.324e8463.js"><link rel="prefetch" href="/blog/assets/js/23.2e0c31c4.js"><link rel="prefetch" href="/blog/assets/js/24.5a3dca30.js"><link rel="prefetch" href="/blog/assets/js/25.3b2d9b9f.js"><link rel="prefetch" href="/blog/assets/js/26.c34a5d16.js"><link rel="prefetch" href="/blog/assets/js/27.b6134063.js"><link rel="prefetch" href="/blog/assets/js/28.bf3c2608.js"><link rel="prefetch" href="/blog/assets/js/29.d3af9c62.js"><link rel="prefetch" href="/blog/assets/js/30.bb079fbc.js"><link rel="prefetch" href="/blog/assets/js/31.e2041594.js"><link rel="prefetch" href="/blog/assets/js/32.5ee57ad4.js"><link rel="prefetch" href="/blog/assets/js/33.79f9ff37.js"><link rel="prefetch" href="/blog/assets/js/34.bd04b9df.js"><link rel="prefetch" href="/blog/assets/js/35.71548143.js"><link rel="prefetch" href="/blog/assets/js/36.0a93475f.js"><link rel="prefetch" href="/blog/assets/js/37.91bdc250.js"><link rel="prefetch" href="/blog/assets/js/38.90858741.js"><link rel="prefetch" href="/blog/assets/js/39.8f381891.js"><link rel="prefetch" href="/blog/assets/js/4.aecd194a.js"><link rel="prefetch" href="/blog/assets/js/40.cf59ef77.js"><link rel="prefetch" href="/blog/assets/js/41.b9a6ffe3.js"><link rel="prefetch" href="/blog/assets/js/42.1f224073.js"><link rel="prefetch" href="/blog/assets/js/43.5b480eab.js"><link rel="prefetch" href="/blog/assets/js/44.696ba103.js"><link rel="prefetch" href="/blog/assets/js/45.a7f44d79.js"><link rel="prefetch" href="/blog/assets/js/46.4e85fe28.js"><link rel="prefetch" href="/blog/assets/js/47.8a9aa7da.js"><link rel="prefetch" href="/blog/assets/js/48.04324fe0.js"><link rel="prefetch" href="/blog/assets/js/49.0f839c66.js"><link rel="prefetch" href="/blog/assets/js/5.6106f207.js"><link rel="prefetch" href="/blog/assets/js/50.11bfcbd5.js"><link rel="prefetch" href="/blog/assets/js/51.82d8487d.js"><link rel="prefetch" href="/blog/assets/js/52.e904bad2.js"><link rel="prefetch" href="/blog/assets/js/53.3f00d869.js"><link rel="prefetch" href="/blog/assets/js/54.70d26d6c.js"><link rel="prefetch" href="/blog/assets/js/55.2f933ad0.js"><link rel="prefetch" href="/blog/assets/js/56.85972735.js"><link rel="prefetch" href="/blog/assets/js/57.b214059e.js"><link rel="prefetch" href="/blog/assets/js/58.a51c7fbb.js"><link rel="prefetch" href="/blog/assets/js/59.6ed363ea.js"><link rel="prefetch" href="/blog/assets/js/6.69c66181.js"><link rel="prefetch" href="/blog/assets/js/60.8c8e72a1.js"><link rel="prefetch" href="/blog/assets/js/61.cd10cc0a.js"><link rel="prefetch" href="/blog/assets/js/62.b3bff3dc.js"><link rel="prefetch" href="/blog/assets/js/63.93753e25.js"><link rel="prefetch" href="/blog/assets/js/64.0c3cfd75.js"><link rel="prefetch" href="/blog/assets/js/65.d53b9bb8.js"><link rel="prefetch" href="/blog/assets/js/66.d46b2746.js"><link rel="prefetch" href="/blog/assets/js/67.285c4dd3.js"><link rel="prefetch" href="/blog/assets/js/7.dcdaa74b.js"><link rel="prefetch" href="/blog/assets/js/8.516b6e0b.js"><link rel="prefetch" href="/blog/assets/js/9.1b87dd6a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ee874cfe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" alt="欢迎回来 ！" class="logo"> <span class="site-name can-hide">欢迎回来 ！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/Python/zhihu/basis.html" class="sidebar-link">基础不牢 地动山摇</a></li><li><a href="/blog/Python/zhihu/confidenceInterval.html" class="sidebar-link">置信区间</a></li><li><a href="/blog/Python/zhihu/HypothesisTesting.html" class="sidebar-link">假设检验</a></li><li><a href="/blog/Python/zhihu/t1.html" class="sidebar-link">案例</a></li><li><a href="/blog/Python/zhihu/t3.html" class="sidebar-link">相关配对t检验</a></li><li><a href="/blog/Python/zhihu/t2.html" class="sidebar-link">独立双样本t检验</a></li><li><a href="/blog/Python/zhihu/correlationAnalysis.html" class="sidebar-link">相关分析+Excel分析&amp;绘图</a></li><li><a href="/blog/Python/zhihu/introductionDataAnalysis.html" class="sidebar-link">描述统计分析</a></li><li><a href="/blog/Python/zhihu/DataAnalysis.html" class="sidebar-link">数据分析的基本过程</a></li><li><a href="/blog/Python/zhihu/MachineLearning.html" class="active sidebar-link">机器学习 入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/MachineLearning.html#步骤" class="sidebar-link">步骤</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/MachineLearning.html#特征、标签" class="sidebar-link">特征、标签</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/MachineLearning.html#python机器学习包" class="sidebar-link">python机器学习包</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/MachineLearning.html#协方差" class="sidebar-link">协方差</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/MachineLearning.html#相关系数" class="sidebar-link">相关系数</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/MachineLearning.html#简单线性回归" class="sidebar-link">简单线性回归</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/MachineLearning.html#相关关系与因果关系" class="sidebar-link">相关关系与因果关系</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/MachineLearning.html#逻辑预测" class="sidebar-link">逻辑预测</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/MachineLearning.html#我机器学习的第一个案例代码" class="sidebar-link">我机器学习的第一个案例代码</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/MachineLearning.html#结合taitan-test-py看" class="sidebar-link">结合taitan-test.py看</a></li></ul></li><li><a href="/blog/Python/zhihu/draw.html" class="sidebar-link">知乎教我python绘图</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="机器学习-入门"><a href="#机器学习-入门" class="header-anchor">#</a> 机器学习 入门</h1> <p></p><div class="table-of-contents"><ul><li><a href="#机器学习-入门">机器学习 入门</a><ul><li><a href="#步骤">步骤</a></li><li><a href="#特征、标签">特征、标签</a></li><li><a href="#python机器学习包">python机器学习包</a></li><li><a href="#协方差">协方差</a></li><li><a href="#相关系数">相关系数</a><ul><li><a href="#缺点">缺点</a></li><li><a href="#相关系数矩阵">相关系数矩阵</a></li></ul></li><li><a href="#简单线性回归">简单线性回归</a><ul><li><a href="#特征">特征</a></li><li><a href="#标签">标签</a></li><li><a href="#train-test-split">traintestsplit</a></li><li><a href="#reshape-1-1">reshape(-1,1)</a></li><li><a href="#r平方">R平方</a></li><li><a href="#学习时常与分数">学习时常与分数</a></li><li><a href="#学习时常与是否通过考试-逻辑回归">学习时常与是否通过考试(逻辑回归)</a></li></ul></li><li><a href="#相关关系与因果关系">相关关系与因果关系</a></li><li><a href="#逻辑预测">逻辑预测</a><ul><li><a href="#code文件里有代码示例">code文件里有代码示例</a></li></ul></li><li><a href="#我机器学习的第一个案例代码">我机器学习的第一个案例代码</a><ul><li><a href="#步骤">步骤</a></li><li><a href="#数据类型缺失值处理">数据类型缺失值处理</a></li><li><a href="#映射，类似emun类型-小技巧1">映射，类似emun类型,小技巧1</a></li><li><a href="#one-hot编码">one-hot编码</a></li><li><a href="#concat将生成的one-hot数据与原数据连接起来">concat将生成的one-hot数据与原数据连接起来</a></li><li><a href="#相关系数法：计算各个特征的相关系数">相关系数法：计算各个特征的相关系数</a></li><li><a href="#泰坦尼克号生存率预测">泰坦尼克号生存率预测</a></li><li><a href="#步骤">步骤</a></li><li><a href="#数据拆分">数据拆分</a></li><li><a href="#泰坦尼克号案例的补充">泰坦尼克号案例的补充</a></li></ul></li><li><a href="#结合taitan-test-py看">结合taitan-test.py看</a></li></ul></li></ul></div><p></p> <h2 id="步骤"><a href="#步骤" class="header-anchor">#</a> 步骤</h2> <ol><li>提出问题</li> <li>理解数据</li> <li>数据清洗</li> <li>构建模型</li> <li>评估</li></ol> <h2 id="特征、标签"><a href="#特征、标签" class="header-anchor">#</a> 特征、标签</h2> <p>输入：特征   输出：标签</p> <h2 id="python机器学习包"><a href="#python机器学习包" class="header-anchor">#</a> python机器学习包</h2> <p>scikit-learn</p> <hr> <p>机器学习常常用来解决相关性分析的问题</p> <h2 id="协方差"><a href="#协方差" class="header-anchor">#</a> 协方差</h2> <p><img src="/blog/assets/img/sk1.287b7bef.png" alt=""></p> <p>标准差描述的就是这种“散布度”</p> <p>标准差和方差一般是用来描述一维数据的
+<img src="data:image/png;base64,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" alt="">
+协方差用于衡量两个变量的总体误差。而方差是协方差的一种特殊情况，即当两个变量是相同的情况.
+从直观上来看，协方差表示的是两个变量总体误差的期望。
+如果两个变量的变化趋势一致，也就是说如果其中一个大于自身的期望值时另外一个也大于自身的期望值，那么两个变量之间的协方差就是正值；如果两个变量的变化趋势相反，即其中一个变量大于自身的期望值时另外一个却小于自身的期望值，那么两个变量之间的协方差就是负值。</p> <h2 id="相关系数"><a href="#相关系数" class="header-anchor">#</a> 相关系数</h2> <p>研究变量之间线性相关程度的量</p> <p>简单相关系数：又叫相关系数或线性相关系数，一般用字母r表示，用来度量两个变量间的线性关系。
+<img src="/blog/assets/img/sk3.142c344f.svg" alt="">
+标准差（西格玛）</p> <p>性值：
+|r(x,y)| &lt;= 1   ,值越大，相关程度越大，1为正相关，-1为负相关，0为相关程度最低</p> <table><thead><tr><th>r的值</th> <th style="text-align:center;">描述</th></tr></thead> <tbody><tr><td>1 ~ 0.6</td> <td style="text-align:center;">强相关</td></tr> <tr><td>0.6 ~ 0.3</td> <td style="text-align:center;">中等程度相关</td></tr> <tr><td>0.3 ~ 0</td> <td style="text-align:center;">若相关</td></tr></tbody></table> <h3 id="缺点"><a href="#缺点" class="header-anchor">#</a> 缺点</h3> <p>需要指出的是，相关系数有一个明显的缺点，即它接近于1的程度与数据组数n相关，这容易给人一种假象。因为，当n较小时，相关系数的波动较大，对有些样本相关系数的绝对值易接近于1；当n较大时，相关系数的绝对值容易偏小。特别是当n=2时，相关系数的绝对值总为1。因此在样本容量n较小时，我们仅凭相关系数较大就判定变量x与y之间有密切的线性关系是不妥当的。</p> <h3 id="相关系数矩阵"><a href="#相关系数矩阵" class="header-anchor">#</a> 相关系数矩阵</h3> <p><strong>相关系数矩阵 = pd_dataFrame.corr()</strong></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+x1<span class="token operator">=</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>rand<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+x2<span class="token operator">=</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>rand<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+x3<span class="token operator">=</span>np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>rand<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+<span class="token comment"># 利用pandas</span>
+df<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">[</span>x1<span class="token punctuation">,</span>x2<span class="token punctuation">,</span>x3<span class="token punctuation">]</span><span class="token punctuation">,</span>index<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">,</span><span class="token string">'c'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>T
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'数据:\n'</span><span class="token punctuation">,</span>df<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'相关系数矩阵为：\n'</span><span class="token punctuation">,</span>df<span class="token punctuation">.</span>corr<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+r_ab<span class="token operator">=</span>df<span class="token punctuation">.</span>a<span class="token punctuation">.</span>corr<span class="token punctuation">(</span>df<span class="token punctuation">.</span>b<span class="token punctuation">)</span>
+r_ac<span class="token operator">=</span>df<span class="token punctuation">.</span>a<span class="token punctuation">.</span>corr<span class="token punctuation">(</span>df<span class="token punctuation">.</span>c<span class="token punctuation">)</span>
+r_bc<span class="token operator">=</span>df<span class="token punctuation">.</span>b<span class="token punctuation">.</span>corr<span class="token punctuation">(</span>df<span class="token punctuation">.</span>c<span class="token punctuation">)</span>
+r_ab_c<span class="token operator">=</span><span class="token punctuation">(</span>r_ab<span class="token operator">-</span>r_ac<span class="token operator">*</span>r_bc<span class="token punctuation">)</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">-</span>r_ac<span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">0.5</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">-</span>r_bc<span class="token operator">**</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'ab_c的一阶偏相关系数为：'</span><span class="token punctuation">,</span>r_ab_c<span class="token punctuation">)</span>
+
+<span class="token comment"># 数据:</span>
+<span class="token comment">#            a         b         c</span>
+<span class="token comment"># 0  0.021221  0.425165  0.971476</span>
+<span class="token comment"># 1  0.313436  0.034512  0.601296</span>
+<span class="token comment"># 2  0.586531  0.934413  0.523409</span>
+<span class="token comment"># 3  0.532916  0.198744  0.127394</span>
+<span class="token comment"># 4  0.712067  0.646639  0.716697</span>
+<span class="token comment"># 5  0.342901  0.841756  0.118820</span>
+<span class="token comment"># 6  0.298651  0.526323  0.435489</span>
+<span class="token comment"># 7  0.515808  0.322576  0.022877</span>
+<span class="token comment"># 8  0.520162  0.890742  0.750954</span>
+<span class="token comment"># 9  0.256005  0.752313  0.762069</span>
+<span class="token comment"># 相关系数矩阵为：</span>
+<span class="token comment">#            a         b         c</span>
+<span class="token comment"># a  1.000000  0.211257 -0.344704</span>
+<span class="token comment"># b  0.211257  1.000000  0.209762</span>
+<span class="token comment"># c -0.344704  0.209762  1.000000</span>
+<span class="token comment"># ab_c的一阶偏相关系数为： 0.3089499284601962</span>
+
+</code></pre></div><h2 id="简单线性回归"><a href="#简单线性回归" class="header-anchor">#</a> 简单线性回归</h2> <h3 id="特征"><a href="#特征" class="header-anchor">#</a> 特征</h3> <p>数据的属性，如橘子的颜色，产地，数据的特点</p> <h3 id="标签"><a href="#标签" class="header-anchor">#</a> 标签</h3> <p>数据的结果，如嫩黄色橘子是甜的</p> <p><img src="/blog/assets/img/sse1.0cb1657d.jpg" alt=""> <img src="/blog/assets/img/Scikit-learn.8fe704ba.png" alt=""></p> <h3 id="train-test-split"><a href="#train-test-split" class="header-anchor">#</a> train_test_split</h3> <p>从样本中随机的按比例选取 训练数据 和 测试数据</p> <div class="language-python extra-class"><pre class="language-python"><code>X_train <span class="token punctuation">,</span> X_test <span class="token punctuation">,</span> y_train <span class="token punctuation">,</span> y_test <span class="token operator">=</span> train_test_split<span class="token punctuation">(</span>exam_X <span class="token punctuation">,</span>exam_y <span class="token punctuation">,</span>train_size <span class="token operator">=</span> <span class="token number">.8</span><span class="token punctuation">)</span>
+</code></pre></div><p>X_train :训练数据 标签
+X_test	:测试数据标签</p> <p>y_train	:训练数据特征
+y_test	:测试数据特征
+<img src="/blog/assets/img/sk4.ef50699b.jpg" alt=""></p> <h3 id="reshape-1-1"><a href="#reshape-1-1" class="header-anchor">#</a> reshape(-1,1)</h3> <h3 id="r平方"><a href="#r平方" class="header-anchor">#</a> R平方</h3> <p><strong>0&lt;=R平方&lt;=1</strong>
+决定系数R平方，功能</p> <ol><li>回归线拟合程度————有多少百分比的y波动可以有回归线来描述（x的波动变化）</li> <li>值大小————R平方越高，回归模型越精确</li></ol> <p>r平方 = 0，说明无法从x值预测y值
+r平方 = 1，说明可以从x值预测y值，且没有误差
+<img src="/blog/assets/img/sk6.a5a87a5a.jpg" alt=""> <img src="/blog/assets/img/sk7.c762fb34.jpg" alt=""></p> <h3 id="学习时常与分数"><a href="#学习时常与分数" class="header-anchor">#</a> 学习时常与分数</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> collections <span class="token keyword">import</span> OrderedDict
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+<span class="token comment">#数据集</span>
+examDict<span class="token operator">=</span><span class="token punctuation">{</span>
+    <span class="token string">'学习时间'</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token number">0.50</span><span class="token punctuation">,</span><span class="token number">0.75</span><span class="token punctuation">,</span><span class="token number">1.00</span><span class="token punctuation">,</span><span class="token number">1.25</span><span class="token punctuation">,</span><span class="token number">1.50</span><span class="token punctuation">,</span><span class="token number">1.75</span><span class="token punctuation">,</span><span class="token number">1.75</span><span class="token punctuation">,</span><span class="token number">2.00</span><span class="token punctuation">,</span><span class="token number">2.25</span><span class="token punctuation">,</span>
+            <span class="token number">2.50</span><span class="token punctuation">,</span><span class="token number">2.75</span><span class="token punctuation">,</span><span class="token number">3.00</span><span class="token punctuation">,</span><span class="token number">3.25</span><span class="token punctuation">,</span><span class="token number">3.50</span><span class="token punctuation">,</span><span class="token number">4.00</span><span class="token punctuation">,</span><span class="token number">4.25</span><span class="token punctuation">,</span><span class="token number">4.50</span><span class="token punctuation">,</span><span class="token number">4.75</span><span class="token punctuation">,</span><span class="token number">5.00</span><span class="token punctuation">,</span><span class="token number">5.50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'分数'</span><span class="token punctuation">:</span>    <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span>  <span class="token number">22</span><span class="token punctuation">,</span>  <span class="token number">13</span><span class="token punctuation">,</span>  <span class="token number">43</span><span class="token punctuation">,</span>  <span class="token number">20</span><span class="token punctuation">,</span>  <span class="token number">22</span><span class="token punctuation">,</span>  <span class="token number">33</span><span class="token punctuation">,</span>  <span class="token number">50</span><span class="token punctuation">,</span>  <span class="token number">62</span><span class="token punctuation">,</span>  
+              <span class="token number">48</span><span class="token punctuation">,</span>  <span class="token number">55</span><span class="token punctuation">,</span>  <span class="token number">75</span><span class="token punctuation">,</span>  <span class="token number">62</span><span class="token punctuation">,</span>  <span class="token number">73</span><span class="token punctuation">,</span>  <span class="token number">81</span><span class="token punctuation">,</span>  <span class="token number">76</span><span class="token punctuation">,</span>  <span class="token number">64</span><span class="token punctuation">,</span>  <span class="token number">82</span><span class="token punctuation">,</span>  <span class="token number">90</span><span class="token punctuation">,</span>  <span class="token number">93</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+examOrderDict<span class="token operator">=</span>OrderedDict<span class="token punctuation">(</span>examDict<span class="token punctuation">)</span>
+examDf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>examOrderDict<span class="token punctuation">)</span>
+
+
+<span class="token comment"># #提取特征和标签</span>
+<span class="token comment"># #特征features</span>
+<span class="token comment"># exam_X=examDf.loc[:,'学习时间']</span>
+<span class="token comment"># #标签labes</span>
+<span class="token comment"># exam_y=examDf.loc[:,'分数']</span>
+
+<span class="token comment"># #绘制散点图</span>
+<span class="token comment"># import matplotlib.pyplot as plt</span>
+
+<span class="token comment"># #散点图</span>
+<span class="token comment"># plt.scatter(exam_X, exam_y, color=&quot;b&quot;, label=&quot;exam data&quot;)</span>
+
+<span class="token comment"># #添加图标标签</span>
+<span class="token comment"># plt.xlabel(&quot;Hours&quot;)</span>
+<span class="token comment"># plt.ylabel(&quot;Score&quot;)</span>
+<span class="token comment"># #显示图像</span>
+<span class="token comment"># plt.show()</span>
+
+<span class="token comment"># #相关系数：corr返回结果是一个数据框，存放的是相关系数矩阵</span>
+<span class="token comment"># rDf=examDf.corr()</span>
+<span class="token comment"># print('相关系数矩阵：')</span>
+<span class="token comment"># print(rDf)</span>
+
+
+<span class="token comment"># 线性回归的实现</span>
+<span class="token comment"># 1.提取特征和标签</span>
+<span class="token comment">#特征features</span>
+exam_X<span class="token operator">=</span>examDf<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token string">'学习时间'</span><span class="token punctuation">]</span>
+<span class="token comment">#标签labes</span>
+exam_y<span class="token operator">=</span>examDf<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token string">'分数'</span><span class="token punctuation">]</span>
+<span class="token comment"># 2.建立训练数据和测试数据</span>
+
+<span class="token triple-quoted-string string">'''
+train_test_split是交叉验证中常用的函数，功能是从样本中随机的按比例选取训练数据（train）和测试数据（test）
+第一个参数：所要划分的样本特征
+第2个参数：所要划分的样本标签
+train_size：训练数据占比，如果是整数的话就是样本的数量
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+sklearn包0.8版本以后，需要将之前的sklearn.cross_validation 换成sklearn.model_selection
+所以课程中的代码
+from sklearn.cross_validation import train_test_split 
+更新为下面的代码
+'''</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> train_test_split
+
+<span class="token comment">#建立训练数据和测试数据</span>
+X_train <span class="token punctuation">,</span> X_test <span class="token punctuation">,</span> y_train <span class="token punctuation">,</span> y_test <span class="token operator">=</span> train_test_split<span class="token punctuation">(</span>exam_X <span class="token punctuation">,</span>
+                                                       exam_y <span class="token punctuation">,</span>
+                                                       train_size <span class="token operator">=</span> <span class="token number">.8</span><span class="token punctuation">)</span>
+<span class="token comment"># #输出数据大小</span>
+<span class="token comment"># print('原始数据特征：',exam_X.shape ,</span>
+<span class="token comment">#       '，训练数据特征：', X_train.shape , </span>
+<span class="token comment">#       '，测试数据特征：',X_test.shape )</span>
+
+<span class="token comment"># print('原始数据标签：',exam_y.shape ,</span>
+<span class="token comment">#       '训练数据标签：', y_train.shape ,</span>
+<span class="token comment">#       '测试数据标签：' ,y_test.shape)</span>
+
+
+<span class="token comment"># #绘制散点图</span>
+<span class="token comment"># import matplotlib.pyplot as plt</span>
+
+<span class="token comment"># #散点图</span>
+<span class="token comment"># plt.scatter(X_train, y_train, color=&quot;blue&quot;, label=&quot;train data&quot;)</span>
+<span class="token comment"># plt.scatter(X_test, y_test, color=&quot;red&quot;, label=&quot;test data&quot;)</span>
+
+<span class="token comment"># #添加图标标签</span>
+<span class="token comment"># plt.legend(loc=2)</span>
+<span class="token comment"># plt.xlabel(&quot;Hours&quot;)</span>
+<span class="token comment"># plt.ylabel(&quot;Score&quot;)</span>
+<span class="token comment"># #显示图像</span>
+<span class="token comment"># plt.show()</span>
+
+
+<span class="token comment"># # 3.训练模型（使用训练数据）</span>
+<span class="token comment"># '''</span>
+<span class="token comment"># 运行后会报错，因为这里输入的特征只有1个。注意看报错信息，通过这个例子也学会如何分析报错信息</span>
+<span class="token comment"># '''</span>
+<span class="token comment"># #第1步：导入线性回归</span>
+<span class="token comment"># from sklearn.linear_model import LinearRegression</span>
+<span class="token comment"># # 第2步：创建模型：线性回归</span>
+<span class="token comment"># model = LinearRegression()</span>
+<span class="token comment"># #第3步：训练模型</span>
+<span class="token comment"># # model.fit(X_train , y_train)</span>
+
+<span class="token triple-quoted-string string">'''
+上面的报错内容，最后一行是这样提示我们的：
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+上面报错的内容翻译过来就是：
+如果你输入的数据只有1个特征，需要用array.reshape(-1, 1)来改变数组的形状
+shape是形状的意思，有首歌叫《shape of you》里面指的是女孩的身材令人难以忘记。在数据里就是指数据的大小。
+numpy的reshape就是指改变数组的形状，下面通过几个案例你就明白了
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+reshape行的参数是-1表示什么呢？例如reshape(-1,列数)
+如果行的参数是-1，就会根据所给的列数，自动按照原始数组的大小形成一个新的数组，
+例如reshape(-1,1)就是改变成1列的数组，这个数组的长度是根据原始数组的大小来自动形成的。
+原始数组总共是2行*3列=6个数，那么这里就会形成6行*1列的数组
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+理解了reshape后，我们再来看下逻辑回归模型
+sklearn要求输入的特征必须是二维数组的类型，但是因为我们目前只有1个特征，所以需要用安装错误提示用reshape转行成二维数组的类型。
+错误提示信息：Reshape your data either using array.reshape(-1, 1) if your data has a single feature
+'''</span>
+<span class="token comment">#将训练数据特征转换成二维数组XX行*1列</span>
+X_train<span class="token operator">=</span>X_train<span class="token punctuation">.</span>values<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token comment">#将测试数据特征转换成二维数组行数*1列</span>
+X_test<span class="token operator">=</span>X_test<span class="token punctuation">.</span>values<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment">#第1步：导入线性回归</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LinearRegression
+<span class="token comment"># 第2步：创建模型：线性回归</span>
+model <span class="token operator">=</span> LinearRegression<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#第3步：训练模型</span>
+model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_train <span class="token punctuation">,</span> y_train<span class="token punctuation">)</span>
+
+
+<span class="token triple-quoted-string string">'''
+最佳拟合线：z=𝑎+𝑏x
+截距intercept：a
+回归系数：b
+'''</span>
+
+<span class="token comment">#截距</span>
+a<span class="token operator">=</span>model<span class="token punctuation">.</span>intercept_
+<span class="token comment">#回归系数</span>
+b<span class="token operator">=</span>model<span class="token punctuation">.</span>coef_
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'最佳拟合线：截距a='</span><span class="token punctuation">,</span>a<span class="token punctuation">,</span><span class="token string">'，回归系数b='</span><span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+
+
+
+<span class="token comment"># 4.模型评估（使用测试数据）</span>
+<span class="token comment">#线性回归的scroe方法得到的是决定系数R平方</span>
+<span class="token comment">#评估模型:决定系数R平方</span>
+model<span class="token punctuation">.</span>score<span class="token punctuation">(</span>X_test <span class="token punctuation">,</span> y_test<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">'''
+score内部会对第一个参数X_test用拟合曲线自动计算出y预测值，内容是决定系数R平方的计算过程。所以我们只用根据他的要求输入参数即可。
+'''</span>
+
+
+
+<span class="token comment">#导入绘图包</span>
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+
+<span class="token triple-quoted-string string">'''
+第1步：绘制训练数据散点图
+'''</span>
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> y_train<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'blue'</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">&quot;train data&quot;</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+第2步：用训练数据绘制最佳线
+'''</span>
+<span class="token comment">#最佳拟合线训练数据的预测值</span>
+y_train_pred <span class="token operator">=</span> model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X_train<span class="token punctuation">)</span>
+<span class="token comment">#绘制最佳拟合线：标签用的是训练数据的预测值y_train_pred</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> y_train_pred<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'black'</span><span class="token punctuation">,</span> linewidth<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">&quot;best line&quot;</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+第3步：绘制测试数据的散点图
+'''</span>
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>X_test<span class="token punctuation">,</span> y_test<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'red'</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">&quot;test data&quot;</span><span class="token punctuation">)</span>
+
+<span class="token comment">#添加图标标签</span>
+plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span>loc<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">&quot;Hours&quot;</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">&quot;Score&quot;</span><span class="token punctuation">)</span>
+<span class="token comment">#显示图像</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="学习时常与是否通过考试-逻辑回归"><a href="#学习时常与是否通过考试-逻辑回归" class="header-anchor">#</a> 学习时常与是否通过考试(逻辑回归)</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> collections <span class="token keyword">import</span> OrderedDict
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token comment">#数据集</span>
+examDict<span class="token operator">=</span><span class="token punctuation">{</span>
+    <span class="token string">'学习时间'</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token number">0.50</span><span class="token punctuation">,</span><span class="token number">0.75</span><span class="token punctuation">,</span><span class="token number">1.00</span><span class="token punctuation">,</span><span class="token number">1.25</span><span class="token punctuation">,</span><span class="token number">1.50</span><span class="token punctuation">,</span><span class="token number">1.75</span><span class="token punctuation">,</span><span class="token number">1.75</span><span class="token punctuation">,</span><span class="token number">2.00</span><span class="token punctuation">,</span><span class="token number">2.25</span><span class="token punctuation">,</span><span class="token number">2.50</span><span class="token punctuation">,</span>
+            <span class="token number">2.75</span><span class="token punctuation">,</span><span class="token number">3.00</span><span class="token punctuation">,</span><span class="token number">3.25</span><span class="token punctuation">,</span><span class="token number">3.50</span><span class="token punctuation">,</span><span class="token number">4.00</span><span class="token punctuation">,</span><span class="token number">4.25</span><span class="token punctuation">,</span><span class="token number">4.50</span><span class="token punctuation">,</span><span class="token number">4.75</span><span class="token punctuation">,</span><span class="token number">5.00</span><span class="token punctuation">,</span><span class="token number">5.50</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'通过考试'</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+examOrderDict<span class="token operator">=</span>OrderedDict<span class="token punctuation">(</span>examDict<span class="token punctuation">)</span>
+examDf<span class="token operator">=</span>pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>examOrderDict<span class="token punctuation">)</span>
+
+
+<span class="token comment">#提取特征和标签</span>
+<span class="token comment">#特征features</span>
+exam_X<span class="token operator">=</span>examDf<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token string">'学习时间'</span><span class="token punctuation">]</span>
+<span class="token comment">#标签labes</span>
+exam_y<span class="token operator">=</span>examDf<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token string">'通过考试'</span><span class="token punctuation">]</span>
+
+
+<span class="token comment"># import matplotlib.pyplot as plt</span>
+<span class="token comment"># #散点图</span>
+<span class="token comment"># plt.scatter(exam_X, exam_y, color=&quot;b&quot;, label=&quot;exam data&quot;)</span>
+
+<span class="token comment"># #添加图标标签</span>
+<span class="token comment"># plt.xlabel(&quot;Hours&quot;)</span>
+<span class="token comment"># plt.ylabel(&quot;Pass&quot;)</span>
+<span class="token comment"># #显示图像</span>
+<span class="token comment"># plt.show()</span>
+
+
+
+<span class="token comment"># 建立训练数据集和测试数据集</span>
+<span class="token triple-quoted-string string">'''
+train_test_split是交叉验证中常用的函数，功能是从样本中随机的按比例选取训练数据（train）和测试数据（test）
+第一个参数：所要划分的样本特征
+第2个参数：所要划分的样本标签
+train_size：训练数据占比，如果是整数的话就是样本的数量
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+sklearn包0.8版本以后，需要将之前的sklearn.cross_validation 换成sklearn.model_selection
+所以课程中的代码
+from sklearn.cross_validation import train_test_split 
+更新为下面的代码
+'''</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> train_test_split
+
+<span class="token comment">#建立训练数据和测试数据</span>
+X_train <span class="token punctuation">,</span> X_test <span class="token punctuation">,</span> y_train <span class="token punctuation">,</span> y_test <span class="token operator">=</span> train_test_split<span class="token punctuation">(</span>exam_X <span class="token punctuation">,</span>
+                                                       exam_y <span class="token punctuation">,</span>
+                                                       train_size <span class="token operator">=</span> <span class="token number">.8</span><span class="token punctuation">)</span>
+
+                                                       <span class="token comment">#输出数据大小</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'原始数据特征：'</span><span class="token punctuation">,</span>exam_X<span class="token punctuation">.</span>shape <span class="token punctuation">,</span>
+      <span class="token string">'，训练数据特征：'</span><span class="token punctuation">,</span> X_train<span class="token punctuation">.</span>shape <span class="token punctuation">,</span> 
+      <span class="token string">'，测试数据特征：'</span><span class="token punctuation">,</span>X_test<span class="token punctuation">.</span>shape <span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'原始数据标签：'</span><span class="token punctuation">,</span>exam_y<span class="token punctuation">.</span>shape <span class="token punctuation">,</span>
+      <span class="token string">'训练数据标签：'</span><span class="token punctuation">,</span> y_train<span class="token punctuation">.</span>shape <span class="token punctuation">,</span>
+      <span class="token string">'测试数据标签：'</span> <span class="token punctuation">,</span>y_test<span class="token punctuation">.</span>shape<span class="token punctuation">)</span>
+
+
+<span class="token comment"># #绘制散点图</span>
+<span class="token comment"># import matplotlib.pyplot as plt</span>
+
+<span class="token comment"># #散点图</span>
+<span class="token comment"># plt.scatter(X_train, y_train, color=&quot;blue&quot;, label=&quot;train data&quot;)</span>
+<span class="token comment"># plt.scatter(X_test, y_test, color=&quot;red&quot;, label=&quot;test data&quot;)</span>
+
+<span class="token comment"># #添加图标标签</span>
+<span class="token comment"># plt.legend(loc=2)</span>
+<span class="token comment"># plt.xlabel(&quot;Hours&quot;)</span>
+<span class="token comment"># plt.ylabel(&quot;Pass&quot;)</span>
+<span class="token comment"># #显示图像</span>
+<span class="token comment"># plt.show()</span>
+
+
+
+<span class="token comment"># 训练模型（使用训练数据）</span>
+<span class="token triple-quoted-string string">'''
+上面的报错内容，最后一行是这样提示我们的：
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+上面报错的内容翻译过来就是：
+如果你输入的数据只有1个特征，需要用array.reshape(-1, 1)来改变数组的形状
+shape是形状的意思，有首歌叫《shape of you》里面指的是女孩的身材令人难以忘记。在数据里就是指数据的大小。
+numpy的reshape就是指改变数组的形状，下面通过几个案例你就明白了
+'''</span>
+<span class="token triple-quoted-string string">'''
+reshape列的参数是-1表示什么呢？例如reshape(行数,-1)
+如果列的参数是-1，就会根据所给的行数，自动按照原始数组的大小形成一个新的数组，
+例如reshape(1,-1)就是改变成1行的数组，这个数组的列数是根据原始数组的大小来自动形成的。
+原始数组总共是2行*3列=6个数，那么这里就会形成1行*6列的数组
+'''</span>
+<span class="token triple-quoted-string string">'''
+理解了reshape后，我们再来看下逻辑回归模型
+sklearn要求输入的特征必须是二维数组的类型，但是因为我们目前只有1个特征，所以需要用安装错误提示用reshape转行成二维数组的类型。
+错误提示信息：Reshape your data either using array.reshape(-1, 1) if your data has a single feature
+'''</span>
+<span class="token comment">#将训练数据特征转换成二维数组XX行*1列</span>
+X_train<span class="token operator">=</span>X_train<span class="token punctuation">.</span>values<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token comment">#将测试数据特征转换成二维数组行数*1列</span>
+X_test<span class="token operator">=</span>X_test<span class="token punctuation">.</span>values<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment">#导入逻辑回归包</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LogisticRegression
+<span class="token comment"># 创建模型：逻辑回归</span>
+model <span class="token operator">=</span> LogisticRegression<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#训练模型</span>
+model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_train <span class="token punctuation">,</span> y_train<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 模型评估（使用测试数据）</span>
+<span class="token comment">#评估模型：准确率</span>
+model<span class="token punctuation">.</span>score<span class="token punctuation">(</span>X_test <span class="token punctuation">,</span> y_test<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 进一步理解什么是逻辑函数</span>
+<span class="token comment">#获取概率值</span>
+<span class="token comment">#第1个值是标签为0的概率值，第2个值是标签为1的概率值</span>
+model<span class="token punctuation">.</span>predict_proba<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+model<span class="token punctuation">.</span>predict_proba<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+
+<span class="token comment">#预测数据：使用模型的predict方法可以进行预测。这里我们输入学生的特征学习时间3小时，模型返回结果标签是1，表示预测该学生通过考试。</span>
+pred<span class="token operator">=</span>model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>pred<span class="token punctuation">)</span>
+
+
+<span class="token triple-quoted-string string">'''
+理解逻辑回归函数
+斜率slope
+截距intercept
+'''</span>
+<span class="token comment">#第1步：得到回归方程的z值</span>
+<span class="token comment">#回归方程：z=𝑎+𝑏x</span>
+<span class="token comment">#截距</span>
+a<span class="token operator">=</span>model<span class="token punctuation">.</span>intercept_
+<span class="token comment">#回归系数</span>
+b<span class="token operator">=</span>model<span class="token punctuation">.</span>coef_
+
+x<span class="token operator">=</span><span class="token number">3</span>
+z<span class="token operator">=</span>a<span class="token operator">+</span>b<span class="token operator">*</span>x
+
+<span class="token comment">#第2步：将z值带入逻辑回归函数中，得到概率值</span>
+y_pred<span class="token operator">=</span><span class="token number">1</span><span class="token operator">/</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">+</span>np<span class="token punctuation">.</span>exp<span class="token punctuation">(</span><span class="token operator">-</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'预测的概率值：'</span><span class="token punctuation">,</span>y_pred<span class="token punctuation">)</span>
+</code></pre></div><h2 id="相关关系与因果关系"><a href="#相关关系与因果关系" class="header-anchor">#</a> 相关关系与因果关系</h2> <h2 id="逻辑预测"><a href="#逻辑预测" class="header-anchor">#</a> 逻辑预测</h2> <h3 id="code文件里有代码示例"><a href="#code文件里有代码示例" class="header-anchor">#</a> code文件里有代码示例</h3> <h2 id="我机器学习的第一个案例代码"><a href="#我机器学习的第一个案例代码" class="header-anchor">#</a> 我机器学习的第一个案例代码</h2> <h3 id="步骤-2"><a href="#步骤-2" class="header-anchor">#</a> 步骤</h3> <ol><li>选择子集</li> <li>列名重命名</li> <li>缺失数据处理</li> <li>数据类型转换</li> <li>数据排序</li> <li>异常值处理</li></ol> <h3 id="数据类型缺失值处理"><a href="#数据类型缺失值处理" class="header-anchor">#</a> 数据类型缺失值处理</h3> <p>用平均值填充</p> <h3 id="映射，类似emun类型-小技巧1"><a href="#映射，类似emun类型-小技巧1" class="header-anchor">#</a> 映射，类似emun类型,小技巧1</h3> <p><strong>dataFrame.map(dict)</strong></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token triple-quoted-string string">'''
+将性别的值映射为数值
+男（male）对应数值1，女（female）对应数值0
+'''</span>
+sex_mapDict<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'male'</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token string">'female'</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">}</span>
+<span class="token comment">#map函数：对Series每个数据应用自定义的函数计算</span>
+full<span class="token punctuation">[</span><span class="token string">'Sex'</span><span class="token punctuation">]</span><span class="token operator">=</span>full<span class="token punctuation">[</span><span class="token string">'Sex'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>sex_mapDict<span class="token punctuation">)</span>
+full<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="one-hot编码"><a href="#one-hot编码" class="header-anchor">#</a> one-hot编码</h3> <p><strong>使用get_dummies进行one-hot编码</strong></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#客舱等级(Pclass):</span>
+<span class="token number">1</span><span class="token operator">=</span><span class="token number">1</span>等舱，<span class="token number">2</span><span class="token operator">=</span><span class="token number">2</span>等舱，<span class="token number">3</span><span class="token operator">=</span><span class="token number">3</span>等舱
+<span class="token string">''</span>'
+<span class="token comment">#存放提取后的特征</span>
+pclassDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#使用get_dummies进行one-hot编码，列名前缀是Pclass</span>
+pclassDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>get_dummies<span class="token punctuation">(</span> full<span class="token punctuation">[</span><span class="token string">'Pclass'</span><span class="token punctuation">]</span> <span class="token punctuation">,</span> prefix<span class="token operator">=</span><span class="token string">'Pclass'</span> <span class="token punctuation">)</span>
+</code></pre></div><h3 id="concat将生成的one-hot数据与原数据连接起来"><a href="#concat将生成的one-hot数据与原数据连接起来" class="header-anchor">#</a> concat将生成的one-hot数据与原数据连接起来</h3> <p><strong>pd.concat([dataFrame1,dataFrame2],axis=1)</strong>
+axis=1,横向连接</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#添加one-hot编码产生的虚拟变量（dummy variables）到泰坦尼克号数据集full</span>
+full <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>full<span class="token punctuation">,</span>embarkedDf<span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment">#删掉客舱等级（Pclass）这一列</span>
+full<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Pclass'</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="相关系数法：计算各个特征的相关系数"><a href="#相关系数法：计算各个特征的相关系数" class="header-anchor">#</a> 相关系数法：计算各个特征的相关系数</h3> <p>根据各个特征与生成情况（Survived）的相关系数大小，我们选择了这几个特征作为模型的输入</p> <h3 id="泰坦尼克号生存率预测"><a href="#泰坦尼克号生存率预测" class="header-anchor">#</a> 泰坦尼克号生存率预测</h3> <h3 id="步骤-3"><a href="#步骤-3" class="header-anchor">#</a> 步骤</h3> <p><img src="/blog/assets/img/sklg.c484a042.jpg" alt=""></p> <h3 id="数据拆分"><a href="#数据拆分" class="header-anchor">#</a> 数据拆分</h3> <p><img src="/blog/assets/img/sk10.e314ece6.jpg" alt="">
+code文件中有</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># 目录 </span>
+<span class="token comment"># 1. 提出问题（Business Understanding ）</span>
+<span class="token comment"># 什么样的人在泰坦尼克号中更容易存活？ </span>
+<span class="token comment"># 2. 理解数据（Data Understanding）</span>
+
+<span class="token comment"># 采集数据</span>
+<span class="token comment"># 导入数据</span>
+<span class="token comment"># 查看数据集信息</span>
+<span class="token comment"># 数据清洗（Data Preparation ）</span>
+<span class="token comment"># 数据预处理</span>
+<span class="token comment"># 特征工程（Feature Engineering）</span>
+<span class="token comment"># 构建模型（Modeling）</span>
+<span class="token comment"># 模型评估（Evaluation）</span>
+<span class="token comment"># 方案实施 （Deployment）</span>
+<span class="token comment"># 提交结果到Kaggle</span>
+<span class="token comment"># 报告撰写</span>
+
+<span class="token comment"># 忽略警告提示</span>
+<span class="token keyword">import</span> warnings
+warnings<span class="token punctuation">.</span>filterwarnings<span class="token punctuation">(</span><span class="token string">'ignore'</span><span class="token punctuation">)</span>
+
+<span class="token comment">#导入处理数据包</span>
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+
+<span class="token comment">#导入数据</span>
+<span class="token comment">#训练数据集</span>
+train <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">&quot;./taitannike/train.csv&quot;</span><span class="token punctuation">)</span>
+<span class="token comment">#测试数据集</span>
+test  <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">&quot;./taitannike/test.csv&quot;</span><span class="token punctuation">)</span>
+<span class="token comment">#这里要记住训练数据集有891条数据，方便后面从中拆分出测试数据集用于提交Kaggle结果</span>
+<span class="token comment"># print ('训练数据集:',train.shape,'测试数据集:',test.shape)</span>
+
+<span class="token comment">#合并数据集，方便同时对两个数据集进行清洗</span>
+full <span class="token operator">=</span> train<span class="token punctuation">.</span>append<span class="token punctuation">(</span> test <span class="token punctuation">,</span> ignore_index <span class="token operator">=</span> <span class="token boolean">True</span> <span class="token punctuation">)</span>
+
+<span class="token comment"># print ('合并后的数据集:',full.shape)</span>
+
+<span class="token comment"># print(full)</span>
+
+<span class="token triple-quoted-string string">'''
+describe只能查看数据类型的描述统计信息，对于其他类型的数据不显示，比如字符串类型姓名（name），客舱号（Cabin）
+这很好理解，因为描述统计指标是计算数值，所以需要该列的数据类型是数据
+'''</span>
+<span class="token comment">#获取数据类型列的描述统计信息</span>
+<span class="token comment"># print(full.describe())</span>
+
+<span class="token comment"># 查看每一列的数据类型，和数据总数</span>
+<span class="token comment"># full.info()</span>
+<span class="token triple-quoted-string string">'''
+我们发现数据总共有1309行。
+其中数据类型列：年龄（Age）、船舱号（Cabin）里面有缺失数据：
+1）年龄（Age）里面数据总数是1046条，缺失了1309-1046=263，缺失率263/1309=20%
+2）船票价格（Fare）里面数据总数是1308条，缺失了1条数据
+
+字符串列：
+1）登船港口（Embarked）里面数据总数是1307，只缺失了2条数据，缺失比较少
+2）船舱号（Cabin）里面数据总数是295，缺失了1309-295=1014，缺失率=1014/1309=77.5%，缺失比较大
+这为我们下一步数据清洗指明了方向，只有知道哪些数据缺失数据，我们才能有针对性的处理。
+'''</span>
+
+<span class="token triple-quoted-string string">'''\n我们发现数据总共有1309行。
+\n其中数据类型列：年龄（Age）、船舱号（Cabin）里面有缺失数据：\n1）年龄（Age）里面数据总数是1046条，
+缺失了1309-1046=263，缺失率263/1309=20%\n2）船票价格（Fare）里面数据总数是1308条，缺失了1条数据\n\n字符串列：\n1）
+登船港口（Embarked）里面数据总数是1307，只缺失了2条数据，缺失比较少\n2）船舱号（Cabin）里面数据总数是295，
+缺失了1309-295=1014，缺失率=1014/1309=77.5%，缺失比较大\n这为我们下一步数据清洗指明了方向，只有知道哪些数据缺失数据，
+我们才能有针对性的处理。\n'''</span>
+
+
+<span class="token comment"># 3.数据清洗（Data Preparation ）</span>
+<span class="token comment"># 3.1 数据预处理</span>
+<span class="token comment"># 缺失值处理</span>
+<span class="token comment"># 在前面，理解数据阶段，我们发现数据总共有1309行。 其中数据类型列：年龄（Age）、船舱号（Cabin）里面有缺失数据。 字符串列：登船港口（Embarked）、船舱号（Cabin）里面有缺失数据。</span>
+
+<span class="token comment"># 这为我们下一步数据清洗指明了方向，只有知道哪些数据缺失数据，我们才能有针对性的处理。</span>
+
+<span class="token comment"># 很多机器学习算法为了训练模型，要求所传入的特征中不能有空值。</span>
+
+<span class="token comment"># 如果是数值类型，用平均值取代</span>
+<span class="token comment"># 如果是分类数据，用最常见的类别取代</span>
+<span class="token comment"># 使用模型预测缺失值，例如：K-NN</span>
+
+
+<span class="token triple-quoted-string string">'''
+我们发现数据总共有1309行。
+其中数据类型列：年龄（Age）、船舱号（Cabin）里面有缺失数据：
+1）年龄（Age）里面数据总数是1046条，缺失了1309-1046=263，缺失率263/1309=20%
+2）船票价格（Fare）里面数据总数是1308条，缺失了1条数据
+
+对于数据类型，处理缺失值最简单的方法就是用平均数来填充缺失值
+'''</span>
+<span class="token comment"># print('处理前：')</span>
+<span class="token comment"># full.info()</span>
+<span class="token comment"># 年龄(Age)</span>
+full<span class="token punctuation">[</span><span class="token string">'Age'</span><span class="token punctuation">]</span><span class="token operator">=</span>full<span class="token punctuation">[</span><span class="token string">'Age'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>fillna<span class="token punctuation">(</span> full<span class="token punctuation">[</span><span class="token string">'Age'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span>
+<span class="token comment"># 船票价格(Fare)</span>
+full<span class="token punctuation">[</span><span class="token string">'Fare'</span><span class="token punctuation">]</span> <span class="token operator">=</span> full<span class="token punctuation">[</span><span class="token string">'Fare'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>fillna<span class="token punctuation">(</span> full<span class="token punctuation">[</span><span class="token string">'Fare'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span>
+<span class="token comment"># print('处理红后：')</span>
+<span class="token comment"># full.info()</span>
+
+
+
+<span class="token triple-quoted-string string">'''
+总数据是1309
+字符串列：
+1）登船港口（Embarked）里面数据总数是1307，只缺失了2条数据，缺失比较少
+2）船舱号（Cabin）里面数据总数是295，缺失了1309-295=1014，缺失率=1014/1309=77.5%，缺失比较大
+'''</span>
+<span class="token comment">#登船港口（Embarked）：查看里面数据长啥样</span>
+<span class="token triple-quoted-string string">'''
+出发地点：S=英国南安普顿Southampton
+途径地点1：C=法国 瑟堡市Cherbourg
+途径地点2：Q=爱尔兰 昆士敦Queenstown
+'''</span>
+<span class="token triple-quoted-string string">'''
+分类变量Embarked，看下最常见的类别，用其填充
+'''</span>
+full<span class="token punctuation">[</span><span class="token string">'Embarked'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value_counts<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+从结果来看，S类别最常见。我们将缺失值填充为最频繁出现的值：
+S=英国南安普顿Southampton
+'''</span>
+full<span class="token punctuation">[</span><span class="token string">'Embarked'</span><span class="token punctuation">]</span> <span class="token operator">=</span> full<span class="token punctuation">[</span><span class="token string">'Embarked'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>fillna<span class="token punctuation">(</span> <span class="token string">'S'</span> <span class="token punctuation">)</span>
+
+
+<span class="token comment">#缺失数据比较多，船舱号（Cabin）缺失值填充为U，表示未知（Uknow） </span>
+full<span class="token punctuation">[</span><span class="token string">'Cabin'</span><span class="token punctuation">]</span> <span class="token operator">=</span> full<span class="token punctuation">[</span><span class="token string">'Cabin'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>fillna<span class="token punctuation">(</span> <span class="token string">'U'</span> <span class="token punctuation">)</span>
+
+
+
+
+<span class="token comment"># 3.2 特征提取</span>
+<span class="token comment"># 3.2.1数据分类</span>
+<span class="token comment"># 查看数据类型，分为3种数据类型。并对类别数据处理：用数值代替类别，并进行One-hot编码</span>
+<span class="token triple-quoted-string string">'''
+1.数值类型：
+乘客编号（PassengerId），年龄（Age），船票价格（Fare），同代直系亲属人数（SibSp），不同代直系亲属人数（Parch）
+2.时间序列：无
+3.分类数据：
+1）有直接类别的
+乘客性别（Sex）：男性male，女性female
+登船港口（Embarked）：出发地点S=英国南安普顿Southampton，途径地点1：C=法国 瑟堡市Cherbourg，出发地点2：Q=爱尔兰 昆士敦Queenstown
+客舱等级（Pclass）：1=1等舱，2=2等舱，3=3等舱
+2）字符串类型：可能从这里面提取出特征来，也归到分类数据中
+乘客姓名（Name）
+客舱号（Cabin）
+船票编号（Ticket）
+'''</span>
+
+<span class="token comment"># 3.2.1 分类数据：有直接类别的</span>
+<span class="token comment"># 乘客性别（Sex）： 男性male，女性female</span>
+<span class="token comment"># 登船港口（Embarked）：出发地点S=英国南安普顿Southampton，途径地点1：C=法国 瑟堡市Cherbourg，出发地点2：Q=爱尔兰 昆士敦Queenstown</span>
+<span class="token comment"># 客舱等级（Pclass）：1=1等舱，2=2等舱，3=3等舱</span>
+
+<span class="token comment"># 性别</span>
+<span class="token comment">#查看性别数据这一列</span>
+full<span class="token punctuation">[</span><span class="token string">'Sex'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">'''
+将性别的值映射为数值
+男（male）对应数值1，女（female）对应数值0
+'''</span>
+sex_mapDict<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'male'</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token string">'female'</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">}</span>
+<span class="token comment">#map函数：对Series每个数据应用自定义的函数计算</span>
+full<span class="token punctuation">[</span><span class="token string">'Sex'</span><span class="token punctuation">]</span><span class="token operator">=</span>full<span class="token punctuation">[</span><span class="token string">'Sex'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>sex_mapDict<span class="token punctuation">)</span>
+full<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token comment"># 登船港口(Embarked)</span>
+<span class="token comment">#存放提取后的特征</span>
+embarkedDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+使用get_dummies进行one-hot编码，产生虚拟变量（dummy variables），列名前缀是Embarked
+'''</span>
+embarkedDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>get_dummies<span class="token punctuation">(</span> full<span class="token punctuation">[</span><span class="token string">'Embarked'</span><span class="token punctuation">]</span> <span class="token punctuation">,</span> prefix<span class="token operator">=</span><span class="token string">'Embarked'</span> <span class="token punctuation">)</span>
+embarkedDf<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#添加one-hot编码产生的虚拟变量（dummy variables）到泰坦尼克号数据集full</span>
+full <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>full<span class="token punctuation">,</span>embarkedDf<span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+因为已经使用登船港口(Embarked)进行了one-hot编码产生了它的虚拟变量（dummy variables）
+所以这里把登船港口(Embarked)删掉
+'''</span>
+full<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Embarked'</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+full<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+上面drop删除某一列代码解释：
+因为drop(name,axis=1)里面指定了name是哪一列，比如指定的是A这一列，axis=1表示按行操作。
+那么结合起来就是把A列里面每一行删除，最终结果是删除了A这一列.
+简单来说，使用drop删除某几列的方法记住这个语法就可以了：drop([列名1,列名2],axis=1)
+'''</span>
+
+<span class="token comment"># Age	Cabin	Fare	Name	Parch	PassengerId	Pclass	Sex	SibSp	Survived	Ticket	Embarked_C	Embarked_Q	Embarked_S</span>
+<span class="token comment"># 0	22.0	U	7.2500	Braund, Mr. Owen Harris	0	1	3	1	1	0.0	A/5 21171	0	0	1</span>
+<span class="token comment"># 1	38.0	C85	71.2833	Cumings, Mrs. John Bradley (Florence Briggs Th...	0	2	1	0	1	1.0	PC 17599	1	0	0</span>
+<span class="token comment"># 2	26.0	U	7.9250	Heikkinen, Miss. Laina	0	3	3	0	0	1.0	STON/O2. 3101282	0	0	1</span>
+<span class="token comment"># 3	35.0	C123	53.1000	Futrelle, Mrs. Jacques Heath (Lily May Peel)	0	4	1	0	1	1.0	113803	0	0	1</span>
+<span class="token comment"># 4	35.0	U	8.0500	Allen, Mr. William Henry	0	5	3	1	0	0.0	373450	0	0	</span>
+
+
+<span class="token comment"># 客舱等级（Pclass）</span>
+<span class="token triple-quoted-string string">'''
+客舱等级(Pclass):
+1=1等舱，2=2等舱，3=3等舱
+'''</span>
+<span class="token comment">#存放提取后的特征</span>
+pclassDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#使用get_dummies进行one-hot编码，列名前缀是Pclass</span>
+pclassDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>get_dummies<span class="token punctuation">(</span> full<span class="token punctuation">[</span><span class="token string">'Pclass'</span><span class="token punctuation">]</span> <span class="token punctuation">,</span> prefix<span class="token operator">=</span><span class="token string">'Pclass'</span> <span class="token punctuation">)</span>
+pclassDf<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#添加one-hot编码产生的虚拟变量（dummy variables）到泰坦尼克号数据集full</span>
+full <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>full<span class="token punctuation">,</span>pclassDf<span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment">#删掉客舱等级（Pclass）这一列</span>
+full<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Pclass'</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+full<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># print(full)</span>
+
+
+
+
+<span class="token comment"># 3.2.1 分类数据：字符串类型</span>
+<span class="token comment"># 字符串类型：可能从这里面提取出特征来，也归到分类数据中，这里数据有：</span>
+
+<span class="token comment"># 乘客姓名（Name）</span>
+<span class="token comment"># 客舱号（Cabin）</span>
+<span class="token comment"># 船票编号（Ticket）</span>
+
+
+
+<span class="token comment"># 从姓名中提取头衔</span>
+<span class="token triple-quoted-string string">'''
+查看姓名这一列长啥样
+注意到在乘客名字（Name）中，有一个非常显著的特点：
+乘客头衔每个名字当中都包含了具体的称谓或者说是头衔，将这部分信息提取出来后可以作为非常有用一个新变量，可以帮助我们进行预测。
+例如：
+Braund, Mr. Owen Harris
+Heikkinen, Miss. Laina
+Oliva y Ocana, Dona. Fermina
+Peter, Master. Michael J
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+定义函数：从姓名中获取头衔
+'''</span>
+<span class="token keyword">def</span> <span class="token function">getTitle</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    str1<span class="token operator">=</span>name<span class="token punctuation">.</span>split<span class="token punctuation">(</span> <span class="token string">','</span> <span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token comment">#Mr. Owen Harris</span>
+    str2<span class="token operator">=</span>str1<span class="token punctuation">.</span>split<span class="token punctuation">(</span> <span class="token string">'.'</span> <span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token comment">#Mr</span>
+    <span class="token comment">#strip() 方法用于移除字符串头尾指定的字符（默认为空格）</span>
+    str3<span class="token operator">=</span>str2<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> str3
+
+<span class="token comment">#存放提取后的特征</span>
+titleDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#map函数：对Series每个数据应用自定义的函数计算</span>
+titleDf<span class="token punctuation">[</span><span class="token string">'Title'</span><span class="token punctuation">]</span> <span class="token operator">=</span> full<span class="token punctuation">[</span><span class="token string">'Name'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>getTitle<span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+定义以下几种头衔类别：
+Officer政府官员
+Royalty王室（皇室）
+Mr已婚男士
+Mrs已婚妇女
+Miss年轻未婚女子
+Master有技能的人/教师
+'''</span>
+<span class="token comment">#姓名中头衔字符串与定义头衔类别的映射关系</span>
+title_mapDict <span class="token operator">=</span> <span class="token punctuation">{</span>
+                    <span class="token string">&quot;Capt&quot;</span><span class="token punctuation">:</span>       <span class="token string">&quot;Officer&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Col&quot;</span><span class="token punctuation">:</span>        <span class="token string">&quot;Officer&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Major&quot;</span><span class="token punctuation">:</span>      <span class="token string">&quot;Officer&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Jonkheer&quot;</span><span class="token punctuation">:</span>   <span class="token string">&quot;Royalty&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Don&quot;</span><span class="token punctuation">:</span>        <span class="token string">&quot;Royalty&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Sir&quot;</span> <span class="token punctuation">:</span>       <span class="token string">&quot;Royalty&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Dr&quot;</span><span class="token punctuation">:</span>         <span class="token string">&quot;Officer&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Rev&quot;</span><span class="token punctuation">:</span>        <span class="token string">&quot;Officer&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;the Countess&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;Royalty&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Dona&quot;</span><span class="token punctuation">:</span>       <span class="token string">&quot;Royalty&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Mme&quot;</span><span class="token punctuation">:</span>        <span class="token string">&quot;Mrs&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Mlle&quot;</span><span class="token punctuation">:</span>       <span class="token string">&quot;Miss&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Ms&quot;</span><span class="token punctuation">:</span>         <span class="token string">&quot;Mrs&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Mr&quot;</span> <span class="token punctuation">:</span>        <span class="token string">&quot;Mr&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Mrs&quot;</span> <span class="token punctuation">:</span>       <span class="token string">&quot;Mrs&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Miss&quot;</span> <span class="token punctuation">:</span>      <span class="token string">&quot;Miss&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Master&quot;</span> <span class="token punctuation">:</span>    <span class="token string">&quot;Master&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;Lady&quot;</span> <span class="token punctuation">:</span>      <span class="token string">&quot;Royalty&quot;</span>
+                    <span class="token punctuation">}</span>
+
+<span class="token comment">#map函数：对Series每个数据应用自定义的函数计算</span>
+titleDf<span class="token punctuation">[</span><span class="token string">'Title'</span><span class="token punctuation">]</span> <span class="token operator">=</span> titleDf<span class="token punctuation">[</span><span class="token string">'Title'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>title_mapDict<span class="token punctuation">)</span>
+
+<span class="token comment">#使用get_dummies进行one-hot编码</span>
+titleDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>get_dummies<span class="token punctuation">(</span>titleDf<span class="token punctuation">[</span><span class="token string">'Title'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment">#添加one-hot编码产生的虚拟变量（dummy variables）到泰坦尼克号数据集full</span>
+full <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>full<span class="token punctuation">,</span>titleDf<span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment">#删掉姓名这一列</span>
+full<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Name'</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+
+
+
+<span class="token comment">#从客舱号中提取客舱类别</span>
+<span class="token comment">#存放客舱号信息</span>
+cabinDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+客场号的类别值是首字母，例如：
+C85 类别映射为首字母C
+'''</span>
+full<span class="token punctuation">[</span> <span class="token string">'Cabin'</span> <span class="token punctuation">]</span> <span class="token operator">=</span> full<span class="token punctuation">[</span> <span class="token string">'Cabin'</span> <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span> <span class="token keyword">lambda</span> c <span class="token punctuation">:</span> c<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token punctuation">)</span>
+
+<span class="token comment">##使用get_dummies进行one-hot编码，列名前缀是Cabin</span>
+cabinDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>get_dummies<span class="token punctuation">(</span> full<span class="token punctuation">[</span><span class="token string">'Cabin'</span><span class="token punctuation">]</span> <span class="token punctuation">,</span> prefix <span class="token operator">=</span> <span class="token string">'Cabin'</span> <span class="token punctuation">)</span>
+<span class="token comment">#添加one-hot编码产生的虚拟变量（dummy variables）到泰坦尼克号数据集full</span>
+full <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>full<span class="token punctuation">,</span>cabinDf<span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment">#删掉客舱号这一列</span>
+full<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Cabin'</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+
+
+
+<span class="token comment"># 建立家庭人数和家庭类别</span>
+<span class="token comment">#存放家庭信息</span>
+familyDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+家庭人数=同代直系亲属数（Parch）+不同代直系亲属数（SibSp）+乘客自己
+（因为乘客自己也是家庭成员的一个，所以这里加1）
+'''</span>
+familyDf<span class="token punctuation">[</span> <span class="token string">'FamilySize'</span> <span class="token punctuation">]</span> <span class="token operator">=</span> full<span class="token punctuation">[</span> <span class="token string">'Parch'</span> <span class="token punctuation">]</span> <span class="token operator">+</span> full<span class="token punctuation">[</span> <span class="token string">'SibSp'</span> <span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span>
+
+<span class="token triple-quoted-string string">'''
+家庭类别：
+小家庭Family_Single：家庭人数=1
+中等家庭Family_Small: 2&lt;=家庭人数&lt;=4
+大家庭Family_Large: 家庭人数&gt;=5
+'''</span>
+<span class="token comment">#if 条件为真的时候返回if前面内容，否则返回0</span>
+familyDf<span class="token punctuation">[</span> <span class="token string">'Family_Single'</span> <span class="token punctuation">]</span> <span class="token operator">=</span> familyDf<span class="token punctuation">[</span> <span class="token string">'FamilySize'</span> <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span> <span class="token keyword">lambda</span> s <span class="token punctuation">:</span> <span class="token number">1</span> <span class="token keyword">if</span> s <span class="token operator">==</span> <span class="token number">1</span> <span class="token keyword">else</span> <span class="token number">0</span> <span class="token punctuation">)</span>
+familyDf<span class="token punctuation">[</span> <span class="token string">'Family_Small'</span> <span class="token punctuation">]</span>  <span class="token operator">=</span> familyDf<span class="token punctuation">[</span> <span class="token string">'FamilySize'</span> <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span> <span class="token keyword">lambda</span> s <span class="token punctuation">:</span> <span class="token number">1</span> <span class="token keyword">if</span> <span class="token number">2</span> <span class="token operator">&lt;=</span> s <span class="token operator">&lt;=</span> <span class="token number">4</span> <span class="token keyword">else</span> <span class="token number">0</span> <span class="token punctuation">)</span>
+familyDf<span class="token punctuation">[</span> <span class="token string">'Family_Large'</span> <span class="token punctuation">]</span>  <span class="token operator">=</span> familyDf<span class="token punctuation">[</span> <span class="token string">'FamilySize'</span> <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span> <span class="token keyword">lambda</span> s <span class="token punctuation">:</span> <span class="token number">1</span> <span class="token keyword">if</span> <span class="token number">5</span> <span class="token operator">&lt;=</span> s <span class="token keyword">else</span> <span class="token number">0</span> <span class="token punctuation">)</span>
+
+<span class="token comment">#添加one-hot编码产生的虚拟变量（dummy variables）到泰坦尼克号数据集full</span>
+full <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span><span class="token punctuation">[</span>full<span class="token punctuation">,</span>familyDf<span class="token punctuation">]</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+
+
+
+
+
+<span class="token comment">#到现在我们已经有了这么多个特征了</span>
+<span class="token comment"># print(full.shape)</span>
+
+
+
+
+
+
+<span class="token comment">#3.3 特征选择</span>
+<span class="token comment"># 相关系数法：计算各个特征的相关系数</span>
+<span class="token comment">#相关性矩阵</span>
+corrDf <span class="token operator">=</span> full<span class="token punctuation">.</span>corr<span class="token punctuation">(</span><span class="token punctuation">)</span> 
+<span class="token comment"># print(corrDf)</span>
+
+<span class="token triple-quoted-string string">'''
+查看各个特征与生成情况（Survived）的相关系数，
+ascending=False表示按降序排列
+'''</span>
+corrDf<span class="token punctuation">[</span><span class="token string">'Survived'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>sort_values<span class="token punctuation">(</span>ascending <span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+<span class="token comment"># print(corrDf['Survived'].sort_values(ascending =False))</span>
+<span class="token comment"># 根据各个特征与生成情况（Survived）的相关系数大小，我们选择了这几个特征作为模型的输入：</span>
+<span class="token comment"># 头衔（前面所在的数据集titleDf）、</span>
+<span class="token comment"># 客舱等级（pclassDf）、家庭大小（familyDf）、船票价格（Fare）、</span>
+<span class="token comment"># 船舱号（cabinDf）、登船港口（embarkedDf）、性别（Sex）</span>
+
+
+<span class="token comment">#特征选择</span>
+full_X <span class="token operator">=</span> pd<span class="token punctuation">.</span>concat<span class="token punctuation">(</span> <span class="token punctuation">[</span>titleDf<span class="token punctuation">,</span><span class="token comment">#头衔</span>
+                     pclassDf<span class="token punctuation">,</span><span class="token comment">#客舱等级</span>
+                     familyDf<span class="token punctuation">,</span><span class="token comment">#家庭大小</span>
+                     full<span class="token punctuation">[</span><span class="token string">'Fare'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">#船票价格</span>
+                     cabinDf<span class="token punctuation">,</span><span class="token comment">#船舱号</span>
+                     embarkedDf<span class="token punctuation">,</span><span class="token comment">#登船港口</span>
+                     full<span class="token punctuation">[</span><span class="token string">'Sex'</span><span class="token punctuation">]</span><span class="token comment">#性别</span>
+                    <span class="token punctuation">]</span> <span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span> <span class="token punctuation">)</span>
+
+
+
+<span class="token comment"># 4.构建模型</span>
+<span class="token comment"># 用训练数据和某个机器学习算法得到机器学习模型，用测试数据评估模型</span>
+
+
+<span class="token comment"># 4.1 建立训练数据集和测试数据集</span>
+<span class="token triple-quoted-string string">'''
+1）坦尼克号测试数据集因为是我们最后要提交给Kaggle的，里面没有生存情况的值，所以不能用于评估模型。
+我们将Kaggle泰坦尼克号项目给我们的测试数据，叫做预测数据集（记为pred,也就是预测英文单词predict的缩写）。
+也就是我们使用机器学习模型来对其生存情况就那些预测。
+2）我们使用Kaggle泰坦尼克号项目给的训练数据集，做为我们的原始数据集（记为source），
+从这个原始数据集中拆分出训练数据集（记为train：用于模型训练）和测试数据集（记为test：用于模型评估）。
+
+'''</span>
+<span class="token comment">#原始数据集有891行</span>
+sourceRow<span class="token operator">=</span><span class="token number">891</span>
+
+<span class="token triple-quoted-string string">'''
+sourceRow是我们在最开始合并数据前知道的，原始数据集有总共有891条数据
+从特征集合full_X中提取原始数据集提取前891行数据时，我们要减去1，因为行号是从0开始的。
+'''</span>
+<span class="token comment">#原始数据集：特征</span>
+source_X <span class="token operator">=</span> full_X<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span>sourceRow<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+<span class="token comment">#原始数据集：标签</span>
+source_y <span class="token operator">=</span> full<span class="token punctuation">.</span>loc<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span>sourceRow<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'Survived'</span><span class="token punctuation">]</span>
+
+<span class="token comment"># print(full_X.columns)</span>
+
+<span class="token comment">#预测数据集：特征</span>
+pred_X <span class="token operator">=</span> full_X<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>sourceRow<span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+<span class="token triple-quoted-string string">'''
+上面代码解释：
+891行前面的数据是测试数据集，891行之后的数据是预测数据集。[sourceRow:,:]就是从891行开始到最后一行作为预测数据集
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+确保这里原始数据集取的是前891行的数据，不然后面模型会有错误
+'''</span>
+<span class="token comment">#原始数据集有多少行</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'原始数据集有多少行:'</span><span class="token punctuation">,</span>source_X<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">#预测数据集大小</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'原始数据集有多少行:'</span><span class="token punctuation">,</span>pred_X<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+
+
+<span class="token triple-quoted-string string">'''
+从原始数据集（source）中拆分出训练数据集（用于模型训练train），测试数据集（用于模型评估test）
+train_test_split是交叉验证中常用的函数，功能是从样本中随机的按比例选取train data和test data
+train_data：所要划分的样本特征集
+train_target：所要划分的样本结果
+test_size：样本占比，如果是整数的话就是样本的数量
+'''</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> train_test_split 
+
+<span class="token comment">#建立模型用的训练数据集和测试数据集</span>
+train_X<span class="token punctuation">,</span> test_X<span class="token punctuation">,</span> train_y<span class="token punctuation">,</span> test_y <span class="token operator">=</span> train_test_split<span class="token punctuation">(</span>source_X <span class="token punctuation">,</span>
+                                                    source_y<span class="token punctuation">,</span>
+                                                    train_size<span class="token operator">=</span><span class="token number">.8</span><span class="token punctuation">)</span>
+
+<span class="token comment">#输出数据集大小</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">'原始数据集特征：'</span><span class="token punctuation">,</span>source_X<span class="token punctuation">.</span>shape<span class="token punctuation">,</span> 
+       <span class="token string">'训练数据集特征：'</span><span class="token punctuation">,</span>train_X<span class="token punctuation">.</span>shape <span class="token punctuation">,</span>
+      <span class="token string">'测试数据集特征：'</span><span class="token punctuation">,</span>test_X<span class="token punctuation">.</span>shape<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">'原始数据集标签：'</span><span class="token punctuation">,</span>source_y<span class="token punctuation">.</span>shape<span class="token punctuation">,</span> 
+       <span class="token string">'训练数据集标签：'</span><span class="token punctuation">,</span>train_y<span class="token punctuation">.</span>shape <span class="token punctuation">,</span>
+      <span class="token string">'测试数据集标签：'</span><span class="token punctuation">,</span>test_y<span class="token punctuation">.</span>shape<span class="token punctuation">)</span>
+
+
+
+
+<span class="token comment"># 4.2 选择机器学习算法</span>
+<span class="token comment"># 选择一个机器学习算法，用于模型的训练。如果你是新手，建议从逻辑回归算法开始</span>
+
+<span class="token comment">#第1步：导入算法</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LogisticRegression
+<span class="token comment">#第2步：创建模型：逻辑回归（logisic regression）</span>
+model <span class="token operator">=</span> LogisticRegression<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 其他算法</span>
+<span class="token comment">#随机森林Random Forests Model</span>
+<span class="token comment">#from sklearn.ensemble import RandomForestClassifier</span>
+<span class="token comment">#model = RandomForestClassifier(n_estimators=100)</span>
+
+<span class="token comment">#支持向量机Support Vector Machines</span>
+<span class="token comment">#from sklearn.svm import SVC, LinearSVC</span>
+<span class="token comment">#model = SVC()</span>
+
+<span class="token comment">#Gradient Boosting Classifier</span>
+<span class="token comment">#from sklearn.ensemble import GradientBoostingClassifier</span>
+<span class="token comment">#model = GradientBoostingClassifier()</span>
+
+<span class="token comment">#K-nearest neighbors</span>
+<span class="token comment">#from sklearn.neighbors import KNeighborsClassifier</span>
+<span class="token comment">#model = KNeighborsClassifier(n_neighbors = 3)</span>
+
+<span class="token comment"># Gaussian Naive Bayes</span>
+<span class="token comment">#from sklearn.naive_bayes import GaussianNB</span>
+<span class="token comment">#model = GaussianNB()</span>
+
+
+<span class="token comment"># 4.3 训练模型</span>
+<span class="token comment">#第3步：训练模型</span>
+model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span> train_X <span class="token punctuation">,</span> train_y <span class="token punctuation">)</span>
+
+
+<span class="token comment"># 分类问题，score得到的是模型的正确率</span>
+model<span class="token punctuation">.</span>score<span class="token punctuation">(</span>test_X <span class="token punctuation">,</span> test_y <span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>model<span class="token punctuation">.</span>score<span class="token punctuation">(</span>test_X <span class="token punctuation">,</span> test_y <span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token comment"># 6.方案实施（Deployment）</span>
+<span class="token comment"># 6.1 得到预测结果上传到Kaggle</span>
+<span class="token comment"># 使用预测数据集到底预测结果，并保存到csv文件中，上传到Kaggle中，就可以看到排名。</span>
+
+<span class="token comment">#使用机器学习模型，对预测数据集中的生存情况进行预测</span>
+pred_Y <span class="token operator">=</span> model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>pred_X<span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+生成的预测值是浮点数（0.0,1,0）
+但是Kaggle要求提交的结果是整型（0,1）
+所以要对数据类型进行转换
+'''</span>
+pred_Y<span class="token operator">=</span>pred_Y<span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+<span class="token comment">#乘客id</span>
+passenger_id <span class="token operator">=</span> full<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>sourceRow<span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token string">'PassengerId'</span><span class="token punctuation">]</span>
+<span class="token comment">#数据框：乘客id，预测生存情况的值</span>
+predDf <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span> 
+    <span class="token punctuation">{</span> <span class="token string">'PassengerId'</span><span class="token punctuation">:</span> passenger_id <span class="token punctuation">,</span> 
+     <span class="token string">'Survived'</span><span class="token punctuation">:</span> pred_Y <span class="token punctuation">}</span> <span class="token punctuation">)</span>
+predDf<span class="token punctuation">.</span>shape
+predDf<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#保存结果</span>
+predDf<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span> <span class="token string">'titanic_pred.csv'</span> <span class="token punctuation">,</span> index <span class="token operator">=</span> <span class="token boolean">False</span> <span class="token punctuation">)</span>
+</code></pre></div><h3 id="泰坦尼克号案例的补充"><a href="#泰坦尼克号案例的补充" class="header-anchor">#</a> 泰坦尼克号案例的补充</h3> <p>size
+用来计算数组和矩阵中所有元素的个数</p> <div class="language- extra-class"><pre class="language-text"><code>a = np.array([[1, 2, 3], [4, 5, 6]])
+np.size(a)    # 返回值为6
+np.size(a,1)    # 返回值为3
+
+shape
+用来计算矩阵每维的大小
+np.shape(a)    # 返回值为(2, 3)
+
+full.describe()  
+# 从数据总数，可以看出那个标签存在缺失值
+
+# 船票最小值为0，说明有缺失值，清洗处理的时候，可以用平均值补充
+#describe只能对数据类型的数据进行描述，对其他类型的数据则无用了，需要其他方法来协助 full.info()
+
+full.info() #查看数据类型和总数
+
+describe和info就让我明了要朝什么方向清洗数据了
+
+</code></pre></div><p>为什么训练数据比测试数据多一个维度，就是多个比如泰坦尼克案例中，训练多测试数据，幸存结果的数据。我们建立模型就是为了预测这个值，所以测试数据中没有。</p> <p>数据清洗包括  数据预处理和特征工程
+步骤</p> <ol><li>选择子集</li> <li>列明重命名（当列明不符合习惯，或者不方面数据分析时）</li> <li>缺失数据处理（）</li> <li>数据类型转换（如文本‘10’转数字10）</li> <li>数据排序</li> <li>异常值处理</li></ol> <h2 id="结合taitan-test-py看"><a href="#结合taitan-test-py看" class="header-anchor">#</a> 结合taitan-test.py看</h2></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/Python/zhihu/DataAnalysis.html" class="prev">
+        数据分析的基本过程
+      </a></span> <span class="next"><a href="/blog/Python/zhihu/draw.html">
+        知乎教我python绘图
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.09e88087.js" defer></script><script src="/blog/assets/js/2.5d6d69d5.js" defer></script><script src="/blog/assets/js/3.39e077d4.js" defer></script>
+  </body>
+</html>

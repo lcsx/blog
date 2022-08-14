@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>相关配对t检验 | 欢迎回来 ！</title>
+    <meta name="description" content="lcsx">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.ee874cfe.css" as="style"><link rel="preload" href="/blog/assets/js/app.09e88087.js" as="script"><link rel="preload" href="/blog/assets/js/2.5d6d69d5.js" as="script"><link rel="preload" href="/blog/assets/js/30.bb079fbc.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.9545c010.js"><link rel="prefetch" href="/blog/assets/js/11.c121cceb.js"><link rel="prefetch" href="/blog/assets/js/12.d8c9c1bd.js"><link rel="prefetch" href="/blog/assets/js/13.858fecce.js"><link rel="prefetch" href="/blog/assets/js/14.10c2aaa2.js"><link rel="prefetch" href="/blog/assets/js/15.1a4adff1.js"><link rel="prefetch" href="/blog/assets/js/16.69d675fe.js"><link rel="prefetch" href="/blog/assets/js/17.ea7dd094.js"><link rel="prefetch" href="/blog/assets/js/18.053f4e8c.js"><link rel="prefetch" href="/blog/assets/js/19.f6d1f87f.js"><link rel="prefetch" href="/blog/assets/js/20.ff3ffefa.js"><link rel="prefetch" href="/blog/assets/js/21.6efdf0ff.js"><link rel="prefetch" href="/blog/assets/js/22.324e8463.js"><link rel="prefetch" href="/blog/assets/js/23.2e0c31c4.js"><link rel="prefetch" href="/blog/assets/js/24.5a3dca30.js"><link rel="prefetch" href="/blog/assets/js/25.3b2d9b9f.js"><link rel="prefetch" href="/blog/assets/js/26.c34a5d16.js"><link rel="prefetch" href="/blog/assets/js/27.b6134063.js"><link rel="prefetch" href="/blog/assets/js/28.bf3c2608.js"><link rel="prefetch" href="/blog/assets/js/29.d3af9c62.js"><link rel="prefetch" href="/blog/assets/js/3.39e077d4.js"><link rel="prefetch" href="/blog/assets/js/31.e2041594.js"><link rel="prefetch" href="/blog/assets/js/32.5ee57ad4.js"><link rel="prefetch" href="/blog/assets/js/33.79f9ff37.js"><link rel="prefetch" href="/blog/assets/js/34.bd04b9df.js"><link rel="prefetch" href="/blog/assets/js/35.71548143.js"><link rel="prefetch" href="/blog/assets/js/36.0a93475f.js"><link rel="prefetch" href="/blog/assets/js/37.91bdc250.js"><link rel="prefetch" href="/blog/assets/js/38.90858741.js"><link rel="prefetch" href="/blog/assets/js/39.8f381891.js"><link rel="prefetch" href="/blog/assets/js/4.aecd194a.js"><link rel="prefetch" href="/blog/assets/js/40.cf59ef77.js"><link rel="prefetch" href="/blog/assets/js/41.b9a6ffe3.js"><link rel="prefetch" href="/blog/assets/js/42.1f224073.js"><link rel="prefetch" href="/blog/assets/js/43.5b480eab.js"><link rel="prefetch" href="/blog/assets/js/44.696ba103.js"><link rel="prefetch" href="/blog/assets/js/45.a7f44d79.js"><link rel="prefetch" href="/blog/assets/js/46.4e85fe28.js"><link rel="prefetch" href="/blog/assets/js/47.8a9aa7da.js"><link rel="prefetch" href="/blog/assets/js/48.04324fe0.js"><link rel="prefetch" href="/blog/assets/js/49.0f839c66.js"><link rel="prefetch" href="/blog/assets/js/5.6106f207.js"><link rel="prefetch" href="/blog/assets/js/50.11bfcbd5.js"><link rel="prefetch" href="/blog/assets/js/51.82d8487d.js"><link rel="prefetch" href="/blog/assets/js/52.e904bad2.js"><link rel="prefetch" href="/blog/assets/js/53.3f00d869.js"><link rel="prefetch" href="/blog/assets/js/54.70d26d6c.js"><link rel="prefetch" href="/blog/assets/js/55.2f933ad0.js"><link rel="prefetch" href="/blog/assets/js/56.85972735.js"><link rel="prefetch" href="/blog/assets/js/57.b214059e.js"><link rel="prefetch" href="/blog/assets/js/58.a51c7fbb.js"><link rel="prefetch" href="/blog/assets/js/59.6ed363ea.js"><link rel="prefetch" href="/blog/assets/js/6.69c66181.js"><link rel="prefetch" href="/blog/assets/js/60.8c8e72a1.js"><link rel="prefetch" href="/blog/assets/js/61.cd10cc0a.js"><link rel="prefetch" href="/blog/assets/js/62.b3bff3dc.js"><link rel="prefetch" href="/blog/assets/js/63.93753e25.js"><link rel="prefetch" href="/blog/assets/js/64.0c3cfd75.js"><link rel="prefetch" href="/blog/assets/js/65.d53b9bb8.js"><link rel="prefetch" href="/blog/assets/js/66.d46b2746.js"><link rel="prefetch" href="/blog/assets/js/67.285c4dd3.js"><link rel="prefetch" href="/blog/assets/js/7.dcdaa74b.js"><link rel="prefetch" href="/blog/assets/js/8.516b6e0b.js"><link rel="prefetch" href="/blog/assets/js/9.1b87dd6a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ee874cfe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" alt="欢迎回来 ！" class="logo"> <span class="site-name can-hide">欢迎回来 ！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/Python/zhihu/basis.html" class="sidebar-link">基础不牢 地动山摇</a></li><li><a href="/blog/Python/zhihu/confidenceInterval.html" class="sidebar-link">置信区间</a></li><li><a href="/blog/Python/zhihu/HypothesisTesting.html" class="sidebar-link">假设检验</a></li><li><a href="/blog/Python/zhihu/t1.html" class="sidebar-link">案例</a></li><li><a href="/blog/Python/zhihu/t3.html" class="active sidebar-link">相关配对t检验</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/t3.html#为啥选左尾" class="sidebar-link">为啥选左尾</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/t3.html#标准误差的计算" class="sidebar-link">标准误差的计算</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/t3.html#相关样本t检验-效应量的计算" class="sidebar-link">相关样本T检验 效应量的计算</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/t3.html#code" class="sidebar-link">code</a></li></ul></li><li><a href="/blog/Python/zhihu/t2.html" class="sidebar-link">独立双样本t检验</a></li><li><a href="/blog/Python/zhihu/correlationAnalysis.html" class="sidebar-link">相关分析+Excel分析&amp;绘图</a></li><li><a href="/blog/Python/zhihu/introductionDataAnalysis.html" class="sidebar-link">描述统计分析</a></li><li><a href="/blog/Python/zhihu/DataAnalysis.html" class="sidebar-link">数据分析的基本过程</a></li><li><a href="/blog/Python/zhihu/MachineLearning.html" class="sidebar-link">机器学习 入门</a></li><li><a href="/blog/Python/zhihu/draw.html" class="sidebar-link">知乎教我python绘图</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="相关配对t检验"><a href="#相关配对t检验" class="header-anchor">#</a> 相关配对t检验</h1> <p><strong>同一个人两组实验</strong></p><div class="table-of-contents"><ul><li><a href="#相关配对t检验">相关配对t检验</a><ul><li><a href="#为啥选左尾">为啥选左尾</a></li><li><a href="#标准误差的计算">标准误差的计算</a><ul><li><a href="#scipy计算">scipy计算</a></li></ul></li><li><a href="#相关样本t检验-效应量的计算">相关样本T检验 效应量的计算</a></li><li><a href="#code">code</a></li></ul></li></ul></div>
+特鲁普效应是著名的心理学现象，展示了人们对事物的认知过程已是一个自动化的历程。
+当有一个新的刺激出现时，如果它的特征和原先的刺激相似或符合一致，便会加速人们的认知；
+反之，若新的刺激特征与原先的刺激不相同，则会干扰人们的认知，使人们的所需的反映数据变长。
+简单来说，斯特鲁普效应是当有与原有认知不同的情况出现时，人们的反应时间会较长。
+我们想要验证斯特鲁普效应。<p></p> <p>每名参与者得到两组有颜色的文字，第一组数据是字体内容和字体颜色一致，第二组数据是字体内容和字体颜色不一致。
+每名参与者对每组文字说出文字的颜色，并分别统计完成每组的时间。
+此次实验共记录25组数据（样本量），并汇总到Excel表格中。</p> <h2 id="为啥选左尾"><a href="#为啥选左尾" class="header-anchor">#</a> 为啥选左尾</h2> <p>###零假设和备选假设
+假设第一组“一致”的均值为 u1 ,第二组“不一致”的均值为 u2
+零假设H0：人们的反应时间不会因为字体内容和字体颜色是否相同（u1 = u2 ，或者 u1-u2=0 ）
+备选假设H1：特鲁普效应确实存在。根据特鲁普效应的定义，颜色和文字不同的情况下，人们的完场测试的时间会变长（ u1 &lt; u2 ）</p> <p>###检验方向
+单尾检验（左尾，右尾），还是双尾检验？
+因为备选假设是：特鲁普效应确实存在，根据Stroop Effect的定义，颜色和文字不同的情况下，人们的完场测试的时间会变长（ u1 &lt; u2 ）。
+所以我们使用单尾检验中的左尾检验，显著水平为5%，t检验的自由度df=n-1=25-1=24</p> <h2 id="标准误差的计算"><a href="#标准误差的计算" class="header-anchor">#</a> 标准误差的计算</h2> <p>相关样本t检验
+<a href="https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.sem.html" target="_blank" rel="noopener noreferrer">标准误差资料<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="scipy计算"><a href="#scipy计算" class="header-anchor">#</a> scipy计算</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#使用scipy计算标准误差</span>
+se<span class="token operator">=</span>stats<span class="token punctuation">.</span>sem<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'差值'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="相关样本t检验-效应量的计算"><a href="#相关样本t检验-效应量的计算" class="header-anchor">#</a> 相关样本T检验 效应量的计算</h2> <p><strong>Cohen's d = （样本平均值1-样本平均值2) / 标准差</strong>
+样本平均值2:这里是与题目有关的，这里是0，零假设H0：人们的反应时间不会因为字体内容和字体颜色是否相同（u1 = u2 ，或者 u1-u2=0 ）</p> <p><img src="/blog/assets/img/jsjy12.d244fd08.jpg" alt=""></p> <h2 id="code"><a href="#code" class="header-anchor">#</a> code</h2> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># 一、描述统计分析</span>
+<span class="token comment">#导入包</span>
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np 
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+
+<span class="token triple-quoted-string string">'''
+路径和文件名中不要用中文，不然会报错
+encoding用于指定文件的编码，因为读取的csv中有中文，所以指定文件编码为中文编码“GBK”
+'''</span>
+data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'./斯特鲁普数据集.csv'</span><span class="token punctuation">,</span>encoding <span class="token operator">=</span> <span class="token string">'GBK'</span><span class="token punctuation">)</span>
+
+<span class="token comment">#获取描述统计信息</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token triple-quoted-string string">'''
+第一组数据：字体内容和字体颜色一致情况下，实验者的反应时间
+'''</span>
+<span class="token comment">#第一组数据均值</span>
+con1_mean <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'一致'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># 第一组数据标准差</span>
+con1_std <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'一致'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>std<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+第一组数据：字体内容和字体颜色一致情况下，实验者的反应时间
+'''</span>
+<span class="token comment"># 第二组数据均值</span>
+con2_mean <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'不一致'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># 第二组数据标准差</span>
+con2_std <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'不一致'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>std<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+
+<span class="token comment">#两个样本数据集对比</span>
+<span class="token comment">#画板</span>
+<span class="token comment"># fg = plt.figure(figsize = (20,10))</span>
+<span class="token comment"># #画纸</span>
+<span class="token comment"># ax = fg.add_subplot(1,1,1)</span>
+<span class="token comment"># #绘制柱状图</span>
+<span class="token comment"># data.plot(kind = 'bar',ax = ax)</span>
+<span class="token comment"># #显示图形</span>
+<span class="token comment"># plt.show()</span>
+
+
+
+<span class="token comment"># 描述统计分析结果：</span>
+<span class="token comment"># 第一组数据：字体内容和字体颜色一致情况下，实验者的平均反应时间是: 13.89044 秒,标准差是 3.47046489537 秒</span>
+<span class="token comment"># 第二组数据：字体内容和字体颜色不一致情况下，实验者的平均反应时间是: 22.62428 秒,标准差是 5.09183854745 秒</span>
+<span class="token comment"># “不一致”情况下所用时间均大于“一致”情况，也就是当字体内容和字体验证不一致时，实验者的平均反应时间变长</span>
+
+
+<span class="token comment"># 二、推论统计分析</span>
+<span class="token comment"># 进行假设检验</span>
+<span class="token comment"># 1.问题是什么？</span>
+<span class="token comment"># 自变量是指原因。因变量是指结果，也就是自变量发生变化导致改变的值就是因变量。</span>
+<span class="token comment"># 自变量：我们有两组实验数据，第一组是字体内容和颜色一致。第二组数据值是字体内容和颜色不一致。所以自变量是实验数据的颜色和文字是否相同</span>
+<span class="token comment"># 因变量：实验者的反应时间</span>
+<span class="token comment"># 所以，我们要考察的是自变量（字体内容和颜色是否相同）两种情况下对因变量（反应时间）的影响。</span>
+
+
+<span class="token comment"># 零假设和备选假设</span>
+<span class="token comment"># 假设第一组“一致”的均值为 u1 ,第二组“不一致”的均值为 u2</span>
+<span class="token comment"># 零假设H0：人们的反应时间不会因为字体内容和字体颜色是否相同（u1 = u2 ，或者 u1-u2=0 ）</span>
+<span class="token comment"># 备选假设H1：特鲁普效应确实存在。根据特鲁普效应的定义，颜色和文字不同的情况下，人们的完场测试的时间会变长（ u1 &lt; u2 ）</span>
+
+
+
+<span class="token comment"># 检验类型</span>
+<span class="token comment"># 检验类型有很多种，因为该使用两组数据是相关样本，所以选择相关配对检验。</span>
+<span class="token comment"># 相关配对检验只关注每对相关数据的差值，从而避免得到的结论受到参与人员间正常反应时间独立性的影响。</span>
+<span class="token comment"># 在只关注差值集的情况下，样本集处理后只有一组（差值集）。下面我们对样本数据进行处理，从而得到差值集。</span>
+
+
+<span class="token triple-quoted-string string">'''
+获取差值数据集，也就是“一致”这一列数据，对应减去“不一致”这一列的数据
+'''</span>
+<span class="token comment">#差值数据集</span>
+data<span class="token punctuation">[</span><span class="token string">'差值'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'一致'</span><span class="token punctuation">]</span> <span class="token operator">-</span> data<span class="token punctuation">[</span><span class="token string">'不一致'</span><span class="token punctuation">]</span>
+
+
+<span class="token comment"># 我们还要判断抽样分布是哪种？因为抽样分布的类型，决定了后面计算p值的不同。</span>
+<span class="token comment"># 在我们这个案例中，样本大小是25（小于30），属于小样本。</span>
+<span class="token comment"># 那小样本的抽样分布是否满足t分布呢？</span>
+<span class="token comment"># 因为t分布还要求数据集近似正态分布，所以下面图片我们看下差值数据集的分布长什么样。</span>
+
+
+<span class="token triple-quoted-string string">'''
+直方图能够粗略估计数据密度，如果想给数据一个更精确的拟合曲线（专业术语叫：核密度估计kernel density estimate (KDE)），
+Seaborn 可以很方便的画出直方图和拟合曲线。
+查看数据集分布官网教程地址：https://seaborn.pydata.org/tutorial/distributions.html
+
+需要先在navigator中安装绘图包（seaborn），
+如果还不知道如何安装包，可以看第1关的教程：https://www.zhihu.com/question/58033789/answer/254673663
+'''</span>
+<span class="token comment">#导入绘图包</span>
+<span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
+<span class="token comment">#查看数据集分布</span>
+sns<span class="token punctuation">.</span>distplot<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'差值'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'差值数据集分布'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token comment"># 通过观察上面差值数据集分布图，数据集近似正态分布，所以满足t分布的使用条件，我们可以使用相关样本t检验。</span>
+
+
+
+<span class="token comment"># 检验方向</span>
+<span class="token comment"># 单尾检验（左尾，右尾），还是双尾检验？</span>
+<span class="token comment"># 因为备选假设是：特鲁普效应确实存在，根据Stroop Effect的定义，颜色和文字不同的情况下，人们的完场测试的时间会变长（ u1 &lt; u2 ）。</span>
+<span class="token comment"># 所以我们使用单尾检验中的左尾检验，显著水平为5%，t检验的自由度df=n-1=25-1=24</span>
+
+
+
+<span class="token comment"># 2.证据是什么？</span>
+<span class="token comment"># 在零假设成立前提下，得到样本平均值的概率p是多少？</span>
+
+
+
+
+<span class="token triple-quoted-string string">'''
+用python统计包scipy自动计算
+用scipy计算出的是：双尾检验
+单（1samp）样本t检验（ttest_1samp）：https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_1samp.html
+相关（related）配对t检验（ttest_rel）：https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_rel.html
+双独立（independent）样本t检验（ttest_ind）：https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html
+'''</span>
+<span class="token comment">#导入统计模块（stats）</span>
+<span class="token keyword">from</span> scipy <span class="token keyword">import</span> stats
+
+<span class="token triple-quoted-string string">'''
+ttest_rel：相关配对检验
+返回的第1个值t是假设检验计算出的（t值），
+第2个值p是双尾检验的p值
+'''</span>
+t<span class="token punctuation">,</span>p_two <span class="token operator">=</span> stats<span class="token punctuation">.</span>ttest_rel<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'一致'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>data<span class="token punctuation">[</span><span class="token string">'不一致'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'t值='</span><span class="token punctuation">,</span>t<span class="token punctuation">,</span><span class="token string">'双尾检验的p值='</span><span class="token punctuation">,</span>p_two<span class="token punctuation">)</span>
+
+
+<span class="token triple-quoted-string string">'''
+因为scipy计算出的是双尾检验的t值和p值，但是我们这里是左尾检验。
+根据对称性，双尾的p值是对应单尾p值的2倍
+'''</span>
+<span class="token comment">#单尾检验的p值</span>
+p_one<span class="token operator">=</span>p_two<span class="token operator">/</span><span class="token number">2</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'单尾检验的p值='</span><span class="token punctuation">,</span>p_one<span class="token punctuation">)</span>
+
+
+
+
+<span class="token comment"># 3.判断标准是什么？</span>
+<span class="token comment">#显著水平使用alpha=5%</span>
+alpha<span class="token operator">=</span><span class="token number">0.05</span>
+
+
+<span class="token comment"># 4.做出结论</span>
+<span class="token triple-quoted-string string">'''
+左尾判断条件：t &lt; 0 and  p_one &lt; 判断标准（显著水平）alpha
+右尾判断条件：t &gt; 0 and  p_one &lt; 判断标准（显著水平）alpha
+'''</span>
+<span class="token comment">#做出结论</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>t<span class="token operator">&lt;</span><span class="token number">0</span> <span class="token keyword">and</span> p_one<span class="token operator">&lt;</span> alpha<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'拒绝零假设，有统计显著'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'也就是接受备选假设：特鲁普效应存在'</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'接受备选假设，没有统计显著，也就是特鲁普效应不存在'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 拒绝零假设，有统计显著</span>
+<span class="token comment"># 也就是接受备选假设：特鲁普效应存在</span>
+
+
+<span class="token comment"># 假设检验报告：</span>
+<span class="token comment"># 相关配对检验t(24)=-8.35,p=7.32e-09 (α=5%),左尾检验</span>
+<span class="token comment"># 统计上存在显著差异，拒绝零假设，从而验证斯特鲁普效应存在。</span>
+
+
+
+<span class="token comment"># 5. 置信区间</span>
+<span class="token triple-quoted-string string">'''
+1）置信水平对应的t值（t_ci）
+查t表格可以得到，95%的置信水平对应的t值=2.262
+2）计算上下限
+置信区间上限a=样本平均值 - t_ci ×标准误差
+置信区间下限b=样本平均值 - t_ci ×标准误差
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+95%的置信水平，自由度是n-1对应的t值
+查找t表格获取，
+也可以通过这个工具获取：https://www.graphpad.com/quickcalcs/statratio1/（利用这个工具获取t值，需要注意输入的概率值是1-95%=0.05）
+注意：课程中这里对应的下面t_ci值有误，以下面的值为准
+'''</span>
+t_ci<span class="token operator">=</span><span class="token number">2.064</span>
+<span class="token comment">#差值数据集平均值</span>
+sample_mean<span class="token operator">=</span>data<span class="token punctuation">[</span><span class="token string">'差值'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#使用scipy计算标准误差</span>
+se<span class="token operator">=</span>stats<span class="token punctuation">.</span>sem<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'差值'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">#置信区间上限</span>
+a<span class="token operator">=</span>sample_mean <span class="token operator">-</span> t_ci <span class="token operator">*</span> se
+<span class="token comment">#置信区间下限</span>
+b<span class="token operator">=</span>sample_mean <span class="token operator">+</span> t_ci <span class="token operator">*</span> se
+
+<span class="token comment"># 两个平均值差值的置信区间，95置信水平 CI=[-8.800151,-8.667529]</span>
+
+
+
+
+
+<span class="token comment"># 6.效应量</span>
+<span class="token triple-quoted-string string">'''
+效应量：差异指标Cohen's d
+'''</span>
+<span class="token comment">#差值数据集对应的总体平均值是0</span>
+pop_mean <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token comment">#差值数据集的标准差</span>
+sample_std<span class="token operator">=</span>data<span class="token punctuation">[</span><span class="token string">'差值'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>std<span class="token punctuation">(</span><span class="token punctuation">)</span>
+d<span class="token operator">=</span><span class="token punctuation">(</span>sample_mean <span class="token operator">-</span> pop_mean<span class="token punctuation">)</span> <span class="token operator">/</span> sample_std
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'d='</span><span class="token punctuation">,</span>d<span class="token punctuation">)</span>
+
+
+
+<span class="token comment"># 三、数据分析报告总结</span>
+<span class="token comment"># 1、描述统计分析</span>
+
+<span class="token comment"># 第一组样本数据：字体内容和字体颜色一致情况下，平均反应时间是: 13.89 秒,标准差是 3.47 秒</span>
+
+<span class="token comment"># 第二组样本数据：字体内容和字体颜色不一致情况下，平均反应时间是: 22.62 秒,标准差是 5.09 秒</span>
+
+<span class="token comment"># “不一致”情况下所用时间均大于“一致”情况，也就是当字体内容和字体验证不一致时，实验者的平均反应时间变长</span>
+
+<span class="token comment"># 2、推论统计分析</span>
+
+<span class="token comment"># 1）假设检验</span>
+
+<span class="token comment"># 相关配对检验t(24)=-8.35,p=7.32e-09 (α=5%),左尾检验</span>
+
+<span class="token comment"># 统计上存在显著差异，拒绝零假设，从而验证斯特鲁普效应存在。</span>
+
+<span class="token comment"># 2）置信区间</span>
+
+<span class="token comment"># 两个平均值差值的置信区间，95%置信水平 CI=-8.80,-8.67</span>
+
+<span class="token comment"># 3）效应量</span>
+
+<span class="token comment"># d= - 1.67</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/Python/zhihu/t1.html" class="prev">
+        案例
+      </a></span> <span class="next"><a href="/blog/Python/zhihu/t2.html">
+        独立双样本t检验
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.09e88087.js" defer></script><script src="/blog/assets/js/2.5d6d69d5.js" defer></script><script src="/blog/assets/js/30.bb079fbc.js" defer></script>
+  </body>
+</html>

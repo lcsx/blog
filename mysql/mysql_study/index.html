@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL基础 | 欢迎回来 ！</title>
+    <meta name="description" content="lcsx">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.ee874cfe.css" as="style"><link rel="preload" href="/blog/assets/js/app.09e88087.js" as="script"><link rel="preload" href="/blog/assets/js/2.5d6d69d5.js" as="script"><link rel="preload" href="/blog/assets/js/34.bd04b9df.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.9545c010.js"><link rel="prefetch" href="/blog/assets/js/11.c121cceb.js"><link rel="prefetch" href="/blog/assets/js/12.d8c9c1bd.js"><link rel="prefetch" href="/blog/assets/js/13.858fecce.js"><link rel="prefetch" href="/blog/assets/js/14.10c2aaa2.js"><link rel="prefetch" href="/blog/assets/js/15.1a4adff1.js"><link rel="prefetch" href="/blog/assets/js/16.69d675fe.js"><link rel="prefetch" href="/blog/assets/js/17.ea7dd094.js"><link rel="prefetch" href="/blog/assets/js/18.053f4e8c.js"><link rel="prefetch" href="/blog/assets/js/19.f6d1f87f.js"><link rel="prefetch" href="/blog/assets/js/20.ff3ffefa.js"><link rel="prefetch" href="/blog/assets/js/21.6efdf0ff.js"><link rel="prefetch" href="/blog/assets/js/22.324e8463.js"><link rel="prefetch" href="/blog/assets/js/23.2e0c31c4.js"><link rel="prefetch" href="/blog/assets/js/24.5a3dca30.js"><link rel="prefetch" href="/blog/assets/js/25.3b2d9b9f.js"><link rel="prefetch" href="/blog/assets/js/26.c34a5d16.js"><link rel="prefetch" href="/blog/assets/js/27.b6134063.js"><link rel="prefetch" href="/blog/assets/js/28.bf3c2608.js"><link rel="prefetch" href="/blog/assets/js/29.d3af9c62.js"><link rel="prefetch" href="/blog/assets/js/3.39e077d4.js"><link rel="prefetch" href="/blog/assets/js/30.bb079fbc.js"><link rel="prefetch" href="/blog/assets/js/31.e2041594.js"><link rel="prefetch" href="/blog/assets/js/32.5ee57ad4.js"><link rel="prefetch" href="/blog/assets/js/33.79f9ff37.js"><link rel="prefetch" href="/blog/assets/js/35.71548143.js"><link rel="prefetch" href="/blog/assets/js/36.0a93475f.js"><link rel="prefetch" href="/blog/assets/js/37.91bdc250.js"><link rel="prefetch" href="/blog/assets/js/38.90858741.js"><link rel="prefetch" href="/blog/assets/js/39.8f381891.js"><link rel="prefetch" href="/blog/assets/js/4.aecd194a.js"><link rel="prefetch" href="/blog/assets/js/40.cf59ef77.js"><link rel="prefetch" href="/blog/assets/js/41.b9a6ffe3.js"><link rel="prefetch" href="/blog/assets/js/42.1f224073.js"><link rel="prefetch" href="/blog/assets/js/43.5b480eab.js"><link rel="prefetch" href="/blog/assets/js/44.696ba103.js"><link rel="prefetch" href="/blog/assets/js/45.a7f44d79.js"><link rel="prefetch" href="/blog/assets/js/46.4e85fe28.js"><link rel="prefetch" href="/blog/assets/js/47.8a9aa7da.js"><link rel="prefetch" href="/blog/assets/js/48.04324fe0.js"><link rel="prefetch" href="/blog/assets/js/49.0f839c66.js"><link rel="prefetch" href="/blog/assets/js/5.6106f207.js"><link rel="prefetch" href="/blog/assets/js/50.11bfcbd5.js"><link rel="prefetch" href="/blog/assets/js/51.82d8487d.js"><link rel="prefetch" href="/blog/assets/js/52.e904bad2.js"><link rel="prefetch" href="/blog/assets/js/53.3f00d869.js"><link rel="prefetch" href="/blog/assets/js/54.70d26d6c.js"><link rel="prefetch" href="/blog/assets/js/55.2f933ad0.js"><link rel="prefetch" href="/blog/assets/js/56.85972735.js"><link rel="prefetch" href="/blog/assets/js/57.b214059e.js"><link rel="prefetch" href="/blog/assets/js/58.a51c7fbb.js"><link rel="prefetch" href="/blog/assets/js/59.6ed363ea.js"><link rel="prefetch" href="/blog/assets/js/6.69c66181.js"><link rel="prefetch" href="/blog/assets/js/60.8c8e72a1.js"><link rel="prefetch" href="/blog/assets/js/61.cd10cc0a.js"><link rel="prefetch" href="/blog/assets/js/62.b3bff3dc.js"><link rel="prefetch" href="/blog/assets/js/63.93753e25.js"><link rel="prefetch" href="/blog/assets/js/64.0c3cfd75.js"><link rel="prefetch" href="/blog/assets/js/65.d53b9bb8.js"><link rel="prefetch" href="/blog/assets/js/66.d46b2746.js"><link rel="prefetch" href="/blog/assets/js/67.285c4dd3.js"><link rel="prefetch" href="/blog/assets/js/7.dcdaa74b.js"><link rel="prefetch" href="/blog/assets/js/8.516b6e0b.js"><link rel="prefetch" href="/blog/assets/js/9.1b87dd6a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ee874cfe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" alt="欢迎回来 ！" class="logo"> <span class="site-name can-hide">欢迎回来 ！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link router-link-exact-active router-link-active">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link router-link-exact-active router-link-active">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/mysql/mysql_study/" class="active sidebar-link">MySQL基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/mysql/mysql_study/#_1-mysql数据库安装与配置" class="sidebar-link">1 MySQL数据库安装与配置</a></li><li class="sidebar-sub-header"><a href="/blog/mysql/mysql_study/#_2-mysql表操作" class="sidebar-link">2 MySQL表操作</a></li></ul></li><li><a href="/blog/mysql/mysql_study/sql_1.html" class="sidebar-link">mysql基本查询</a></li><li><a href="/blog/mysql/mysql_study/sql_2.html" class="sidebar-link">mysql高级查询</a></li><li><a href="/blog/mysql/mysql_study/DML.html" class="sidebar-link">MYSQL【增删改】</a></li><li><a href="/blog/mysql/mysql_study/methods.html" class="sidebar-link">mysql基本函数</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mysql基础"><a href="#mysql基础" class="header-anchor">#</a> MySQL基础</h1> <p></p><div class="table-of-contents"><ul><li><a href="#mysql基础">MySQL基础</a><ul><li><a href="#_1-mysql数据库安装与配置">1 MySQL数据库安装与配置</a><ul><li><a href="#_1-1-用户管理">1.1 用户管理</a><ul><li><a href="#_1-1-2-navicat">1.1.2 navicat</a></li><li><a href="#_1-1-2-重设root密码">1.1.2 重设root密码</a></li></ul></li><li><a href="#_1-2-mysql配置文件">1.2 mysql配置文件</a><ul><li><a href="#_1-2-1-my-ini">1.2.1 my.ini</a></li></ul></li></ul></li><li><a href="#_2-mysql表操作">2 MySQL表操作</a><ul><li><a href="#_2-1-管理逻辑库和数据表">2.1 管理逻辑库和数据表</a><ul><li><a href="#_2-1-1-sql语言分类">2.1.1 SQL语言分类</a></li><li><a href="#_2-1-2-创建逻辑库">2.1.2 创建逻辑库</a></li><li><a href="#_2-1-3-插入数据">2.1.3 插入数据</a></li></ul></li><li><a href="#_2-2-常用的数据类型和约束">2.2 常用的数据类型和约束</a><ul><li><a href="#_2-2-1-数字">2.2.1 数字</a></li><li><a href="#_2-2-2-字符串">2.2.2 字符串</a></li><li><a href="#_2-2-3-日期类型">2.2.3 日期类型</a></li></ul></li><li><a href="#_2-3-修改表结构">2.3 修改表结构</a><ul><li><a href="#_2-3-1-添加字段-add">2.3.1 添加字段 ADD</a></li><li><a href="#_2-3-2-修改已有字段-modify">2.3.2 修改已有字段 MODIFY</a></li><li><a href="#_2-3-3-修改字段名称-change">2.3.3 修改字段名称 CHANGE</a></li><li><a href="#_2-3-4-删除字段">2.3.4 删除字段</a></li></ul></li><li><a href="#_2-4-字段约束">2.4 字段约束</a><ul><li><a href="#_2-4-1-数据句的范式">2.4.1 数据句的范式</a></li><li><a href="#_2-4-2-主键约束">2.4.2 主键约束</a></li><li><a href="#_2-4-3-外键约束">2.4.3 外键约束</a></li></ul></li><li><a href="#_2-3-索引运行机制和使用原则">2.3 索引运行机制和使用原则</a></li></ul></li></ul></li></ul></div><p></p> <h2 id="_1-mysql数据库安装与配置"><a href="#_1-mysql数据库安装与配置" class="header-anchor">#</a> 1 MySQL数据库安装与配置</h2> <p>数据库系统（DBMS）</p> <blockquote><p>关系模型中，数据是分类存放的，数据直接可以有联系</p></blockquote> <p>主流关系型数据库：</p> <ol><li>IBM的 DB2 数据库，随服务器硬件赠送的，但服务器硬件价格不低，采购成本高。所以一般用在超大型项目。</li> <li>甲骨文的 Oracle。性能强，采购成本比DB2低，一般根据cup数量、内存数量、主频高低收费。非开源。</li> <li>MySQL 开源的数据库，虽然性能相对 oRACLE、DB2要差，但灵活二次开发。阿里巴巴等都是二次开发。</li> <li>微软的 SQL Server，优秀的图形界面，教育领域免费使用。1、2、3都是可跨平台、多系统安装，但SQL Server仅在windows系统下。通常生产环境是在linux下，加之SQL Server网上资料少，不建议使用。</li></ol> <blockquote><p>NoSQL 数据库
+NoSQL数据库 指的是数据分类存放，但数据之间内衣关联关系的数据库系统。ta没有SQL语言，不能从多个数据文件中提取数据。</p></blockquote> <p>NoSQL数据库是关系型数据库的补充，一般使用业务场景：</p> <ol><li>秒杀库存。活动促销中，秒杀容易出现超卖。超卖原因：数据库系统是多线程的，多线程容易出现超卖。关系型数据库是多线程的，NoSQL数据库Redis是单线程的，不会出现超卖</li> <li>登陆信息、通知消息等。关系型数据库保存之前，需要先建表，定义字段的类型，约束条件（哪些列不能有空值、重复值等），在高速写入的时候，这样的校验会降低写入速度。如果用在保存低价值数据上，浪费数据库。NoSQL没有严格表结构、数据读写没有那么多的数据校验，所以读写速度远超关系型数据库。</li> <li>长篇幅字符内容。新闻。mysql不合适。</li></ol> <p>主流NoSQL数据库：</p> <ol><li>Redis。内存保存数据。内存读取速度远超硬盘。如保存微博大V热点信息，电商网站首页信息</li> <li>MemCache 同redis也是内存保存数据，份额比后者低；</li> <li>MongoDB。以硬盘存储方式，保存海量低价值数据。如新闻、留言、朋友圈等</li> <li>Neo4J 以硬盘存储方式，用于保存复杂的组织关系和人际关系。</li></ol> <p>Mysql衍生版：percona、mariadb</p> <hr> <h3 id="_1-1-用户管理"><a href="#_1-1-用户管理" class="header-anchor">#</a> 1.1 用户管理</h3> <h4 id="_1-1-2-navicat"><a href="#_1-1-2-navicat" class="header-anchor">#</a> 1.1.2 navicat</h4> <p>mysql客户端</p> <ol><li>【用户】【主机】【%】表示任何ip地址</li> <li>创建逻辑空间，即新建数据库</li> <li>新增用户，然后分配权限</li> <li>【服务器权限】全局的权限</li> <li>【权限】可以设置如dev用户仅可以对某个库进行常规增insert删delete查select改update操作，删表、逻辑空间是drop</li> <li>mysql数据文件是被隐藏起来的</li></ol> <hr> <h4 id="_1-1-2-重设root密码"><a href="#_1-1-2-重设root密码" class="header-anchor">#</a> 1.1.2 重设root密码</h4> <p>创建一个txt文件，定义修改密码是sql语句</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">ALTER</span> <span class="token keyword">USER</span> <span class="token string">'root@localhost'</span> IDENTIFIED <span class="token keyword">BY</span> <span class="token string">'123456'</span><span class="token punctuation">;</span>
+</code></pre></div><p>root@localhsot:  给root账户设置密码，@后是设置root账户的登录方式，可以是本地localhost，设置为“ % ”即可以远程、本地登陆；</p> <p>用管理员身份运行cmd，先 net stop mysql80  关闭名为mysql80 的服务；</p> <p>命令行运行</p> <div class="language- extra-class"><pre class="language-text"><code>mysqld --defaults-file=&quot;C:\ProgramData\MySQL\MySQL Server 8.0\my.ini&quot; --init-file=&quot;C:\Users\46957\Desktop\XX.txt&quot; --console
+</code></pre></div><p>路径有空格，用打双引号“”；路径是mysql数据地址的my.ini；还有上面的txt文件</p> <hr> <h3 id="_1-2-mysql配置文件"><a href="#_1-2-mysql配置文件" class="header-anchor">#</a> 1.2 mysql配置文件</h3> <h4 id="_1-2-1-my-ini"><a href="#_1-2-1-my-ini" class="header-anchor">#</a> 1.2.1 my.ini</h4> <div class="language-text extra-class"><pre class="language-text"><code>[client]
+port=3306 # 客户端链接数据库时，没有指明端口的话，默认3306端口
+[mysql]
+no-beep  # 命令行客户端执行sql语句发生错误时，设置主板不蜂鸣
+[mysqld]
+port=3306 #端口号
+datadir=C:/ProgramData/MySQL/MySQL Server 8.0\Data # 数据目录
+authentication_policy=mysql_native_password,,   #密码认证插件
+default-storage-engine=INNODB   #默认存储引擎 （INNODB支持事物机制，适合保持数据一致，重要数据需要用
+sql-mode=&quot;STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION&quot;   #开启严格模式【非严格下，数据字段不一致时，数据类型可以自动转；严格下，会报错】
+log-output=FILE # 用文件记录日志
+general-log=0   # 关闭日志输出
+general_log_file=&quot;LCS-MI.log&quot;   # 日志文件名称
+slow-query-log=1 # 开启慢查询日志 【sql查询速度】
+slow_query_log_file=&quot;LCS-MI-slow.log&quot; #慢查询日志文件名称
+long_query_time=10  #大于多少秒的执行sql杯记录在慢查询日志中
+log-error=&quot;LCS-MI.err&quot;  #错误日志名称
+log-bin=&quot;LCS-MI-bin&quot;
+server-id=1 #数据库id 【单机mysql用不到，mysql集群会用到】
+lower_case_table_names=1    #把表名转换成小写
+secure-file-priv=&quot;C:/ProgramData/MySQL/MySQL Server 8.0/Uploads&quot;    #导入导出数据的目录地址
+max_connections=151 #最大连接数  最大连接客户端的数量
+table_open_cache=4000
+tmp_table_size=91M #缓存的大小
+thread_cache_size=10    #线程数量 【数据库服务器可以调高点，如20-30。好的配置可以更高】
+myisam_max_sort_file_size=100G
+myisam_sort_buffer_size=171M
+key_buffer_size=8M
+read_buffer_size=64K
+read_rnd_buffer_size=256K
+innodb_flush_log_at_trx_commit=1
+innodb_log_buffer_size=1M
+innodb_buffer_pool_size=128M
+innodb_log_file_size=48M
+innodb_thread_concurrency=17
+innodb_autoextend_increment=64
+innodb_buffer_pool_instances=8
+innodb_concurrency_tickets=5000
+innodb_old_blocks_time=1000
+innodb_stats_on_metadata=0
+innodb_file_per_table=1
+innodb_checksum_algorithm=0
+back_log=80
+flush_time=0
+join_buffer_size=256K
+max_allowed_packet=64M
+max_connect_errors=100
+open_files_limit=8161
+sort_buffer_size=256K
+table_definition_cache=2000
+binlog_row_event_max_size=8K
+sync_source_info=10000
+sync_relay_log=10000
+sync_relay_log_info=10000
+loose_mysqlx_port=33060
+</code></pre></div><hr> <h2 id="_2-mysql表操作"><a href="#_2-mysql表操作" class="header-anchor">#</a> 2 MySQL表操作</h2> <h3 id="_2-1-管理逻辑库和数据表"><a href="#_2-1-管理逻辑库和数据表" class="header-anchor">#</a> 2.1 管理逻辑库和数据表</h3> <h4 id="_2-1-1-sql语言分类"><a href="#_2-1-1-sql语言分类" class="header-anchor">#</a> 2.1.1 SQL语言分类</h4> <ol><li>DML 添加、修改、删除、查询</li> <li>DCL 用户、权限、事务</li> <li>DDL 逻辑库、数据表、视图、索引</li></ol> <hr> <h4 id="_2-1-2-创建逻辑库"><a href="#_2-1-2-创建逻辑库" class="header-anchor">#</a> 2.1.2 创建逻辑库</h4> <div class="language-sql extra-class"><pre class="language-sql"><code> mysql<span class="token operator">&gt;</span> <span class="token keyword">CREATE</span> <span class="token keyword">DATABASE</span> 逻辑库名称<span class="token punctuation">;</span>
+ mysql<span class="token operator">&gt;</span> <span class="token keyword">SHOW</span> <span class="token keyword">DATABASES</span><span class="token punctuation">;</span>
+ mysql<span class="token operator">&gt;</span> <span class="token keyword">DROP</span> <span class="token keyword">DATABASE</span> 逻辑库名称<span class="token punctuation">;</span>
+</code></pre></div><hr> <h5 id="_2-1-2-创建数据表"><a href="#_2-1-2-创建数据表" class="header-anchor">#</a> 2.1.2 创建数据表</h5> <p>有逻辑空间，然后创建数据表</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 数据表<span class="token punctuation">(</span>
+	列名<span class="token number">1</span> 数据类型 <span class="token punctuation">[</span>约束<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 注释<span class="token punctuation">]</span><span class="token punctuation">,</span>
+	列名<span class="token number">2</span> 数据类型 <span class="token punctuation">[</span>约束<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 注释<span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 注释<span class="token punctuation">]</span>
+
+<span class="token keyword">USE</span> lcs_test2<span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student<span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span> <span class="token keyword">UNSIGNED</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>   
+	NAME <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	sex <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	birthday <span class="token keyword">DATE</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	tel <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	remark <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ol><li>[]中括号的，可写可不写</li> <li>INT是整数，学生序号不能为负数，所以无符号整数UNSIGNED，就是正整数</li> <li>PRIMARY KEY主键，即id字段不能重复</li> <li>VARCHAR(20) 字符串，最大不超过20字符</li> <li>NOT NULL 必须填写，不能为空</li></ol> <blockquote><p>数据表的其他操作</p></blockquote> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SHOW</span> <span class="token keyword">tables</span><span class="token punctuation">;</span>  <span class="token comment"># 查看逻辑空间里有上面数据表</span>
+<span class="token keyword">DESC</span> student<span class="token punctuation">;</span>	<span class="token comment">#查看数据表student的具体情况</span>
+<span class="token keyword">SHOW</span> <span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student<span class="token punctuation">;</span>	<span class="token comment">#查看当初创建数据表student的sql语句</span>
+<span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> student<span class="token punctuation">;</span> <span class="token comment">#销毁表</span>
+</code></pre></div><hr> <h4 id="_2-1-3-插入数据"><a href="#_2-1-3-插入数据" class="header-anchor">#</a> 2.1.3 插入数据</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">&quot;朵朵&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;男&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;2021-07-01&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;13242816991&quot;</span><span class="token punctuation">,</span><span class="token boolean">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>数据表文件 后缀  .idb</p> <hr> <h3 id="_2-2-常用的数据类型和约束"><a href="#_2-2-常用的数据类型和约束" class="header-anchor">#</a> 2.2 常用的数据类型和约束</h3> <p>字符串、证书、浮点数、精确数字、日期、枚举、主键约束、非空约束、唯一约束、外键约束</p> <h4 id="_2-2-1-数字"><a href="#_2-2-1-数字" class="header-anchor">#</a> 2.2.1 数字</h4> <table><thead><tr><th>类型</th> <th>大小</th> <th>说明</th></tr></thead> <tbody><tr><td>TINYINT</td> <td>1字节</td> <td>小整数  从 -2^7 (-128) 到 2^7 - 1 (127) 的整型数据。	带符号的范围是-128到127。无符号的范围是0到255</td></tr> <tr><td>SMALLINT</td> <td>2字节</td> <td>普通整数	有符号的 SMALLINT 值的范围是 –2^15（2^15表示2的15次幂） 到2^15 – 1，即 –32768 到 32767。无符号的 SMALLINT 值范围是 0 到 2^16 – 1，即 0 到 65535。</td></tr> <tr><td>MEDIUMINT</td> <td>3字节</td> <td>普通整数	值范围为：-8388608到8388607，无符号的范围是0到16777215。</td></tr> <tr><td>INT</td> <td>4字节</td> <td>较大整数  围为-2147483648~+2147483647,无符号情况下表示为0~4294967295。</td></tr> <tr><td>BIGINT</td> <td>8字节</td> <td>大整数</td></tr> <tr><td>FLOAT</td> <td>4字节</td> <td>单精度浮点数</td></tr> <tr><td>DOUBLE</td> <td>8字节</td> <td>双精度浮点数</td></tr> <tr><td>DECIMAL</td> <td>----</td> <td>DECIMAL(10,2)	float和doubel的精度还不够高，记录精度高的数据用decimal</td></tr></tbody></table> <blockquote><p>十进制的浮点数无法在计算机中用二进制精确表达
+设置字段 num  ---  FLOAT(20,10);   #20位，小数点后有10位</p></blockquote> <p>存0.2时，会出现0.20000...30</p> <p>想不丢失精度，设置字段的时候 num用DECIMAL(20,10)</p> <hr> <h4 id="_2-2-2-字符串"><a href="#_2-2-2-字符串" class="header-anchor">#</a> 2.2.2 字符串</h4> <table><thead><tr><th>类型</th> <th>大小</th> <th>说明</th></tr></thead> <tbody><tr><td>CHAR</td> <td>1-255字符</td> <td>固定长度字符串</td></tr> <tr><td>VARCHAR</td> <td>1-65535字符</td> <td>不固定长度字符串</td></tr> <tr><td>TEXT</td> <td>1-65535字符</td> <td>不确定长度字符串</td></tr> <tr><td>MEDIUMTEXT</td> <td>1-1千6百万字符</td> <td>不确定长度字符串</td></tr> <tr><td>LONGTEXT</td> <td>1-42亿字符</td> <td>不确定长度字符串</td></tr></tbody></table> <hr> <h4 id="_2-2-3-日期类型"><a href="#_2-2-3-日期类型" class="header-anchor">#</a> 2.2.3 日期类型</h4> <table><thead><tr><th>类型</th> <th>大小</th> <th>说明</th></tr></thead> <tbody><tr><td>DATE</td> <td>3字节</td> <td>日期</td></tr> <tr><td>TIME</td> <td>3字节</td> <td>时间</td></tr> <tr><td>YEAR</td> <td>1字节</td> <td>年份</td></tr> <tr><td>DATETIME</td> <td>8字节</td> <td>日期时间</td></tr> <tr><td>TIMESTAMP</td> <td>4字节</td> <td>时间戳</td></tr></tbody></table> <hr> <h3 id="_2-3-修改表结构"><a href="#_2-3-修改表结构" class="header-anchor">#</a> 2.3 修改表结构</h3> <h4 id="_2-3-1-添加字段-add"><a href="#_2-3-1-添加字段-add" class="header-anchor">#</a> 2.3.1 添加字段 ADD</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名称
+<span class="token keyword">ADD</span> 列<span class="token number">1</span> 数据类型 <span class="token punctuation">[</span>约束<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 注释<span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token keyword">ADD</span> 列<span class="token number">2</span> 数据类型 <span class="token punctuation">[</span>约束<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 注释<span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> student
+<span class="token keyword">ADD</span> address <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+<span class="token keyword">ADD</span> home_tel <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <h4 id="_2-3-2-修改已有字段-modify"><a href="#_2-3-2-修改已有字段-modify" class="header-anchor">#</a> 2.3.2 修改已有字段 MODIFY</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> student
+<span class="token keyword">MODIFY</span> home_tel <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <h4 id="_2-3-3-修改字段名称-change"><a href="#_2-3-3-修改字段名称-change" class="header-anchor">#</a> 2.3.3 修改字段名称 CHANGE</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">ALTER</span> TANLE 表名称
+CHANGE 列<span class="token number">1</span> 新列明<span class="token number">1</span> 数据类型 <span class="token punctuation">[</span>约束<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 注释<span class="token punctuation">]</span><span class="token punctuation">,</span>
+CHANGE 列<span class="token number">2</span> 新列明<span class="token number">2</span> 数据类型 <span class="token punctuation">[</span>约束<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token keyword">COMMENT</span> 注释<span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <h4 id="_2-3-4-删除字段"><a href="#_2-3-4-删除字段" class="header-anchor">#</a> 2.3.4 删除字段</h4> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 表名称
+<span class="token keyword">DROP</span> 列<span class="token number">1</span><span class="token punctuation">,</span>
+<span class="token keyword">DROP</span> 列<span class="token number">2</span><span class="token punctuation">,</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <h3 id="_2-4-字段约束"><a href="#_2-4-字段约束" class="header-anchor">#</a> 2.4 字段约束</h3> <h4 id="_2-4-1-数据句的范式"><a href="#_2-4-1-数据句的范式" class="header-anchor">#</a> 2.4.1 数据句的范式</h4> <p>构造数据库必须准遵守一定的规则，这种规则就是范式；</p> <p>目前关系数据库有6中范式，一般情况下，只满足第三范式即可。</p> <p>第一范式：原子性。数据库的每一列都不能再分割的基本数据项</p> <p>第二范式：唯一性。数据表的每条记录必须是唯一的。主键 实现区分</p> <p>第三范式：关联型。每列斗鱼主键有之间关系，不存在传递依赖。</p> <table><thead><tr><th>爸爸</th> <th>儿子</th> <th>女儿</th> <th>女儿的玩具</th> <th>女儿的衣服</th></tr></thead> <tbody><tr><td>陈华</td> <td>陈浩</td> <td>陈婷婷</td> <td>海绵宝宝</td> <td>校服</td></tr></tbody></table> <p>儿子和女儿 字段 依赖与爸爸字段，而女儿的玩具、衣服不依赖爸爸。所以这个表设计不符合第三范式</p> <p>数据表字段关联松散，会影响检索速度</p> <p>应该是：</p> <table><thead><tr><th>爸爸</th> <th>儿子</th> <th>女儿</th></tr></thead> <tbody><tr><td>陈华</td> <td>陈浩</td> <td>陈婷婷</td></tr></tbody></table> <table><thead><tr><th>女儿</th> <th>女儿的玩具</th> <th>女儿的衣服</th></tr></thead> <tbody><tr><td>陈婷婷</td> <td>海绵宝宝</td> <td>校服</td></tr></tbody></table> <hr> <blockquote><p>MySQL中的字段约束公有四种：</p></blockquote> <table><thead><tr><th>约束名称</th> <th>关键字</th> <th>描述</th></tr></thead> <tbody><tr><td>主键约束</td> <td>PRIMARY KEY</td> <td>字段值唯一，且不能为NULL</td></tr> <tr><td>非空约束</td> <td>NOT NULL</td> <td>字段值不能为NULL</td></tr> <tr><td>唯一约束</td> <td>UNIQUE</td> <td>字段值唯一，且可以为NULL</td></tr> <tr><td>外键约束</td> <td>FOREIGEN KEY</td> <td>保持关联数据的逻辑性</td></tr></tbody></table> <h4 id="_2-4-2-主键约束"><a href="#_2-4-2-主键约束" class="header-anchor">#</a> 2.4.2 主键约束</h4> <ol><li>主键约束 要求字段的值 在全表必须唯一，且不能为NULL值。</li> <li>建议主键一定使用数字类型，因为数字的检索速度快。数字值的主键，还可以设置自动增长</li></ol> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> t_teacher<span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token keyword">AUTO_INCREMENT</span><span class="token punctuation">,</span>
+	<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">)</span>
+</code></pre></div><ol start="3"><li>外键约束不推荐使用</li></ol> <hr> <h4 id="_2-4-3-外键约束"><a href="#_2-4-3-外键约束" class="header-anchor">#</a> 2.4.3 外键约束</h4> <p><img src="/blog/assets/img/mysql1.9a6635ba.jpg" alt="">
+外键约束的定义卸载子表上</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> t_dept<span class="token punctuation">(</span>
+	deptno <span class="token keyword">INT</span> UNSIGEND <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+	dname <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">UNIQUE</span><span class="token punctuation">,</span>
+	tel <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token keyword">UNIQUE</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> t_emp<span class="token punctuation">(</span>
+	empno <span class="token keyword">INT</span> <span class="token keyword">UNSIGNED</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+	ename <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	sex <span class="token keyword">ENUM</span><span class="token punctuation">(</span><span class="token string">&quot;男&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;女&quot;</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	deptno <span class="token keyword">INT</span> <span class="token keyword">UNSIGNED</span><span class="token punctuation">,</span>
+	hiredate <span class="token keyword">DATE</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	<span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>deptno<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> t_dept<span class="token punctuation">(</span>deptno<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>有外键约束的表，要把关联子表的所有记录都删除了，父表才可以删除。所以会有一个闭环问题。</p> <p>多个表外键约束后，会很容易形成闭环，无法删除。</p> <hr> <h3 id="_2-3-索引运行机制和使用原则"><a href="#_2-3-索引运行机制和使用原则" class="header-anchor">#</a> 2.3 索引运行机制和使用原则</h3> <p>一旦数据排序后，查找的速度会翻倍。因为有二叉树的二分查找。</p> <blockquote><p>索引应用场景
+数量量很大，而且经常被查询的数据表可以设置经常杯检索的字段作为索引。</p></blockquote> <p>对于少量数据的表，可不用设置索引。因为设置索引，数据表还有维护额外的二叉树，有计算开销。</p> <p>数据量多，但写入操作比查询多，也不适合设置索引。</p> <p>不要在大字段上创建索引。如字符长度超过50的字符串不适合设置索引。</p> <blockquote><p>数据表不存在时，创建索引</p></blockquote> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> 表名称<span class="token punctuation">(</span>
+	<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">,</span>
+	<span class="token keyword">INDEX</span> <span class="token punctuation">[</span>索引名称<span class="token punctuation">]</span><span class="token punctuation">(</span>字段<span class="token punctuation">)</span><span class="token punctuation">,</span>   <span class="token comment">#不写 索引名称的话，默认索引名称即原字段名称</span>
+	<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <blockquote><p>数据表已有，添加/删除索引</p></blockquote> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment"># 方式一：</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">INDEX</span> 索引名称 <span class="token keyword">ON</span> 表明<span class="token punctuation">(</span>字段<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 方式二：</span>
+<span class="token keyword">ALTER</span> TABEL 表名称 <span class="token keyword">ADD</span> <span class="token keyword">INDEX</span> <span class="token punctuation">[</span>索引名<span class="token punctuation">]</span><span class="token punctuation">(</span>字段<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 查看已有索引</span>
+<span class="token keyword">SHOW</span> <span class="token keyword">INDEX</span> <span class="token keyword">FROM</span> 表名<span class="token punctuation">;</span>
+
+<span class="token comment"># 删除索引</span>
+<span class="token keyword">DROP</span> <span class="token keyword">INDEX</span> 索引名称 <span class="token keyword">ON</span> 表名<span class="token punctuation">;</span>
+</code></pre></div><div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> t_message<span class="token punctuation">(</span>
+	id <span class="token keyword">INT</span> <span class="token keyword">UNSIGNED</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+	content <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	<span class="token keyword">type</span> <span class="token keyword">ENUM</span><span class="token punctuation">(</span><span class="token string">&quot;公告&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;通报&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;个人通知&quot;</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	create_time <span class="token keyword">TIMESTAMP</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+	<span class="token keyword">INDEX</span> idx_type<span class="token punctuation">(</span><span class="token keyword">type</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SHOW</span> <span class="token keyword">INDEX</span> <span class="token keyword">FROM</span> t_message<span class="token punctuation">;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> t_message <span class="token keyword">ADD</span> <span class="token keyword">INDEX</span> idx_type<span class="token punctuation">(</span><span class="token keyword">type</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">DROP</span> <span class="token keyword">INDEX</span> idx_type <span class="token keyword">ON</span> t_message<span class="token punctuation">;</span>
+</code></pre></div><hr></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blog/mysql/mysql_study/sql_1.html">
+        mysql基本查询
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.09e88087.js" defer></script><script src="/blog/assets/js/2.5d6d69d5.js" defer></script><script src="/blog/assets/js/34.bd04b9df.js" defer></script>
+  </body>
+</html>
