@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>内部类 | 欢迎回来 ！</title>
+    <meta name="description" content="lcsx">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.ee874cfe.css" as="style"><link rel="preload" href="/blog/assets/js/app.7a4660d2.js" as="script"><link rel="preload" href="/blog/assets/js/2.85e08d05.js" as="script"><link rel="preload" href="/blog/assets/js/65.f84cda40.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.573da17f.js"><link rel="prefetch" href="/blog/assets/js/11.5a02348c.js"><link rel="prefetch" href="/blog/assets/js/12.d8c9c1bd.js"><link rel="prefetch" href="/blog/assets/js/13.e09bb963.js"><link rel="prefetch" href="/blog/assets/js/14.d23ca837.js"><link rel="prefetch" href="/blog/assets/js/15.c4683e2a.js"><link rel="prefetch" href="/blog/assets/js/16.c660c97d.js"><link rel="prefetch" href="/blog/assets/js/17.49bf184a.js"><link rel="prefetch" href="/blog/assets/js/18.9be995ca.js"><link rel="prefetch" href="/blog/assets/js/19.df144b24.js"><link rel="prefetch" href="/blog/assets/js/20.5aad5a93.js"><link rel="prefetch" href="/blog/assets/js/21.262a03c1.js"><link rel="prefetch" href="/blog/assets/js/22.7fed5ac6.js"><link rel="prefetch" href="/blog/assets/js/23.6aa0be70.js"><link rel="prefetch" href="/blog/assets/js/24.09d96859.js"><link rel="prefetch" href="/blog/assets/js/25.418504a4.js"><link rel="prefetch" href="/blog/assets/js/26.f0584d72.js"><link rel="prefetch" href="/blog/assets/js/27.cd44913e.js"><link rel="prefetch" href="/blog/assets/js/28.4f5c209f.js"><link rel="prefetch" href="/blog/assets/js/29.2dcd5c40.js"><link rel="prefetch" href="/blog/assets/js/3.11e700f0.js"><link rel="prefetch" href="/blog/assets/js/30.d2e1f594.js"><link rel="prefetch" href="/blog/assets/js/31.7b1f9108.js"><link rel="prefetch" href="/blog/assets/js/32.f4856997.js"><link rel="prefetch" href="/blog/assets/js/33.f6007bb0.js"><link rel="prefetch" href="/blog/assets/js/34.974aeb16.js"><link rel="prefetch" href="/blog/assets/js/35.af78c18d.js"><link rel="prefetch" href="/blog/assets/js/36.0a0639ee.js"><link rel="prefetch" href="/blog/assets/js/37.3a26ab2f.js"><link rel="prefetch" href="/blog/assets/js/38.ba809f55.js"><link rel="prefetch" href="/blog/assets/js/39.fb48ae1b.js"><link rel="prefetch" href="/blog/assets/js/4.31720545.js"><link rel="prefetch" href="/blog/assets/js/40.639ac403.js"><link rel="prefetch" href="/blog/assets/js/41.182c195e.js"><link rel="prefetch" href="/blog/assets/js/42.bd60b723.js"><link rel="prefetch" href="/blog/assets/js/43.7f4ee63e.js"><link rel="prefetch" href="/blog/assets/js/44.1345cf6d.js"><link rel="prefetch" href="/blog/assets/js/45.f0b98685.js"><link rel="prefetch" href="/blog/assets/js/46.97e7267e.js"><link rel="prefetch" href="/blog/assets/js/47.2c6a6d63.js"><link rel="prefetch" href="/blog/assets/js/48.faebaa80.js"><link rel="prefetch" href="/blog/assets/js/49.49af56c0.js"><link rel="prefetch" href="/blog/assets/js/5.232758e0.js"><link rel="prefetch" href="/blog/assets/js/50.b6235237.js"><link rel="prefetch" href="/blog/assets/js/51.8bb71e61.js"><link rel="prefetch" href="/blog/assets/js/52.a8d8e7ae.js"><link rel="prefetch" href="/blog/assets/js/53.259ab2d4.js"><link rel="prefetch" href="/blog/assets/js/54.a1620682.js"><link rel="prefetch" href="/blog/assets/js/55.15b38884.js"><link rel="prefetch" href="/blog/assets/js/56.408630af.js"><link rel="prefetch" href="/blog/assets/js/57.b6ac7546.js"><link rel="prefetch" href="/blog/assets/js/58.82664ed4.js"><link rel="prefetch" href="/blog/assets/js/59.339098b4.js"><link rel="prefetch" href="/blog/assets/js/6.0bf13852.js"><link rel="prefetch" href="/blog/assets/js/60.56bec4a5.js"><link rel="prefetch" href="/blog/assets/js/61.1d5e0a93.js"><link rel="prefetch" href="/blog/assets/js/62.caa7d838.js"><link rel="prefetch" href="/blog/assets/js/63.b2935415.js"><link rel="prefetch" href="/blog/assets/js/64.27d92569.js"><link rel="prefetch" href="/blog/assets/js/66.1585871d.js"><link rel="prefetch" href="/blog/assets/js/67.dd596334.js"><link rel="prefetch" href="/blog/assets/js/68.7f108fcc.js"><link rel="prefetch" href="/blog/assets/js/69.e67a606a.js"><link rel="prefetch" href="/blog/assets/js/7.1e456cb7.js"><link rel="prefetch" href="/blog/assets/js/70.7ca5af58.js"><link rel="prefetch" href="/blog/assets/js/71.9ec68011.js"><link rel="prefetch" href="/blog/assets/js/72.50a3a3b0.js"><link rel="prefetch" href="/blog/assets/js/73.e2564842.js"><link rel="prefetch" href="/blog/assets/js/74.b0c6fc38.js"><link rel="prefetch" href="/blog/assets/js/8.3c5dcc01.js"><link rel="prefetch" href="/blog/assets/js/9.33061631.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ee874cfe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" alt="欢迎回来 ！" class="logo"> <span class="site-name can-hide">欢迎回来 ！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/java/java_study/env.html" class="sidebar-link">Java环境搭建与基本语法</a></li><li><a href="/blog/java/java_study/OOP.html" class="sidebar-link">OOP面向对象</a></li><li><a href="/blog/java/java_study/Design.html" class="sidebar-link">设计模式</a></li><li><a href="/blog/java/java_study/DuoTai.html" class="sidebar-link">多态</a></li><li><a href="/blog/java/java_study/Neibulei.html" class="active sidebar-link">内部类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/java/java_study/Neibulei.html#_1-1-什么是内部类" class="sidebar-link">1.1 什么是内部类</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/Neibulei.html#为什么要内部类？内部类隐藏在外部类之内，更好的实现了信息隐藏。" class="sidebar-link">为什么要内部类？
+内部类隐藏在外部类之内，更好的实现了信息隐藏。</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/Neibulei.html#_1-2-内部类的分类" class="sidebar-link">1.2 内部类的分类</a></li></ul></li><li><a href="/blog/java/java_study/Throwable.html" class="sidebar-link">异常</a></li><li><a href="/blog/java/java_study/Wrapper.html" class="sidebar-link">包装类</a></li><li><a href="/blog/java/java_study/String.html" class="sidebar-link">字符串处理类</a></li><li><a href="/blog/java/java_study/Collection.html" class="sidebar-link">集合</a></li><li><a href="/blog/java/java_study/Generics.html" class="sidebar-link">泛型</a></li><li><a href="/blog/java/java_study/XC.html" class="sidebar-link">多线程</a></li><li><a href="/blog/java/java_study/IO.html" class="sidebar-link">输入输出流</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="内部类"><a href="#内部类" class="header-anchor">#</a> 内部类</h1> <h2 id="_1-1-什么是内部类"><a href="#_1-1-什么是内部类" class="header-anchor">#</a> 1.1 什么是内部类</h2> <p>在java中，可以将一个类定义在另一个类里面或者一个方法里面，这样的类称内部类。</p> <h2 id="为什么要内部类？内部类隐藏在外部类之内，更好的实现了信息隐藏。"><a href="#为什么要内部类？内部类隐藏在外部类之内，更好的实现了信息隐藏。" class="header-anchor">#</a> 为什么要内部类？
+内部类隐藏在外部类之内，更好的实现了信息隐藏。</h2> <h2 id="_1-2-内部类的分类"><a href="#_1-2-内部类的分类" class="header-anchor">#</a> 1.2 内部类的分类</h2> <ol><li>成员内部类</li> <li>静态内部类</li> <li>方法内部类</li> <li>匿名内部类</li></ol> <hr> <h4 id="_1-2-1-成员内部类"><a href="#_1-2-1-成员内部类" class="header-anchor">#</a> 1.2.1 成员内部类</h4> <p>成员内部类，也称普通内部类</p> <ol><li>内部类在外部使用时，无法直接实例化，需要借助外部类信息才能完成实例化；</li> <li>内部类的访问修饰符，可以任意，但是访问范围会收到影响；</li> <li>内部类可以直接访问外部类的成员；如果出现同名属性，优先访问内部类中定义的；</li> <li>可以使用  外部类 .this.成员 的方式，访问外部类中同名的信息；</li> <li>外部类访问内部类信息，需要通过内部类实例，无法直接访问；</li> <li>内部类编译后.class文件命名：外部类$内部类.class</li> <li>内部类中是否可以包含与外部类相同方法签名</li></ol> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+//外部类
+public class Person {
+    public int age;
+    public Heart geatHeart(){
+        return new Heart();
+    }
+
+    //成员内部类
+    public class Heart{
+        public void beat(){
+            System.out.println(&quot;心跳&quot;);
+        }
+    }
+}
+</code></pre></div><blockquote><p>跨包调用时，test类需要public
+new 外部类.new 内部类
+外部实例.new 内部类</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>import com.lcs.tel.Person;
+
+public class test {
+    public static void main(String[] args) {
+        Person p1 = new Person();
+        p1.age = 18;
+
+        //获取内部类实例对象，方式1：new 外部类.new 内部类
+        Person.Heart mh = new Person().new Heart();
+
+        //方式2: 外部类对象.new 内部类
+        Person.Heart mh1 = p1.new Heart();
+
+        //方式3：自定义个方法 外部类、外部对象   .自定义获取方法
+        Person.Heart mh2 = new Person().geatHeart();
+        Person.Heart mh3 = p1.geatHeart();
+    }
+}
+</code></pre></div><hr> <h4 id="_1-2-2-静态内部类"><a href="#_1-2-2-静态内部类" class="header-anchor">#</a> 1.2.2 静态内部类</h4> <p>static修饰的内部类</p> <p>总结：1、静态内部类中可以写哪些内容</p> <p>1）匿名代码块</p> <p>2）静态代码块</p> <p>3）静态变量和非静态变量</p> <p>4）静态方法和非静态方法</p> <p>注意：不能在静态内部类中写抽象方法</p> <p>2、外部类如何调用静态内部类中的属性和方法</p> <p>1）外部类可以通过创建静态内部类实例的方法来调用静态内部类的非静态属性和方法</p> <p>2）外部类可以直接通过“ 外部类.内部类.属性（方法）” 的方式直接调用静态内部类中的静态属性和方法</p> <p>3、静态内部类如何调用外部类的属性和方法</p> <p>1）静态内部类可以直接调用外部类的静态属性和方法</p> <p>2）静态内部类可以通过创建外部类实例的方法调用外部类的非静态属性和方法</p> <p>4、如何创建静态内部类实例</p> <p>1）在非外部类中：外部类名.内部类名 name = new 外部类名.内部类名();</p> <p>2）在外部类中：内部类名 name = new 内部类名();</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+
+public class Outer {
+    //定义一个实例变量和一个静态变量
+    private int a;
+    private static int b;
+    //定义一个静态方法和一个非静态方法
+    public static void say(){}
+    public void test(){
+        //在外部类中调用内部类的属性和方法
+        Outer.Inner.c = 1;            //可以通过静态内部类的全类名来调用静态内部类的静态属性（外部类名.静态内部类名.属性）
+        Outer.Inner.go();            //可以通过静态内部类的全类名来调用静态内部类的静态方法（外部类名.静态内部类名.方法）
+        //Outer.Inner.walk();        //不能通过类静态内部类的全类名来调用内部类的非静态属性和方法
+        Inner inner = new Inner();
+        inner.d = 1;
+        inner.walk();                    //可以通过创建内部类实例来调用静态内部类的非静态属性和方法
+    }
+    //静态内部类
+    public static class Inner{
+        //在静态内部类中定义一个静态变量和一个实例变量
+        static int c;
+        int d;
+        //定义一个匿名代码块和一个静态代码块
+        {}
+        static{}
+        //定义一个静态方法和一个普通方法
+        public static void go(){}
+        public void walk(){
+            //在静态内部类中调用外部类的属性和方法
+            int f = b;                     //可以直接调用外部类的静态属性
+            say();                        //可以直接调用外部类的静态方法
+            //int e = a;                 直接调用外部类的非静态属性出错编译出错
+            //test();                    直接调用外部类的非静态方法时编译出错
+            Outer outer = new Outer();
+            int e = outer.a;            //可以通过创建外部类实例来调用外部类的非静态属性
+            outer.test();                //可以通过创建外部类实例来调用外部类的非静态方法
+        }
+    }
+}
+</code></pre></div><blockquote><p>类的内部不能直接写代码，代码只能写在方法内部</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+//外部类
+public class Person {
+    public int age = 22;
+    public void eat(){
+        System.out.println(&quot;吃吃吃&quot;);
+    }
+    //静态内部类
+    static class Heart{
+        public int age = 18;
+
+        // 1.想调用非静态成员，外部类非static的方法，需要通过对象实例访问
+        Person p1 = new Person();
+
+        //p1.eat(); 报错 java: 需要&lt;标识符&gt;  :类的内部不能直接写代码，代码只能写在方法内部，作为方法体。main是很特殊的⽅法。
+        public void lcs(){
+            p1.eat();  //就可以调用了
+        }
+
+
+
+    }
+}
+</code></pre></div><hr> <h4 id="_1-2-3-方法内部类"><a href="#_1-2-3-方法内部类" class="header-anchor">#</a> 1.2.3 方法内部类</h4> <p>也成局部内部类，定义在外部类方法中的内部类</p> <ol><li>方法内定义的局部变量智能在方法里使用</li> <li>方法内不能定义静态成员</li> <li>和方法内部成员使用规则一样，不可以用 public/private/protected/static 修饰，可以抽象类 abstract</li> <li>类中可以包含final、abstract修饰的成员</li></ol> <div class="language- extra-class"><pre class="language-text"><code>//外部类
+public class Person {
+    public int age = 22;
+    public void eat(){
+        System.out.println(&quot;吃吃吃&quot;);
+    }
+
+    public Object getHeart(){
+        //定义在方法内部的类
+        class Heart{
+            public final int age = 6;
+            int temp = 22;
+
+            public final void say(){
+                System.out.println(&quot;hello&quot;);
+            }
+
+            public String beat(){
+                //调用外部类成员
+                new Person().eat();
+                return &quot;要加油&quot;;
+            }
+        }
+        //return new Heart(); 一般很少直接返回实例，一般返回实例的方法
+        // 因为：
+        // 外部实例执行 p1= Person.getHeart()时，返回new Heart()
+        // 但 p1不能调用方法内部类的其他方法了 如say、beat方法
+        // 所以要想调用方法内部类中的方法，需要return具体的方法,如下
+        return new Heart().beat();
+    }
+
+}
+</code></pre></div><hr> <h4 id="_1-2-4-匿名内部类"><a href="#_1-2-4-匿名内部类" class="header-anchor">#</a> 1.2.4 匿名内部类</h4> <p>anonymous	[əˈnɒnɪməs]
+没有名字、隐藏名字 。将类的定义与类的创建放到一起完成</p> <p>当实例仅使用一次的时候，此时，这个类的名字就不是很重要了。</p> <p>适用场景：</p> <ol><li>只用到类的一个实例</li> <li>类在定以后马上用到</li> <li>给类命名并不会使代码更容易被理解</li></ol> <p>匿名内部类：</p> <ol><li>匿名内部类没有类型名称、实例对象名称</li> <li>编译后的文件名：外部类$数字.class</li> <li>无法使用private、public、protected、abstract、static修饰</li> <li>无法便携构造方法，可以添加构造代码块</li> <li>不能出现静态成员</li> <li>匿名内部类可以实现接口，也可以继承父类，但不可兼得</li></ol> <hr> <p>根据传入的不同的人的类型，调用对应的read方法</p> <blockquote><p>先用非匿名方式实现</p> <blockquote><p>父类 抽象类</p></blockquote></blockquote> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+public abstract class Person {
+    private String name;
+    public Person(){}
+
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public abstract void read();
+}
+</code></pre></div><blockquote><blockquote><p>子类继承父类抽象类，并实现父类抽象类里的方法</p></blockquote></blockquote> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+// 一个类要继承一个抽象父类，需要实现父类的所有抽象方法
+public class Man extends Person{
+    @Override
+    public void read() {
+        System.out.println(&quot;man的read&quot;);
+    }
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public class Women extends Person{
+    @Override
+    public void read() {
+        System.out.println(&quot;women的read&quot;);
+    }
+}
+</code></pre></div><blockquote><blockquote><p>测试类
+方案1：</p></blockquote></blockquote> <div class="language- extra-class"><pre class="language-text"><code>import com.lcs.tel.Man;
+import com.lcs.tel.Women;
+
+public class test {
+    //根据传入的不同的人的类型，调用对应的read方法
+    //方案1：
+    public void getRead(Man man){
+        man.read();
+    }
+    public void getRead(Women man){
+        man.read();
+    }
+	
+    public static void main(String[] args) {
+        //要调用getRead方法，需要先创建实例
+        test t1 = new test();
+        Man m1 = new Man();
+        Women w1 = new Women();
+        t1.getRead(m1);
+        t1.getRead(w1);
+    }
+}
+</code></pre></div><p>方案2：根据man women都是继承person类，</p> <div class="language- extra-class"><pre class="language-text"><code>public class test {
+    //根据传入的不同的人的类型，调用对应的read方法
+
+    //方案2：根据man women都是继承person类，
+    public void getRead(Person person){
+        person.read();
+    }
+
+    public static void main(String[] args) {
+        //要调用getRead方法，需要先创建实例
+        test t1 = new test();
+        Man m1 = new Man();
+        Women w1 = new Women();
+        t1.getRead(m1);
+        t1.getRead(w1);
+    }
+}
+</code></pre></div><p>方案3：匿名类方式</p> <div class="language- extra-class"><pre class="language-text"><code>public class test {
+    //根据传入的不同的人的类型，调用对应的read方法
+
+    public void getRead(Person person){
+        person.read();
+    }
+
+    public static void main(String[] args) {
+        //要调用getRead方法，需要先创建实例
+        test t1 = new test();
+
+        //Man m1 = new Man();
+        //Women w1 = new Women();
+        //t1.getRead(m1);
+        //t1.getRead(w1);
+
+        //Person p1 = new Person(); // Person是抽象类，不能实例化
+
+        //匿名内部类
+        t1.getRead(new Person() {
+			{
+				//构造代码块
+			}
+            @Override
+            public void read() {
+                System.out.println(&quot;man的read&quot;);
+            }
+        });
+        //只能用一次，不能复用，再想用的时候，需要重新写
+        t1.getRead(new Person() {
+            @Override
+            public void read() {
+                System.out.println(&quot;women的read&quot;);
+            }
+        });
+        //用匿名类内部类的方式，可以节省引用、内存。 如上文的m1，w1
+    }
+}
+</code></pre></div><blockquote></blockquote> <p>点击右边的一个Project Structure按钮，或者按快捷键ctrl+shift+alt+s打开工程结构窗口</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/java/java_study/DuoTai.html" class="prev">
+        多态
+      </a></span> <span class="next"><a href="/blog/java/java_study/Throwable.html">
+        异常
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.7a4660d2.js" defer></script><script src="/blog/assets/js/2.85e08d05.js" defer></script><script src="/blog/assets/js/65.f84cda40.js" defer></script>
+  </body>
+</html>

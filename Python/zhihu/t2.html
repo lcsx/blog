@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>独立双样本t检验 | 欢迎回来 ！</title>
+    <meta name="description" content="lcsx">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.ee874cfe.css" as="style"><link rel="preload" href="/blog/assets/js/app.7a4660d2.js" as="script"><link rel="preload" href="/blog/assets/js/2.85e08d05.js" as="script"><link rel="preload" href="/blog/assets/js/12.d8c9c1bd.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.573da17f.js"><link rel="prefetch" href="/blog/assets/js/11.5a02348c.js"><link rel="prefetch" href="/blog/assets/js/13.e09bb963.js"><link rel="prefetch" href="/blog/assets/js/14.d23ca837.js"><link rel="prefetch" href="/blog/assets/js/15.c4683e2a.js"><link rel="prefetch" href="/blog/assets/js/16.c660c97d.js"><link rel="prefetch" href="/blog/assets/js/17.49bf184a.js"><link rel="prefetch" href="/blog/assets/js/18.9be995ca.js"><link rel="prefetch" href="/blog/assets/js/19.df144b24.js"><link rel="prefetch" href="/blog/assets/js/20.5aad5a93.js"><link rel="prefetch" href="/blog/assets/js/21.262a03c1.js"><link rel="prefetch" href="/blog/assets/js/22.7fed5ac6.js"><link rel="prefetch" href="/blog/assets/js/23.6aa0be70.js"><link rel="prefetch" href="/blog/assets/js/24.09d96859.js"><link rel="prefetch" href="/blog/assets/js/25.418504a4.js"><link rel="prefetch" href="/blog/assets/js/26.f0584d72.js"><link rel="prefetch" href="/blog/assets/js/27.cd44913e.js"><link rel="prefetch" href="/blog/assets/js/28.4f5c209f.js"><link rel="prefetch" href="/blog/assets/js/29.2dcd5c40.js"><link rel="prefetch" href="/blog/assets/js/3.11e700f0.js"><link rel="prefetch" href="/blog/assets/js/30.d2e1f594.js"><link rel="prefetch" href="/blog/assets/js/31.7b1f9108.js"><link rel="prefetch" href="/blog/assets/js/32.f4856997.js"><link rel="prefetch" href="/blog/assets/js/33.f6007bb0.js"><link rel="prefetch" href="/blog/assets/js/34.974aeb16.js"><link rel="prefetch" href="/blog/assets/js/35.af78c18d.js"><link rel="prefetch" href="/blog/assets/js/36.0a0639ee.js"><link rel="prefetch" href="/blog/assets/js/37.3a26ab2f.js"><link rel="prefetch" href="/blog/assets/js/38.ba809f55.js"><link rel="prefetch" href="/blog/assets/js/39.fb48ae1b.js"><link rel="prefetch" href="/blog/assets/js/4.31720545.js"><link rel="prefetch" href="/blog/assets/js/40.639ac403.js"><link rel="prefetch" href="/blog/assets/js/41.182c195e.js"><link rel="prefetch" href="/blog/assets/js/42.bd60b723.js"><link rel="prefetch" href="/blog/assets/js/43.7f4ee63e.js"><link rel="prefetch" href="/blog/assets/js/44.1345cf6d.js"><link rel="prefetch" href="/blog/assets/js/45.f0b98685.js"><link rel="prefetch" href="/blog/assets/js/46.97e7267e.js"><link rel="prefetch" href="/blog/assets/js/47.2c6a6d63.js"><link rel="prefetch" href="/blog/assets/js/48.faebaa80.js"><link rel="prefetch" href="/blog/assets/js/49.49af56c0.js"><link rel="prefetch" href="/blog/assets/js/5.232758e0.js"><link rel="prefetch" href="/blog/assets/js/50.b6235237.js"><link rel="prefetch" href="/blog/assets/js/51.8bb71e61.js"><link rel="prefetch" href="/blog/assets/js/52.a8d8e7ae.js"><link rel="prefetch" href="/blog/assets/js/53.259ab2d4.js"><link rel="prefetch" href="/blog/assets/js/54.a1620682.js"><link rel="prefetch" href="/blog/assets/js/55.15b38884.js"><link rel="prefetch" href="/blog/assets/js/56.408630af.js"><link rel="prefetch" href="/blog/assets/js/57.b6ac7546.js"><link rel="prefetch" href="/blog/assets/js/58.82664ed4.js"><link rel="prefetch" href="/blog/assets/js/59.339098b4.js"><link rel="prefetch" href="/blog/assets/js/6.0bf13852.js"><link rel="prefetch" href="/blog/assets/js/60.56bec4a5.js"><link rel="prefetch" href="/blog/assets/js/61.1d5e0a93.js"><link rel="prefetch" href="/blog/assets/js/62.caa7d838.js"><link rel="prefetch" href="/blog/assets/js/63.b2935415.js"><link rel="prefetch" href="/blog/assets/js/64.27d92569.js"><link rel="prefetch" href="/blog/assets/js/65.f84cda40.js"><link rel="prefetch" href="/blog/assets/js/66.1585871d.js"><link rel="prefetch" href="/blog/assets/js/67.dd596334.js"><link rel="prefetch" href="/blog/assets/js/68.7f108fcc.js"><link rel="prefetch" href="/blog/assets/js/69.e67a606a.js"><link rel="prefetch" href="/blog/assets/js/7.1e456cb7.js"><link rel="prefetch" href="/blog/assets/js/70.7ca5af58.js"><link rel="prefetch" href="/blog/assets/js/71.9ec68011.js"><link rel="prefetch" href="/blog/assets/js/72.50a3a3b0.js"><link rel="prefetch" href="/blog/assets/js/73.e2564842.js"><link rel="prefetch" href="/blog/assets/js/74.b0c6fc38.js"><link rel="prefetch" href="/blog/assets/js/8.3c5dcc01.js"><link rel="prefetch" href="/blog/assets/js/9.33061631.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ee874cfe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" alt="欢迎回来 ！" class="logo"> <span class="site-name can-hide">欢迎回来 ！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/Python/zhihu/basis.html" class="sidebar-link">基础不牢 地动山摇</a></li><li><a href="/blog/Python/zhihu/confidenceInterval.html" class="sidebar-link">置信区间</a></li><li><a href="/blog/Python/zhihu/HypothesisTesting.html" class="sidebar-link">假设检验</a></li><li><a href="/blog/Python/zhihu/t1.html" class="sidebar-link">案例</a></li><li><a href="/blog/Python/zhihu/t3.html" class="sidebar-link">相关配对t检验</a></li><li><a href="/blog/Python/zhihu/t2.html" class="active sidebar-link">独立双样本t检验</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/t2.html#独立双样本t检验-与-单样本t检验有什么区别" class="sidebar-link">独立双样本T检验 与 单样本t检验有什么区别</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/t2.html#标准误差的计算" class="sidebar-link">标准误差的计算</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/t2.html#独立双样本t检验效应量的计算" class="sidebar-link">独立双样本T检验效应量的计算</a></li><li class="sidebar-sub-header"><a href="/blog/Python/zhihu/t2.html#独立双样本t检验code" class="sidebar-link">独立双样本T检验code</a></li></ul></li><li><a href="/blog/Python/zhihu/correlationAnalysis.html" class="sidebar-link">相关分析+Excel分析&amp;绘图</a></li><li><a href="/blog/Python/zhihu/introductionDataAnalysis.html" class="sidebar-link">描述统计分析</a></li><li><a href="/blog/Python/zhihu/DataAnalysis.html" class="sidebar-link">数据分析的基本过程</a></li><li><a href="/blog/Python/zhihu/MachineLearning.html" class="sidebar-link">机器学习 入门</a></li><li><a href="/blog/Python/zhihu/draw.html" class="sidebar-link">知乎教我python绘图</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="独立双样本t检验"><a href="#独立双样本t检验" class="header-anchor">#</a> 独立双样本t检验</h1> <p></p><div class="table-of-contents"><ul><li><a href="#独立双样本t检验">独立双样本t检验</a><ul><li><a href="#独立双样本t检验-与-单样本t检验有什么区别">独立双样本T检验 与 单样本t检验有什么区别</a></li><li><a href="#标准误差的计算">标准误差的计算</a></li><li><a href="#独立双样本t检验效应量的计算">独立双样本T检验效应量的计算</a></li><li><a href="#独立双样本t检验code">独立双样本T检验code</a></li></ul></li></ul></div><p></p> <p>这是两款键盘布局不一样的手机(A版本，B版本)，你作为公司的产品经理，想在正式发布产品之前知道，哪个键盘布局对用户体验更好呢？</p> <p>首先，我们需要设置目标，用来衡量各个版本的优劣，如果是电商网站，目标可以是点击率，注册率，页面停留时间等。</p> <p>在这个键盘布局案例里，如果一个键盘布局对用户打字时拼错产生的影响较小，那么这个布局是符合用户体验习惯的。所以我们将目标定为用户打字时拼错字产生的影响。</p> <p>有了目标以后，下一步就是采集数据。在这一部分，用户会随机分配到不同版本中，通过他们的交互行为会被直接检测，并收集起来作为以后分析的重要数据。</p> <p>我们随机抽取实验者，将实验者分成2组，每组25人，A组使用键盘布局A，B组使用键盘布局B。让他们在30秒内打出标准的20个单词文字消息，然后记录打错字的数量。</p> <p>我们将数据记录在Excel中，A列是使用键盘布局A打错字的数量，B列是使用键盘布局B打错字的数量。</p> <p>现在我们开始A/B测试</p> <p><img src="/blog/assets/img/jsjy9.2ccf5cba.png" alt=""></p> <h2 id="独立双样本t检验-与-单样本t检验有什么区别"><a href="#独立双样本t检验-与-单样本t检验有什么区别" class="header-anchor">#</a> 独立双样本T检验 与 单样本t检验有什么区别</h2> <ul><li>误差的计算不一样</li> <li>python函数不一样</li> <li>得到自由度的方式不一样，单样本 和 相关样本检验  直接从数据得到，独立双样本从计算中得到</li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#独立双样本t检验</span>
+t<span class="token punctuation">,</span>p_two<span class="token punctuation">,</span>df<span class="token operator">=</span>st<span class="token punctuation">.</span>ttest_ind<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>data<span class="token punctuation">[</span><span class="token string">'B'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        usevar<span class="token operator">=</span><span class="token string">'unequal'</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#单样本t检验</span>
+t<span class="token punctuation">,</span>p_two <span class="token operator">=</span>stats<span class="token punctuation">.</span>ttest_1samp<span class="token punctuation">(</span>dataSer<span class="token punctuation">,</span>pop_mean<span class="token punctuation">)</span>
+
+
+<span class="token comment">#相关样本检验</span>
+t<span class="token punctuation">,</span>p_two <span class="token operator">=</span> stats<span class="token punctuation">.</span>ttest_rel<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'一致'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>data<span class="token punctuation">[</span><span class="token string">'不一致'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="标准误差的计算"><a href="#标准误差的计算" class="header-anchor">#</a> 标准误差的计算</h2> <p><em>独立样本T检验的标准误差计算</em></p> <ul><li>s1:样本1的标准差</li> <li>s2:样本2的标准差</li> <li>n1样本1的数量，n2类似</li></ul> <p><img src="/blog/assets/img/jsjy11.c04bfe3d.jpg" alt=""></p> <p>code</p> <div class="language-python extra-class"><pre class="language-python"><code>se<span class="token operator">=</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span> np<span class="token punctuation">.</span>square<span class="token punctuation">(</span>a_std<span class="token punctuation">)</span><span class="token operator">/</span>a_n <span class="token operator">+</span> np<span class="token punctuation">.</span>square<span class="token punctuation">(</span>b_std<span class="token punctuation">)</span><span class="token operator">/</span>b_n <span class="token punctuation">)</span>
+</code></pre></div><h2 id="独立双样本t检验效应量的计算"><a href="#独立双样本t检验效应量的计算" class="header-anchor">#</a> 独立双样本T检验效应量的计算</h2> <p>s:标准差
+<img src="/blog/assets/img/jsjy13.801c933e.jpg" alt=""></p> <h2 id="独立双样本t检验code"><a href="#独立双样本t检验code" class="header-anchor">#</a> 独立双样本T检验code</h2> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#导入包</span>
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+
+<span class="token comment">#文件路径</span>
+fileNameStr<span class="token operator">=</span><span class="token string">'./键盘AB测试.xlsx'</span>
+<span class="token comment">#读取Ecxcel数据，统一先按照字符串读入，之后转换</span>
+data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_excel<span class="token punctuation">(</span>fileNameStr<span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token string">'object'</span><span class="token punctuation">)</span>
+<span class="token comment"># data = xls.parse('Sheet1',dtype='object')</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">#查看每一列的数据类型</span>
+data<span class="token punctuation">.</span>dtypes
+
+
+<span class="token comment">#描述统计信息</span>
+data<span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#字符串转换为数值（浮点型）</span>
+data<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token string">'int'</span><span class="token punctuation">)</span>
+data<span class="token punctuation">[</span><span class="token string">'B'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'B'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token string">'int'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'转换后的数据类型：\n'</span><span class="token punctuation">,</span>data<span class="token punctuation">.</span>dtypes<span class="token punctuation">)</span>
+
+
+<span class="token comment">#样本平均值</span>
+a_mean<span class="token operator">=</span>data<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
+b_mean<span class="token operator">=</span>data<span class="token punctuation">[</span><span class="token string">'B'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'A版本平均值='</span><span class="token punctuation">,</span>a_mean<span class="token punctuation">,</span><span class="token string">'单位：打错字数量'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'B版本平均值='</span><span class="token punctuation">,</span>b_mean<span class="token punctuation">,</span><span class="token string">'单位：打错字数量'</span><span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+这里要区别：数据集的标准差，和样本标准差
+数据集的标准差公式除以的是n，样本标准差公式除以的是n-1。
+样本标准差，用途是用样本标准差估计出总体标准差
+pandas计算的标准差，默认除以的是n-1，也就是计算出的是样本标准差
+pandas标准差官网地址：https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.std.html
+'''</span>
+<span class="token comment">#样本标准差</span>
+a_std<span class="token operator">=</span>data<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>std<span class="token punctuation">(</span><span class="token punctuation">)</span>
+b_std<span class="token operator">=</span>data<span class="token punctuation">[</span><span class="token string">'B'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>std<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'A版本样本大小25，样本标准差='</span><span class="token punctuation">,</span>a_std<span class="token punctuation">,</span><span class="token string">'单位：打错字数量'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'B版本样本大小25，样本标准差='</span><span class="token punctuation">,</span>b_std<span class="token punctuation">,</span><span class="token string">'单位：打错字数量'</span><span class="token punctuation">)</span>
+
+
+<span class="token comment"># 二、推论统计分析</span>
+<span class="token comment"># 推论统计分析报告中包括：假设检验，置信区间，效应量</span>
+
+<span class="token comment"># 1. 问题是什么？</span>
+<span class="token comment"># 零假设和备选假设</span>
+<span class="token comment"># 要研究的问题是：哪个键盘布局对用户体验更好呢？</span>
+<span class="token comment"># 根据这个问题我提出来下面两个互为相反的假设。</span>
+<span class="token comment"># 零假设：A版本和B版本没有差别，也就是A版本平均值=B版本平均值。</span>
+<span class="token comment"># 零假设总是表述为研究没有改变，没有效果，不起作用等，这里就是不满足标准。</span>
+<span class="token comment"># 备选假设：A版本和B版本有差别，也就是A版本平均值 不等于 B版本平均值。</span>
+
+<span class="token comment"># 检验类型</span>
+<span class="token comment"># 检验类型有很多种，因为这里有2组样本，是不同的人，所以选择双独立样本检验。</span>
+
+<span class="token comment"># 检验类型参考资料：</span>
+<span class="token comment"># http://support.minitab.com/zh-cn/minitab/17/topic-library/basic-statistics-and-graphs/hypothesis-tests/tests-of-means/types-of-t-tests/</span>
+
+
+<span class="token comment"># 抽样分布类型</span>
+<span class="token comment"># 我们还要判断抽样分布是哪种？因为抽样分布的类型，决定了后面计算p值的不同。</span>
+
+<span class="token comment"># 在我们这个AB测试案例中，样本大小是25（小于30），属于小样本。</span>
+<span class="token comment"># 那小样本的抽样分布是否满足t分布呢？</span>
+<span class="token comment"># 因为t分布还要求总体分布近似正态分布，但是总体分布我们是不知道的，我们可以通过样本数据集的分布来推断总体分布。</span>
+
+
+<span class="token triple-quoted-string string">'''
+直方图能够粗略估计数据密度，如果想给数据一个更精确的拟合曲线（专业术语叫：核密度估计kernel density estimate (KDE)），
+Seaborn 可以很方便的画出直方图和拟合曲线。
+查看数据集分布官网教程地址：https://seaborn.pydata.org/tutorial/distributions.html
+'''</span>
+<span class="token triple-quoted-string string">'''
+需要先在navigator中安装绘图包seaborn，
+
+如果还不知道如何安装包，可以看第1关的教程：https://www.zhihu.com/question/58033789/answer/254673663
+'''</span>
+<span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
+
+<span class="token comment">#查看数据集分布</span>
+sns<span class="token punctuation">.</span>distplot<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'A版本数据集分布'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+sns<span class="token punctuation">.</span>distplot<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'B'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'B版本数据集分布'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token comment"># 通过观察上面数据集分布图，两个样本数据集都近似正态分布，满足t分布的使用条件，所以抽样分布是t分布</span>
+
+
+
+<span class="token comment"># 检验方向</span>
+<span class="token comment"># 单尾检验（左尾，右尾），还是双尾检验？</span>
+<span class="token comment"># 因为备选假设是A版本和B版本有差别，也就是A版本平均值 不等于 B版本平均值，所以我们使用双尾检验。</span>
+
+<span class="token comment"># 总结</span>
+<span class="token comment"># 综合以上分析，本次假设检验是双独立样本t检验，双尾检验。</span>
+
+
+
+
+
+<span class="token comment"># 2.证据是什么？</span>
+<span class="token comment"># 在零假设成立前提下，得到样本平均值的概率p是多少？</span>
+
+<span class="token comment"># 独立双样本t检验，计算标准误差和自由度的公式想要深入了解的可以看这里：</span>
+<span class="token comment">#  https://en.wikipedia.org/wiki/Student%27s_t-test#Independent_two-sample_t-test</span>
+
+
+<span class="token triple-quoted-string string">'''
+Scipy的双独立样本t检验不能返回自由度，对于后面计算置信区间不方便。所以我们使用另一个统计包（statsmodels）
+
+需要先在navigator中安装统计包（statsmodels），
+如果还不知道如何安装包，可以看第1关的教程：https://www.zhihu.com/question/58033789/answer/254673663
+
+双独立（independent）样本t检验（ttest_ind）
+statsmodels.stats.weightstats.ttest_ind
+官网使用文档http://www.statsmodels.org/dev/generated/statsmodels.stats.weightstats.ttest_ind.html
+'''</span>
+<span class="token keyword">import</span> statsmodels<span class="token punctuation">.</span>stats<span class="token punctuation">.</span>weightstats <span class="token keyword">as</span> st
+
+<span class="token triple-quoted-string string">'''
+ttest_ind：独立双样本t检验，
+usevar='unequal'两个总体方差不一样
+返回的第1个值t是假设检验计算出的（t值），
+第2个p_two是双尾检验的p值
+第3个df是独立双样本的自由度
+'''</span>
+t<span class="token punctuation">,</span>p_two<span class="token punctuation">,</span>df<span class="token operator">=</span>st<span class="token punctuation">.</span>ttest_ind<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>data<span class="token punctuation">[</span><span class="token string">'B'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                        usevar<span class="token operator">=</span><span class="token string">'unequal'</span><span class="token punctuation">)</span>
+
+<span class="token comment">#自由度一般只保留整数部分</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'t='</span><span class="token punctuation">,</span>t<span class="token punctuation">,</span><span class="token string">'p_two='</span><span class="token punctuation">,</span>p_two<span class="token punctuation">,</span><span class="token string">',df='</span><span class="token punctuation">,</span>df<span class="token punctuation">)</span>
+
+
+
+<span class="token comment"># 3. 判断标准是什么？</span>
+<span class="token comment">#判断标准（显著水平）使用alpha=5%</span>
+alpha<span class="token operator">=</span><span class="token number">0.05</span>
+
+
+<span class="token comment"># 4. 做出结论</span>
+<span class="token triple-quoted-string string">'''
+在课程中《章节33：独立双样本检验第4步：做出结论》有误，修正为下面最新的代码和对应文档《课程错误更正.doc》：
+双尾判断条件：
+p_two（双尾检验的p值） &lt; 判断标准（显著水平）alpha 时，
+拒绝零假设，有统计显著，也就是有显著差异
+'''</span>
+<span class="token comment">#做出结论</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>p_two<span class="token operator">&lt;</span> alpha<span class="token punctuation">)</span><span class="token punctuation">:</span> 
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'拒绝零假设，有统计显著，也就是接受备选假设'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'备选假设：A版本和B版本有差异'</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span> 
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'接受零假设，没有统计显著'</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'零假设：A版本和B版本没有差异'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 独立双样本t(45)=-4.05 , p=.00019 (α=5%),双尾检验.(这里的t(45)，里面的45是前面计算出的t分布的自由度df）</span>
+<span class="token comment"># 统计上存在显著差异，拒绝零假设，从而验证A版本和B版本存在显著差异。</span>
+
+
+<span class="token comment"># 5.置信区间</span>
+<span class="token comment"># 图片里是APA格式的置信区间：平均值的置信区间，95% CI=(a,b)</span>
+
+<span class="token comment"># 在报告告置信区间时，提供了这样几个信息：</span>
+<span class="token comment"># 1）开头会说是哪种类型的置信区间 例如在单样本检验中是单个平均值的置信区间，但是在我们后面要讲到的相关样本检验是两个平均值之间差异的置信区间。 </span>
+<span class="token comment"># 在这个案例里，我们是单个平均值的置信区间</span>
+<span class="token comment"># 2）置信水平和区间的上下限。</span>
+<span class="token comment"># 置信水平（简写为CI），括号里写上下限。这里是955的置信水平</span>
+
+
+<span class="token triple-quoted-string string">'''
+1）置信水平对应的t值（t_ci）
+查t表格可以得到，95%的置信水平，自由度是n-1对应的t值
+2）计算上下限,
+置信区间上限a=样本平均值 - t_ci ×标准误差
+置信区间下限b=样本平均值 - t_ci ×标准误差
+'''</span>
+
+<span class="token triple-quoted-string string">'''
+95%的置信水平，自由度df对应的t值，可以查找t表格获取，
+也可以通过这个工具获取：https://www.graphpad.com/quickcalcs/statratio1/（利用这个工具获取t值，需要注意输入的概率值是1-95%=0.05）
+注意：课程中这里对应的下面t_ci值有误，以下面的值为准
+'''</span>
+t_ci<span class="token operator">=</span><span class="token number">2.0141</span>
+
+<span class="token comment">#样本大小n</span>
+a_n <span class="token operator">=</span> <span class="token number">25</span>
+b_n <span class="token operator">=</span> <span class="token number">25</span>
+
+
+<span class="token triple-quoted-string string">'''
+numpy.square 平方
+numpy.sqrt开方
+标准误差计算公式：
+https://en.wikipedia.org/wiki/Student%27s_t-test#Independent_two-sample_t-test
+'''</span>
+se<span class="token operator">=</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span> np<span class="token punctuation">.</span>square<span class="token punctuation">(</span>a_std<span class="token punctuation">)</span><span class="token operator">/</span>a_n <span class="token operator">+</span> np<span class="token punctuation">.</span>square<span class="token punctuation">(</span>b_std<span class="token punctuation">)</span><span class="token operator">/</span>b_n <span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">'''
+对于双独立样本检验
+置信区间的样本平均值=A版本平均值 - B版本平均值
+'''</span>
+sample_mean<span class="token operator">=</span>a_mean <span class="token operator">-</span> b_mean
+<span class="token comment">#置信区间上限</span>
+a<span class="token operator">=</span>sample_mean <span class="token operator">-</span> t_ci <span class="token operator">*</span> se
+<span class="token comment">#置信区间下限</span>
+b<span class="token operator">=</span>sample_mean <span class="token operator">+</span> t_ci <span class="token operator">*</span> se
+
+
+<span class="token comment"># 两个平均值差异的置信区间，95置信水平 CI=[-2.762316,-2.677684]</span>
+<span class="token comment"># 置信区间是-2.76,-2.68,平均下来，使用A键盘的错误数量要比B键盘的要少大约3到2个</span>
+
+
+
+<span class="token comment"># 6.效应量</span>
+<span class="token comment"># 为什么要给出效应量？</span>
+
+<span class="token comment"># 在判断某个调查研究的结果，是否有意义或者重要时，要考虑的另一项指标是效应量。效应量太小，意味着处理即使达到了显著水平，也缺乏实用价值。</span>
+
+<span class="token comment"># 所以，在假设检验中，我们给出了是否具有统计显著性，也要给出效应量，一起来判断研究结果是否有意义。</span>
+
+<span class="token comment"># 效应量报告格式：d=x.xx ，R2=.xx</span>
+
+<span class="token triple-quoted-string string">'''
+效应量：差异指标Cohen's d
+这里的标准差，因为是双独立样本，需要用合并标准差（pooled standard deviations）代替
+'''</span>
+<span class="token comment">#合并标准差</span>
+sp<span class="token operator">=</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span>a_n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span>np<span class="token punctuation">.</span>square<span class="token punctuation">(</span>a_std<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span>b_n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span> np<span class="token punctuation">.</span>square<span class="token punctuation">(</span>a_std<span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>a_n<span class="token operator">+</span>b_n<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">#效应量Cohen's d</span>
+d<span class="token operator">=</span><span class="token punctuation">(</span>a_mean <span class="token operator">-</span> b_mean<span class="token punctuation">)</span> <span class="token operator">/</span> sp
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'d='</span><span class="token punctuation">,</span>d<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 三、数据分析报告</span>
+<span class="token comment"># 1、描述统计分析</span>
+
+<span class="token comment"># A版本打错字数量 平均是5.08个，标准差是2.06个</span>
+
+<span class="token comment"># B版本打错字数量 平均是7.8个，标准差是2.65个</span>
+
+<span class="token comment"># 2、推论统计分析 1）假设检验 独立双样本t(45)=-4.05 , p=.00019 (α=5%) , 双尾检验</span>
+
+<span class="token comment"># 拒绝零假设，统计显著。</span>
+
+<span class="token comment"># 2）置信区间 两个平均值差值的置信区间， 95%置信水平 CI=-2.76,-2.68</span>
+
+<span class="token comment"># 3）效应量 d= - 1.32，效果显著</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/Python/zhihu/t3.html" class="prev">
+        相关配对t检验
+      </a></span> <span class="next"><a href="/blog/Python/zhihu/correlationAnalysis.html">
+        相关分析+Excel分析&amp;绘图
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.7a4660d2.js" defer></script><script src="/blog/assets/js/2.85e08d05.js" defer></script><script src="/blog/assets/js/12.d8c9c1bd.js" defer></script>
+  </body>
+</html>

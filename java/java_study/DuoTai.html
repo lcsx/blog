@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>多态 | 欢迎回来 ！</title>
+    <meta name="description" content="lcsx">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.ee874cfe.css" as="style"><link rel="preload" href="/blog/assets/js/app.7a4660d2.js" as="script"><link rel="preload" href="/blog/assets/js/2.85e08d05.js" as="script"><link rel="preload" href="/blog/assets/js/62.caa7d838.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.573da17f.js"><link rel="prefetch" href="/blog/assets/js/11.5a02348c.js"><link rel="prefetch" href="/blog/assets/js/12.d8c9c1bd.js"><link rel="prefetch" href="/blog/assets/js/13.e09bb963.js"><link rel="prefetch" href="/blog/assets/js/14.d23ca837.js"><link rel="prefetch" href="/blog/assets/js/15.c4683e2a.js"><link rel="prefetch" href="/blog/assets/js/16.c660c97d.js"><link rel="prefetch" href="/blog/assets/js/17.49bf184a.js"><link rel="prefetch" href="/blog/assets/js/18.9be995ca.js"><link rel="prefetch" href="/blog/assets/js/19.df144b24.js"><link rel="prefetch" href="/blog/assets/js/20.5aad5a93.js"><link rel="prefetch" href="/blog/assets/js/21.262a03c1.js"><link rel="prefetch" href="/blog/assets/js/22.7fed5ac6.js"><link rel="prefetch" href="/blog/assets/js/23.6aa0be70.js"><link rel="prefetch" href="/blog/assets/js/24.09d96859.js"><link rel="prefetch" href="/blog/assets/js/25.418504a4.js"><link rel="prefetch" href="/blog/assets/js/26.f0584d72.js"><link rel="prefetch" href="/blog/assets/js/27.cd44913e.js"><link rel="prefetch" href="/blog/assets/js/28.4f5c209f.js"><link rel="prefetch" href="/blog/assets/js/29.2dcd5c40.js"><link rel="prefetch" href="/blog/assets/js/3.11e700f0.js"><link rel="prefetch" href="/blog/assets/js/30.d2e1f594.js"><link rel="prefetch" href="/blog/assets/js/31.7b1f9108.js"><link rel="prefetch" href="/blog/assets/js/32.f4856997.js"><link rel="prefetch" href="/blog/assets/js/33.f6007bb0.js"><link rel="prefetch" href="/blog/assets/js/34.974aeb16.js"><link rel="prefetch" href="/blog/assets/js/35.af78c18d.js"><link rel="prefetch" href="/blog/assets/js/36.0a0639ee.js"><link rel="prefetch" href="/blog/assets/js/37.3a26ab2f.js"><link rel="prefetch" href="/blog/assets/js/38.ba809f55.js"><link rel="prefetch" href="/blog/assets/js/39.fb48ae1b.js"><link rel="prefetch" href="/blog/assets/js/4.31720545.js"><link rel="prefetch" href="/blog/assets/js/40.639ac403.js"><link rel="prefetch" href="/blog/assets/js/41.182c195e.js"><link rel="prefetch" href="/blog/assets/js/42.bd60b723.js"><link rel="prefetch" href="/blog/assets/js/43.7f4ee63e.js"><link rel="prefetch" href="/blog/assets/js/44.1345cf6d.js"><link rel="prefetch" href="/blog/assets/js/45.f0b98685.js"><link rel="prefetch" href="/blog/assets/js/46.97e7267e.js"><link rel="prefetch" href="/blog/assets/js/47.2c6a6d63.js"><link rel="prefetch" href="/blog/assets/js/48.faebaa80.js"><link rel="prefetch" href="/blog/assets/js/49.49af56c0.js"><link rel="prefetch" href="/blog/assets/js/5.232758e0.js"><link rel="prefetch" href="/blog/assets/js/50.b6235237.js"><link rel="prefetch" href="/blog/assets/js/51.8bb71e61.js"><link rel="prefetch" href="/blog/assets/js/52.a8d8e7ae.js"><link rel="prefetch" href="/blog/assets/js/53.259ab2d4.js"><link rel="prefetch" href="/blog/assets/js/54.a1620682.js"><link rel="prefetch" href="/blog/assets/js/55.15b38884.js"><link rel="prefetch" href="/blog/assets/js/56.408630af.js"><link rel="prefetch" href="/blog/assets/js/57.b6ac7546.js"><link rel="prefetch" href="/blog/assets/js/58.82664ed4.js"><link rel="prefetch" href="/blog/assets/js/59.339098b4.js"><link rel="prefetch" href="/blog/assets/js/6.0bf13852.js"><link rel="prefetch" href="/blog/assets/js/60.56bec4a5.js"><link rel="prefetch" href="/blog/assets/js/61.1d5e0a93.js"><link rel="prefetch" href="/blog/assets/js/63.b2935415.js"><link rel="prefetch" href="/blog/assets/js/64.27d92569.js"><link rel="prefetch" href="/blog/assets/js/65.f84cda40.js"><link rel="prefetch" href="/blog/assets/js/66.1585871d.js"><link rel="prefetch" href="/blog/assets/js/67.dd596334.js"><link rel="prefetch" href="/blog/assets/js/68.7f108fcc.js"><link rel="prefetch" href="/blog/assets/js/69.e67a606a.js"><link rel="prefetch" href="/blog/assets/js/7.1e456cb7.js"><link rel="prefetch" href="/blog/assets/js/70.7ca5af58.js"><link rel="prefetch" href="/blog/assets/js/71.9ec68011.js"><link rel="prefetch" href="/blog/assets/js/72.50a3a3b0.js"><link rel="prefetch" href="/blog/assets/js/73.e2564842.js"><link rel="prefetch" href="/blog/assets/js/74.b0c6fc38.js"><link rel="prefetch" href="/blog/assets/js/8.3c5dcc01.js"><link rel="prefetch" href="/blog/assets/js/9.33061631.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ee874cfe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" alt="欢迎回来 ！" class="logo"> <span class="site-name can-hide">欢迎回来 ！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/java/java_study/env.html" class="sidebar-link">Java环境搭建与基本语法</a></li><li><a href="/blog/java/java_study/OOP.html" class="sidebar-link">OOP面向对象</a></li><li><a href="/blog/java/java_study/Design.html" class="sidebar-link">设计模式</a></li><li><a href="/blog/java/java_study/DuoTai.html" class="active sidebar-link">多态</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/java/java_study/DuoTai.html#_1-多态" class="sidebar-link">1 多态</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/DuoTai.html#接口没有构造方法。接口不饿能包含成员变量，除了static和final变量" class="sidebar-link">接口没有构造方法。接口不饿能包含成员变量，除了static和final变量</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/DuoTai.html#当某个空调实现了-节能-接口后，这个空调就具备了节能的功能，那么我们也可以不用空调类的引用指向空调对象，我们可以直接使用一个-节能-接口类型引用的-遥控器-去指向-空调-，虽然这个-遥控器-上面只有一个按键，只有一个-变频-的方法，但是-遥控器-所指向的空调是实现了-节能-这个接口的，是有-变频-方法的实现的，我们用这个只有一个-变频-方法的遥控器去命令空调调用-变频-方法，也是行得通的" class="sidebar-link">当某个空调实现了“节能”接口后，这个空调就具备了节能的功能，那么我们也可以不用空调类的引用指向空调对象，
+我们可以直接使用一个“节能”接口类型引用的“遥控器”去指向“空调”，虽然这个“遥控器”上面只有一个按键，只有一个“变频”的方法，
+但是“遥控器”所指向的空调是实现了“节能”这个接口的，是有“变频”方法的实现的，我们用这个只有一个“变频”方法的遥控器去命令空调调用“变频”方法，也是行得通的</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/DuoTai.html#_2-接口" class="sidebar-link">2 接口</a></li></ul></li><li><a href="/blog/java/java_study/Neibulei.html" class="sidebar-link">内部类</a></li><li><a href="/blog/java/java_study/Throwable.html" class="sidebar-link">异常</a></li><li><a href="/blog/java/java_study/Wrapper.html" class="sidebar-link">包装类</a></li><li><a href="/blog/java/java_study/String.html" class="sidebar-link">字符串处理类</a></li><li><a href="/blog/java/java_study/Collection.html" class="sidebar-link">集合</a></li><li><a href="/blog/java/java_study/Generics.html" class="sidebar-link">泛型</a></li><li><a href="/blog/java/java_study/XC.html" class="sidebar-link">多线程</a></li><li><a href="/blog/java/java_study/IO.html" class="sidebar-link">输入输出流</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="多态"><a href="#多态" class="header-anchor">#</a> 多态</h1> <p></p><div class="table-of-contents"><ul><li><a href="#多态">多态</a><ul><li><a href="#_1-多态">1 多态</a><ul><li><a href="#_1-1-多态的实现方式">1.1 多态的实现方式</a><ul><li><a href="#_1-1-1-重写">1.1.1 重写</a></li><li><a href="#_1-1-2-接口">1.1.2 接口</a></li></ul></li></ul></li><li><a href="#接口没有构造方法。接口不饿能包含成员变量，除了static和final变量">接口没有构造方法。接口不饿能包含成员变量，除了static和final变量</a></li><li><a href="#当某个空调实现了-节能-接口后，这个空调就具备了节能的功能，那么我们也可以不用空调类的引用指向空调对象，我们可以直接使用一个-节能-接口类型引用的-遥控器-去指向-空调-，虽然这个-遥控器-上面只有一个按键，只有一个-变频-的方法，但是-遥控器-所指向的空调是实现了-节能-这个接口的，是有-变频-方法的实现的，我们用这个只有一个-变频-方法的遥控器去命令空调调用-变频-方法，也是行得通的">当某个空调实现了“节能”接口后，这个空调就具备了节能的功能，那么我们也可以不用空调类的引用指向空调对象，
+我们可以直接使用一个“节能”接口类型引用的“遥控器”去指向“空调”，虽然这个“遥控器”上面只有一个按键，只有一个“变频”的方法，
+但是“遥控器”所指向的空调是实现了“节能”这个接口的，是有“变频”方法的实现的，我们用这个只有一个“变频”方法的遥控器去命令空调调用“变频”方法，也是行得通的</a></li><li><a href="#_2-接口">2 接口</a><ul><li><a href="#_2-1-接口的声明">2.1 接口的声明</a></li><li><a href="#_2-2-接口的实现">2.2 接口的实现</a></li><li><a href="#_2-3-不想在当前类中实现全部接口的方法">2.3 不想在当前类中实现全部接口的方法</a></li><li><a href="#_2-4-接口中的常量">2.4 接口中的常量</a><ul><li><a href="#_2-4-1-常量的声明">2.4.1 常量的声明</a></li><li><a href="#_2-4-2-接口-与-实现类-的常量重名">2.4.2 接口 与 实现类 的常量重名</a></li></ul></li><li><a href="#_2-5-接口中的defalut-与-static">2.5 接口中的defalut 与 static</a><ul><li><a href="#_2-5-1-defalut">2.5.1 defalut</a></li><li><a href="#_2-5-2-多接口中方法重名解决">2.5.2 多接口中方法重名解决</a></li><li><a href="#_2-6-接口的继承">2.6 接口的继承</a></li></ul></li></ul></li></ul></li></ul></div><p></p> <h2 id="_1-多态"><a href="#_1-多态" class="header-anchor">#</a> 1 多态</h2> <p>多态（英语：polymorphism）</p> <p>多态是同一个行为具有多个不同表现形式或形态的能力。</p> <p>多态就是同一个接口，使用不同的实例而执行不同操作</p> <blockquote><p>多态的必要条件</p></blockquote> <ol><li>继承;</li> <li>重写;</li> <li>父类引用指向子类对象.</li></ol> <blockquote><p>多态的优点</p></blockquote> <ol><li>消除类型之间的耦合关系</li> <li>可替换性</li> <li>可扩充性</li> <li>接口性</li> <li>灵活性</li> <li>简化性</li></ol> <h3 id="_1-1-多态的实现方式"><a href="#_1-1-多态的实现方式" class="header-anchor">#</a> 1.1 多态的实现方式</h3> <ol><li>重写</li> <li>接口</li> <li>抽象类和抽象方法</li></ol> <h4 id="_1-1-1-重写"><a href="#_1-1-1-重写" class="header-anchor">#</a> 1.1.1 重写</h4> <p>3 什么是引用指向xxx</p> <div class="language- extra-class"><pre class="language-text"><code>Salary s = new Salary(&quot;员工 A&quot;, &quot;北京&quot;, 3, 3600.00);
+Employee e = new Salary(&quot;员工 B&quot;, &quot;上海&quot;, 2, 2400.00);
+
+//e 是 Employee 的引用
+// Salary 引用 s，另一个使用 Employee 引用 e
+</code></pre></div><p>父类指向子类就是</p> <div class="language- extra-class"><pre class="language-text"><code>//public class B extends A{}
+
+public class test {
+    public static void main(String[] args) {
+        A a = new B();     //父类指向子类
+        B b = new B();
+        a.gg();            //父类的引用调用的是子类的方法
+        a.g1();
+        b.gg();
+    }
+}
+</code></pre></div><h4 id="_1-1-2-接口"><a href="#_1-1-2-接口" class="header-anchor">#</a> 1.1.2 接口</h4> <blockquote><p>问题引出
+Java中只支持单继承，</p></blockquote> <ol><li>那如何实现一个类型中兼容多种类型特征呢？</li> <li>多种不同类型，如何有相同的特征呢？</li></ol> <p>可以通过接口实现</p> <hr> <p>接口（interface）是一个抽象类型，是抽象方法的集合，不是类。</p> <p>接口通常已interface来声明。一个类通过继承接口的方式来继承接口的抽象方法。除非实现接口的类是抽象类，否则该类要定义接口中的所有方法。</p> <p>接口无法被实化，因为接口中的方法都是抽象的，是没有方法体的</p> <h2 id="接口没有构造方法。接口不饿能包含成员变量，除了static和final变量"><a href="#接口没有构造方法。接口不饿能包含成员变量，除了static和final变量" class="header-anchor">#</a> 接口没有构造方法。接口不饿能包含成员变量，除了static和final变量</h2> <blockquote><p>接口的特性</p></blockquote> <ol><li>java中没有方法体的方法需要abstract声明，但接口是隐式抽象的，当声明一个接口的时候，不必使用abstract关键字。</li> <li>接口中的方法都是公有的public。</li> <li>接口不关心类的内部数据，也不关心类里的实现方法的细节，ta之规定这些类里必须提供某些方法</li> <li>接口里的方法都需要被实现。若是当前实现类，不完全实现接口的方法，可以将当前实现类设为抽象类abstract，然后由该类的子类来实现未实现的方法。谁类继承，谁来实现。</li> <li>接口抽象方法不能带有主体，没有{}</li> <li>接口不能实例化，new XX();</li></ol> <hr> <blockquote><p>接口的通俗理解“空调”——“遥控器”
+可以把“节能”作为一种标准，或者说节能就是一个“接口”，这个接口中有一个方法，叫做变频方法，任何空调，如果要称得上叫做节能空调的话，那么必须实现“节能”这个接口，实现“节能”这个接口，也就必须实现“节能”接口中规定实现的“变频”方法，
+这样才算是真正的实现了“节能”这个接口，实现了“节能”这个功能。</p></blockquote> <h2 id="当某个空调实现了-节能-接口后，这个空调就具备了节能的功能，那么我们也可以不用空调类的引用指向空调对象，我们可以直接使用一个-节能-接口类型引用的-遥控器-去指向-空调-，虽然这个-遥控器-上面只有一个按键，只有一个-变频-的方法，但是-遥控器-所指向的空调是实现了-节能-这个接口的，是有-变频-方法的实现的，我们用这个只有一个-变频-方法的遥控器去命令空调调用-变频-方法，也是行得通的"><a href="#当某个空调实现了-节能-接口后，这个空调就具备了节能的功能，那么我们也可以不用空调类的引用指向空调对象，我们可以直接使用一个-节能-接口类型引用的-遥控器-去指向-空调-，虽然这个-遥控器-上面只有一个按键，只有一个-变频-的方法，但是-遥控器-所指向的空调是实现了-节能-这个接口的，是有-变频-方法的实现的，我们用这个只有一个-变频-方法的遥控器去命令空调调用-变频-方法，也是行得通的" class="header-anchor">#</a> 当某个空调实现了“节能”接口后，这个空调就具备了节能的功能，那么我们也可以不用空调类的引用指向空调对象，
+我们可以直接使用一个“节能”接口类型引用的“遥控器”去指向“空调”，虽然这个“遥控器”上面只有一个按键，只有一个“变频”的方法，
+但是“遥控器”所指向的空调是实现了“节能”这个接口的，是有“变频”方法的实现的，我们用这个只有一个“变频”方法的遥控器去命令空调调用“变频”方法，也是行得通的</h2> <h2 id="_2-接口"><a href="#_2-接口" class="header-anchor">#</a> 2 接口</h2> <h3 id="_2-1-接口的声明"><a href="#_2-1-接口的声明" class="header-anchor">#</a> 2.1 接口的声明</h3> <p>通常文件名以 &quot;I&quot;开头；</p> <p>java中没有方法体的方法需要abstract声明，但接口中抽象方法可以不写abstract</p> <div class="language- extra-class"><pre class="language-text"><code>[可见度] interface 接口名称 [extends 其他的接口名] {
+        // 声明变量
+        // 抽象方法
+}
+//==============
+package com.lcs.tel;
+
+public abstract interface Usb {
+    //接口中抽象方法可以不写abstract
+    public void read();
+    //写全是
+    //public abstract void read();
+
+}
+
+
+</code></pre></div><h3 id="_2-2-接口的实现"><a href="#_2-2-接口的实现" class="header-anchor">#</a> 2.2 接口的实现</h3> <p>当类实现接口的时候，类要实现接口中所有的方法。否则，类必须声明为抽象的类。</p> <p>类使用implements关键字实现接口。在类声明中，Implements关键字放在class声明后面。</p> <p>一个接口能继承另一个接口，和类之间的继承方式比较相似。接口的继承使用extends关键字，子接口继承父接口的方法。</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public abstract interface Usb {
+    //接口中抽象方法可以不写abstract
+    public void read();
+    //写全是
+    //public abstract void read();
+
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>// ...implements 接口名称[, 其他接口名称, 其他接口名称..., ...] ...
+//一个接口能继承另一个接口，和类之间的继承方式比较相似。接口的继承使用extends关键字，子接口继承父接口的方法。
+// 接口的多继承
+// public interface Hockey extends Sports, Event{}
+//============================
+import com.lcs.tel.Iphoto;
+import com.lcs.tel.Usb;
+//A类实现Usb接口
+public class A implements Usb, Iphoto {
+    @Override
+    public void read(){
+        System.out.println(&quot;usb a&quot;);
+    }
+
+    @Override
+    public void takePhoto(){
+        System.out.println(&quot;paizhao&quot;);
+    }
+}
+
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import com.lcs.tel.Usb;
+
+public class test {
+    public static void main(String[] args) {
+        A a = new A();//A类指向实现类
+        Usb usb1 = new A();//接口指向实现类，虽然指向A类，但ta没有A类其他的方法，只有接口里的方法
+    }
+}
+</code></pre></div><hr> <h3 id="_2-3-不想在当前类中实现全部接口的方法"><a href="#_2-3-不想在当前类中实现全部接口的方法" class="header-anchor">#</a> 2.3 不想在当前类中实现全部接口的方法</h3> <p>接口</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public interface Inet {
+    public void get1();
+    public void get2();
+}
+</code></pre></div><hr> <p>abstract，使为抽象类，get2()方法为实现</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+// 如果在当前类中不想实现Inet全部的方法，即只实现部分Inet的方法，需要将当前类调整为 抽象类，+ abstract
+public abstract class B implements Inet{
+    private String name;
+    private int age;
+
+    @Override
+    public void get1() { }
+
+    public B(String name,int age){
+        this.name = name;
+        this.age = age;
+    }
+    public void showInfo(){
+        System.out.println(&quot;名字：&quot;+this.name+&quot;\n年龄：&quot;+this.age);
+    }
+}
+</code></pre></div><hr> <p>子类实现接口剩下的方法</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public class C extends B{
+    public C(String name,int age){
+        super(name,age);
+    }
+
+    @Override
+    public void get2() { }
+}
+</code></pre></div><hr> <p>测试</p> <div class="language- extra-class"><pre class="language-text"><code>import com.lcs.tel.B;
+import com.lcs.tel.C;
+
+public class test {
+    public static void main(String[] args) {
+        C c1 = new C(&quot;lcs&quot;,18);
+
+        // 多态，父类指向 子类实例
+        B b1 = new C(&quot;lcs1&quot;,22);
+
+        c1.showInfo();
+
+    }
+}
+</code></pre></div><hr> <h3 id="_2-4-接口中的常量"><a href="#_2-4-接口中的常量" class="header-anchor">#</a> 2.4 接口中的常量</h3> <h4 id="_2-4-1-常量的声明"><a href="#_2-4-1-常量的声明" class="header-anchor">#</a> 2.4.1 常量的声明</h4> <div class="language- extra-class"><pre class="language-text"><code>public static final PI = 3.14;
+</code></pre></div><p>在接口中可以省略，默认是public static final</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public interface Inet {
+    public void get1();
+    public void get2();
+    
+    int TEMP = 20;
+}
+
+// 调用： 类实 例.TEMP
+</code></pre></div><hr> <h4 id="_2-4-2-接口-与-实现类-的常量重名"><a href="#_2-4-2-接口-与-实现类-的常量重名" class="header-anchor">#</a> 2.4.2 接口 与 实现类 的常量重名</h4> <div class="language- extra-class"><pre class="language-text"><code>import com.lcs.tel.B;
+import com.lcs.tel.C;
+import com.lcs.tel.Inet;
+
+public class test {
+    public static void main(String[] args) {
+        // 多态，父类指向 子类实例
+        B b1 = new C(&quot;lcs1&quot;,22);
+        C c1 = new C(&quot;lcs666&quot;,22);
+
+        System.out.println(b1.TEMP);    // B类中的temp值
+        System.out.println(Inet.TEMP);  //inter中的temp值
+        System.out.println(c1.TEMP);    //c中的temp值
+    }
+}
+</code></pre></div><hr> <h3 id="_2-5-接口中的defalut-与-static"><a href="#_2-5-接口中的defalut-与-static" class="header-anchor">#</a> 2.5 接口中的defalut 与 static</h3> <h4 id="_2-5-1-defalut"><a href="#_2-5-1-defalut" class="header-anchor">#</a> 2.5.1 defalut</h4> <p>接口里的方法是必须要要实现的，你不想实现接口方法，但你由不得不实现这个方法。</p> <p>java1.8中提供一个 默认实现 方式，不想改写接口的方法时。</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public interface Inet {
+    public void get1();
+
+    //default 是由方法体的
+    default void connection(){
+        System.out.println(&quot;接口的默认连接&quot;);
+    }
+
+    static void stop(){
+        System.out.println(&quot;接口的静态方法&quot;);
+    }
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public class C implements Inet{
+    @Override
+    public void get1() { }
+
+    @Override
+    public void connection(){
+        Inet.super.connection(); //调用接口的默认方法
+    }
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import com.lcs.tel.C;
+import com.lcs.tel.Inet;
+
+public class test {
+    public static void main(String[] args) {
+        C c1 = new C();
+        c1.connection();
+        Inet.stop();
+    }
+}
+</code></pre></div><hr> <h4 id="_2-5-2-多接口中方法重名解决"><a href="#_2-5-2-多接口中方法重名解决" class="header-anchor">#</a> 2.5.2 多接口中方法重名解决</h4> <h5 id="_2-5-2-1-接口与接口间重名"><a href="#_2-5-2-1-接口与接口间重名" class="header-anchor">#</a> 2.5.2.1 接口与接口间重名</h5> <p>接口中有重名方法，在实现类中也声明一个同名的方法即可。</p> <h5 id="_2-5-2-2-接口与接口、父类方法重名"><a href="#_2-5-2-2-接口与接口、父类方法重名" class="header-anchor">#</a> 2.5.2.2 接口与接口、父类方法重名</h5> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public interface Inet {
+    default void connection(){
+        System.out.println(&quot;接口的默认连接&quot;);
+    }
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public interface Iphoto {
+    default void connection(){
+        System.out.println(&quot;iphoto接口的默认连接&quot;);
+    }
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public class B {
+    public void connection(){
+        System.out.println(&quot;B中的connection&quot;);
+    }
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>package com.lcs.tel;
+
+public class C extends B implements Inet,Iphoto{
+
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import com.lcs.tel.C;
+
+
+public class test {
+    public static void main(String[] args) {
+        C c1 = new C();
+        c1.connection(); //B中的connection
+    }
+}
+</code></pre></div><hr> <h5 id="_2-5-3-接口变量与父类变量重名"><a href="#_2-5-3-接口变量与父类变量重名" class="header-anchor">#</a> 2.5.3 接口变量与父类变量重名</h5> <p>接口方法与实现类的父类方法同名，实现类中没有该方法，则调用的是父类的方法。但是，对于接口变量与父类变量同名时，需要在实现类声明同名变量</p> <div class="language- extra-class"><pre class="language-text"><code>interface One{
+    final int TEMP = 10;
+    default void connection(){
+        System.out.println(&quot;接口的默认连接&quot;);
+    }
+}
+
+interface Two{
+    static int TEMP = 20;
+    void connection();
+}
+
+class B{
+    public static final int TEMP = 30;
+    public void connection(){
+        System.out.println(&quot;B中的connection&quot;);
+    }
+}
+public class test extends B implements One,Two{
+    public int TEMP = 40;
+    public static int LCS = 50;
+    public void show1(){
+        System.out.println(TEMP);
+    }
+    public static void main(String[] args) {
+
+        test t1 = new test();
+        t1.connection();  //B中的connection
+        t1.run();
+
+        One o1 = new test();
+        o1.connection();  //B中的connection
+
+        /*
+        * o1.run();  // One指向子类实例，但只有接口定义的方法，调用的是实现类或实现类的父类的方法。没有子类的其他方法。
+        * */
+
+        //One o2 = new B();  //报错  不兼容的类型: B无法转换为One
+
+        Two two1 = new test();
+        two1.connection();  //B中的connection
+
+        /*
+        * 接口方法与实现类的父类方法同名，实现类中没有该方法，则调用的是父类的方法。但是，对于接口变量与父类变量同名时，需要在实现类声明同名变量
+        * System.out.println(t1.TEMP);  //对TEMP的引用不明确,B 中的变量 TEMP 和 One 中的变量 TEMP 都匹配
+        * 解决 实现类中声明同名变量
+        */
+
+
+        //System.out.println(TEMP); //无法从静态上下文中引用非静态 变量 TEMP
+        //转成静态变量即可引用
+        System.out.println(LCS);  //50
+    }
+
+    public void run(){}
+}
+</code></pre></div><hr> <h4 id="_2-6-接口的继承"><a href="#_2-6-接口的继承" class="header-anchor">#</a> 2.6 接口的继承</h4> <p>java类是单继承的，但接口可以多继承。但实现类要实现接口的所有方法。</p> <p>当前类不想完全实现接口的方法，需要转为抽象类。</p> <p>当子接口的多个父接口有重名抽象方法，需要在子接口声明那个接口</p> <div class="language- extra-class"><pre class="language-text"><code>//写在一个文件里
+
+interface IFather{
+    default void connection(){
+        System.out.println(&quot;IFather中的connection&quot;);
+    }
+}
+//public interface IFather{
+//    default void connection(){
+//        System.out.println(&quot;IFather中的connection&quot;);
+//    }
+//}
+// 写在一个文件里， interface前不加 public
+// 因为，类IFather是公共的, 应在名为 IFather.java 的文件中声明
+
+interface IFather2{
+    default void connection(){
+        System.out.println(&quot;IFather2中的connection&quot;);
+    }
+}
+
+interface ISon extends IFather2{
+    void run();
+    default void connection(){
+        System.out.println(&quot;ISon中的connection&quot;);
+    }
+}
+
+public class test implements ISon{
+    public void run(){}
+    public static void main(String[] args) {
+        test t1 = new test();
+        t1.connection(); //实现类中未重写connection ，输出的是 ISon中的connection
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/java/java_study/Design.html" class="prev">
+        设计模式
+      </a></span> <span class="next"><a href="/blog/java/java_study/Neibulei.html">
+        内部类
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.7a4660d2.js" defer></script><script src="/blog/assets/js/2.85e08d05.js" defer></script><script src="/blog/assets/js/62.caa7d838.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>字符串处理类 | 欢迎回来 ！</title>
+    <meta name="description" content="lcsx">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.ee874cfe.css" as="style"><link rel="preload" href="/blog/assets/js/app.7a4660d2.js" as="script"><link rel="preload" href="/blog/assets/js/2.85e08d05.js" as="script"><link rel="preload" href="/blog/assets/js/22.7fed5ac6.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.573da17f.js"><link rel="prefetch" href="/blog/assets/js/11.5a02348c.js"><link rel="prefetch" href="/blog/assets/js/12.d8c9c1bd.js"><link rel="prefetch" href="/blog/assets/js/13.e09bb963.js"><link rel="prefetch" href="/blog/assets/js/14.d23ca837.js"><link rel="prefetch" href="/blog/assets/js/15.c4683e2a.js"><link rel="prefetch" href="/blog/assets/js/16.c660c97d.js"><link rel="prefetch" href="/blog/assets/js/17.49bf184a.js"><link rel="prefetch" href="/blog/assets/js/18.9be995ca.js"><link rel="prefetch" href="/blog/assets/js/19.df144b24.js"><link rel="prefetch" href="/blog/assets/js/20.5aad5a93.js"><link rel="prefetch" href="/blog/assets/js/21.262a03c1.js"><link rel="prefetch" href="/blog/assets/js/23.6aa0be70.js"><link rel="prefetch" href="/blog/assets/js/24.09d96859.js"><link rel="prefetch" href="/blog/assets/js/25.418504a4.js"><link rel="prefetch" href="/blog/assets/js/26.f0584d72.js"><link rel="prefetch" href="/blog/assets/js/27.cd44913e.js"><link rel="prefetch" href="/blog/assets/js/28.4f5c209f.js"><link rel="prefetch" href="/blog/assets/js/29.2dcd5c40.js"><link rel="prefetch" href="/blog/assets/js/3.11e700f0.js"><link rel="prefetch" href="/blog/assets/js/30.d2e1f594.js"><link rel="prefetch" href="/blog/assets/js/31.7b1f9108.js"><link rel="prefetch" href="/blog/assets/js/32.f4856997.js"><link rel="prefetch" href="/blog/assets/js/33.f6007bb0.js"><link rel="prefetch" href="/blog/assets/js/34.974aeb16.js"><link rel="prefetch" href="/blog/assets/js/35.af78c18d.js"><link rel="prefetch" href="/blog/assets/js/36.0a0639ee.js"><link rel="prefetch" href="/blog/assets/js/37.3a26ab2f.js"><link rel="prefetch" href="/blog/assets/js/38.ba809f55.js"><link rel="prefetch" href="/blog/assets/js/39.fb48ae1b.js"><link rel="prefetch" href="/blog/assets/js/4.31720545.js"><link rel="prefetch" href="/blog/assets/js/40.639ac403.js"><link rel="prefetch" href="/blog/assets/js/41.182c195e.js"><link rel="prefetch" href="/blog/assets/js/42.bd60b723.js"><link rel="prefetch" href="/blog/assets/js/43.7f4ee63e.js"><link rel="prefetch" href="/blog/assets/js/44.1345cf6d.js"><link rel="prefetch" href="/blog/assets/js/45.f0b98685.js"><link rel="prefetch" href="/blog/assets/js/46.97e7267e.js"><link rel="prefetch" href="/blog/assets/js/47.2c6a6d63.js"><link rel="prefetch" href="/blog/assets/js/48.faebaa80.js"><link rel="prefetch" href="/blog/assets/js/49.49af56c0.js"><link rel="prefetch" href="/blog/assets/js/5.232758e0.js"><link rel="prefetch" href="/blog/assets/js/50.b6235237.js"><link rel="prefetch" href="/blog/assets/js/51.8bb71e61.js"><link rel="prefetch" href="/blog/assets/js/52.a8d8e7ae.js"><link rel="prefetch" href="/blog/assets/js/53.259ab2d4.js"><link rel="prefetch" href="/blog/assets/js/54.a1620682.js"><link rel="prefetch" href="/blog/assets/js/55.15b38884.js"><link rel="prefetch" href="/blog/assets/js/56.408630af.js"><link rel="prefetch" href="/blog/assets/js/57.b6ac7546.js"><link rel="prefetch" href="/blog/assets/js/58.82664ed4.js"><link rel="prefetch" href="/blog/assets/js/59.339098b4.js"><link rel="prefetch" href="/blog/assets/js/6.0bf13852.js"><link rel="prefetch" href="/blog/assets/js/60.56bec4a5.js"><link rel="prefetch" href="/blog/assets/js/61.1d5e0a93.js"><link rel="prefetch" href="/blog/assets/js/62.caa7d838.js"><link rel="prefetch" href="/blog/assets/js/63.b2935415.js"><link rel="prefetch" href="/blog/assets/js/64.27d92569.js"><link rel="prefetch" href="/blog/assets/js/65.f84cda40.js"><link rel="prefetch" href="/blog/assets/js/66.1585871d.js"><link rel="prefetch" href="/blog/assets/js/67.dd596334.js"><link rel="prefetch" href="/blog/assets/js/68.7f108fcc.js"><link rel="prefetch" href="/blog/assets/js/69.e67a606a.js"><link rel="prefetch" href="/blog/assets/js/7.1e456cb7.js"><link rel="prefetch" href="/blog/assets/js/70.7ca5af58.js"><link rel="prefetch" href="/blog/assets/js/71.9ec68011.js"><link rel="prefetch" href="/blog/assets/js/72.50a3a3b0.js"><link rel="prefetch" href="/blog/assets/js/73.e2564842.js"><link rel="prefetch" href="/blog/assets/js/74.b0c6fc38.js"><link rel="prefetch" href="/blog/assets/js/8.3c5dcc01.js"><link rel="prefetch" href="/blog/assets/js/9.33061631.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ee874cfe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" alt="欢迎回来 ！" class="logo"> <span class="site-name can-hide">欢迎回来 ！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/java/java_study/env.html" class="sidebar-link">Java环境搭建与基本语法</a></li><li><a href="/blog/java/java_study/OOP.html" class="sidebar-link">OOP面向对象</a></li><li><a href="/blog/java/java_study/Design.html" class="sidebar-link">设计模式</a></li><li><a href="/blog/java/java_study/DuoTai.html" class="sidebar-link">多态</a></li><li><a href="/blog/java/java_study/Neibulei.html" class="sidebar-link">内部类</a></li><li><a href="/blog/java/java_study/Throwable.html" class="sidebar-link">异常</a></li><li><a href="/blog/java/java_study/Wrapper.html" class="sidebar-link">包装类</a></li><li><a href="/blog/java/java_study/String.html" class="active sidebar-link">字符串处理类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/java/java_study/String.html#_1-创建string对象" class="sidebar-link">1 创建String对象</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/String.html#_2-string对象常用方法" class="sidebar-link">2 String对象常用方法</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/String.html#_3-和-equals方法的区别" class="sidebar-link">3 == 和 equals方法的区别</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/String.html#_4-string的不可变性" class="sidebar-link">4 String的不可变性</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/String.html#_5-字符串stringbuilder" class="sidebar-link">5 字符串StringBuilder</a></li></ul></li><li><a href="/blog/java/java_study/Collection.html" class="sidebar-link">集合</a></li><li><a href="/blog/java/java_study/Generics.html" class="sidebar-link">泛型</a></li><li><a href="/blog/java/java_study/XC.html" class="sidebar-link">多线程</a></li><li><a href="/blog/java/java_study/IO.html" class="sidebar-link">输入输出流</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="字符串处理类"><a href="#字符串处理类" class="header-anchor">#</a> 字符串处理类</h1> <p>java里string是类的对象
+</p><div class="table-of-contents"><ul><li><a href="#字符串处理类">字符串处理类</a><ul><li><a href="#_1-创建string对象">1 创建String对象</a></li><li><a href="#_2-string对象常用方法">2 String对象常用方法</a><ul><li><a href="#_2-1-字符串与byte数组间的转换">2.1 字符串与byte数组间的转换</a></li></ul></li><li><a href="#_3-和-equals方法的区别">3 == 和 equals方法的区别</a></li><li><a href="#_4-string的不可变性">4 String的不可变性</a></li><li><a href="#_5-字符串stringbuilder">5 字符串StringBuilder</a></li></ul></li></ul></div><p></p> <h2 id="_1-创建string对象"><a href="#_1-创建string对象" class="header-anchor">#</a> 1 创建String对象</h2> <div class="language- extra-class"><pre class="language-text"><code>String s1 = &quot;lcs&quot;;
+String s2 = new String();
+String s3 = new String(&quot;lcs&quot;);
+</code></pre></div><hr> <h2 id="_2-string对象常用方法"><a href="#_2-string对象常用方法" class="header-anchor">#</a> 2 String对象常用方法</h2> <p><img src="/blog/assets/img/string1.8f4c19e6.jpg" alt="String对象常用方法"></p> <p>(输出，输入)</p> <h3 id="_2-1-字符串与byte数组间的转换"><a href="#_2-1-字符串与byte数组间的转换" class="header-anchor">#</a> 2.1 字符串与byte数组间的转换</h3> <p>网络传输数据是通过二进制字节进行，接受数据需要将byte转为字符串。</p> <div class="language- extra-class"><pre class="language-text"><code>import imooc.lcs.test.HException;
+import sun.nio.cs.ext.GBK;
+
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
+
+public class Test1 {
+    public static void main(String[] args) throws UnsupportedEncodingException {
+       String st1 = &quot;JAVA 编程 基础&quot;;
+//       byte[] arrs = st1.getBytes(&quot;UTF-8&quot;);
+       byte[] arrs = st1.getBytes(&quot;GBK&quot;);
+       for (int i=0;i&lt; arrs.length;i++){
+           System.out.print(arrs[i]+&quot; &quot;);   //UTF-8:74 65 86 65 32 -25 -68 -106 -25 -88 -117 32 -27 -97 -70 -25 -95 -128
+                                            //GBK:74 65 86 65 32 -79 -32 -77 -52 32 -69 -7 -76 -95
+       }
+        System.out.println(&quot;============&quot;);
+        String str2 = new String(arrs,&quot;GBK&quot;);  //保持字符集一致
+        System.out.println(str2);
+    }
+}
+</code></pre></div><hr> <h2 id="_3-和-equals方法的区别"><a href="#_3-和-equals方法的区别" class="header-anchor">#</a> 3 == 和 equals方法的区别</h2> <blockquote><p>== 判断内存地址是否一致
+equals 判断内容是否一致</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>String str1 = &quot;lcs&quot;;
+String str2 = &quot;lcs&quot;;
+String str3 = new String(&quot;lcs&quot;);
+
+str1.equals(str2);    // true
+str1.equals(str3);		//true
+
+str1 == str2;	//true
+str1 == str3;	//false
+</code></pre></div><blockquote><p>内存存储情况
+<img src="/blog/assets/img/string2.828bc774.jpg" alt="">
+【常量池】的作用就是复用</p></blockquote> <hr> <h2 id="_4-string的不可变性"><a href="#_4-string的不可变性" class="header-anchor">#</a> 4 String的不可变性</h2> <p>所谓可变：就是创建了新的对象，所指向的内存空间不变。</p> <p>String类是final类型的。final修饰引用类型，它保存的仅仅是一个引用，final只保证这个引用类型变量所引用的地址不会改变，也就是一直引用同一个对象，但这个对象完全可以发生改变。</p> <p>当我们使字面量进行创建字符串时，会在常量池中查找是否有相同值的字符串，如果有则会返回其引用，否则会创建新的字符串，并返回新字符串的引用。</p> <blockquote><p>为什么String要设计成不可变</p></blockquote> <p>主要是从缓存、安全性、线程安全和性能等角度出发的。</p> <blockquote><p>缓存
+字符串是使用最广泛的数据结构。大量的字符串的创建是非常耗费资源的，所以，Java提供了对字符串的缓存功能，可以大大地节省堆空间。</p></blockquote> <blockquote><p>安全性：
+字符串在Java应用程序中广泛用于存储敏感信息，如用户名、密码、连接url、网络连接等。JVM类加载器在加载类的时也广泛地使用它。
+当我们在程序中传递一个字符串的时候，如果这个字符串的内容是不可变的，那么我们就可以相信这个字符串中的内容。</p></blockquote> <blockquote><p>不可变性的缺点
+需要定义其他变量来存储计算结果，如果是复杂的字符串处理，会生成很多中间变量。可以通过StringBuilder处理。</p></blockquote> <hr> <h2 id="_5-字符串stringbuilder"><a href="#_5-字符串stringbuilder" class="header-anchor">#</a> 5 字符串StringBuilder</h2> <p>String和StringBuilder的区别：</p> <ol><li>String具有不可变性；</li> <li>StringBukder不具备可变性。</li></ol> <blockquote><p>当频繁操作字符串，用String会产生大量的中间变量和常量池大量的废弃数据,推荐使用StringBuilder可以避免。</p></blockquote> <p>StringBuilder和StringBuffer 两者基本相似，StringBuffer是线程安全，而StringBuilder没有。所以StringBuiler性能略高。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/java/java_study/Wrapper.html" class="prev">
+        包装类
+      </a></span> <span class="next"><a href="/blog/java/java_study/Collection.html">
+        集合
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.7a4660d2.js" defer></script><script src="/blog/assets/js/2.85e08d05.js" defer></script><script src="/blog/assets/js/22.7fed5ac6.js" defer></script>
+  </body>
+</html>

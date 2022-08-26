@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>OOP面向对象 | 欢迎回来 ！</title>
+    <meta name="description" content="lcsx">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.ee874cfe.css" as="style"><link rel="preload" href="/blog/assets/js/app.7a4660d2.js" as="script"><link rel="preload" href="/blog/assets/js/2.85e08d05.js" as="script"><link rel="preload" href="/blog/assets/js/21.262a03c1.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.573da17f.js"><link rel="prefetch" href="/blog/assets/js/11.5a02348c.js"><link rel="prefetch" href="/blog/assets/js/12.d8c9c1bd.js"><link rel="prefetch" href="/blog/assets/js/13.e09bb963.js"><link rel="prefetch" href="/blog/assets/js/14.d23ca837.js"><link rel="prefetch" href="/blog/assets/js/15.c4683e2a.js"><link rel="prefetch" href="/blog/assets/js/16.c660c97d.js"><link rel="prefetch" href="/blog/assets/js/17.49bf184a.js"><link rel="prefetch" href="/blog/assets/js/18.9be995ca.js"><link rel="prefetch" href="/blog/assets/js/19.df144b24.js"><link rel="prefetch" href="/blog/assets/js/20.5aad5a93.js"><link rel="prefetch" href="/blog/assets/js/22.7fed5ac6.js"><link rel="prefetch" href="/blog/assets/js/23.6aa0be70.js"><link rel="prefetch" href="/blog/assets/js/24.09d96859.js"><link rel="prefetch" href="/blog/assets/js/25.418504a4.js"><link rel="prefetch" href="/blog/assets/js/26.f0584d72.js"><link rel="prefetch" href="/blog/assets/js/27.cd44913e.js"><link rel="prefetch" href="/blog/assets/js/28.4f5c209f.js"><link rel="prefetch" href="/blog/assets/js/29.2dcd5c40.js"><link rel="prefetch" href="/blog/assets/js/3.11e700f0.js"><link rel="prefetch" href="/blog/assets/js/30.d2e1f594.js"><link rel="prefetch" href="/blog/assets/js/31.7b1f9108.js"><link rel="prefetch" href="/blog/assets/js/32.f4856997.js"><link rel="prefetch" href="/blog/assets/js/33.f6007bb0.js"><link rel="prefetch" href="/blog/assets/js/34.974aeb16.js"><link rel="prefetch" href="/blog/assets/js/35.af78c18d.js"><link rel="prefetch" href="/blog/assets/js/36.0a0639ee.js"><link rel="prefetch" href="/blog/assets/js/37.3a26ab2f.js"><link rel="prefetch" href="/blog/assets/js/38.ba809f55.js"><link rel="prefetch" href="/blog/assets/js/39.fb48ae1b.js"><link rel="prefetch" href="/blog/assets/js/4.31720545.js"><link rel="prefetch" href="/blog/assets/js/40.639ac403.js"><link rel="prefetch" href="/blog/assets/js/41.182c195e.js"><link rel="prefetch" href="/blog/assets/js/42.bd60b723.js"><link rel="prefetch" href="/blog/assets/js/43.7f4ee63e.js"><link rel="prefetch" href="/blog/assets/js/44.1345cf6d.js"><link rel="prefetch" href="/blog/assets/js/45.f0b98685.js"><link rel="prefetch" href="/blog/assets/js/46.97e7267e.js"><link rel="prefetch" href="/blog/assets/js/47.2c6a6d63.js"><link rel="prefetch" href="/blog/assets/js/48.faebaa80.js"><link rel="prefetch" href="/blog/assets/js/49.49af56c0.js"><link rel="prefetch" href="/blog/assets/js/5.232758e0.js"><link rel="prefetch" href="/blog/assets/js/50.b6235237.js"><link rel="prefetch" href="/blog/assets/js/51.8bb71e61.js"><link rel="prefetch" href="/blog/assets/js/52.a8d8e7ae.js"><link rel="prefetch" href="/blog/assets/js/53.259ab2d4.js"><link rel="prefetch" href="/blog/assets/js/54.a1620682.js"><link rel="prefetch" href="/blog/assets/js/55.15b38884.js"><link rel="prefetch" href="/blog/assets/js/56.408630af.js"><link rel="prefetch" href="/blog/assets/js/57.b6ac7546.js"><link rel="prefetch" href="/blog/assets/js/58.82664ed4.js"><link rel="prefetch" href="/blog/assets/js/59.339098b4.js"><link rel="prefetch" href="/blog/assets/js/6.0bf13852.js"><link rel="prefetch" href="/blog/assets/js/60.56bec4a5.js"><link rel="prefetch" href="/blog/assets/js/61.1d5e0a93.js"><link rel="prefetch" href="/blog/assets/js/62.caa7d838.js"><link rel="prefetch" href="/blog/assets/js/63.b2935415.js"><link rel="prefetch" href="/blog/assets/js/64.27d92569.js"><link rel="prefetch" href="/blog/assets/js/65.f84cda40.js"><link rel="prefetch" href="/blog/assets/js/66.1585871d.js"><link rel="prefetch" href="/blog/assets/js/67.dd596334.js"><link rel="prefetch" href="/blog/assets/js/68.7f108fcc.js"><link rel="prefetch" href="/blog/assets/js/69.e67a606a.js"><link rel="prefetch" href="/blog/assets/js/7.1e456cb7.js"><link rel="prefetch" href="/blog/assets/js/70.7ca5af58.js"><link rel="prefetch" href="/blog/assets/js/71.9ec68011.js"><link rel="prefetch" href="/blog/assets/js/72.50a3a3b0.js"><link rel="prefetch" href="/blog/assets/js/73.e2564842.js"><link rel="prefetch" href="/blog/assets/js/74.b0c6fc38.js"><link rel="prefetch" href="/blog/assets/js/8.3c5dcc01.js"><link rel="prefetch" href="/blog/assets/js/9.33061631.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ee874cfe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" alt="欢迎回来 ！" class="logo"> <span class="site-name can-hide">欢迎回来 ！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/java/java_study/env.html" class="sidebar-link">Java环境搭建与基本语法</a></li><li><a href="/blog/java/java_study/OOP.html" class="active sidebar-link">OOP面向对象</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/java/java_study/OOP.html#_1-类和对象" class="sidebar-link">1 类和对象</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/OOP.html#_2-封装" class="sidebar-link">2 封装</a></li><li class="sidebar-sub-header"><a href="/blog/java/java_study/OOP.html#_3-继承" class="sidebar-link">3 继承</a></li></ul></li><li><a href="/blog/java/java_study/Design.html" class="sidebar-link">设计模式</a></li><li><a href="/blog/java/java_study/DuoTai.html" class="sidebar-link">多态</a></li><li><a href="/blog/java/java_study/Neibulei.html" class="sidebar-link">内部类</a></li><li><a href="/blog/java/java_study/Throwable.html" class="sidebar-link">异常</a></li><li><a href="/blog/java/java_study/Wrapper.html" class="sidebar-link">包装类</a></li><li><a href="/blog/java/java_study/String.html" class="sidebar-link">字符串处理类</a></li><li><a href="/blog/java/java_study/Collection.html" class="sidebar-link">集合</a></li><li><a href="/blog/java/java_study/Generics.html" class="sidebar-link">泛型</a></li><li><a href="/blog/java/java_study/XC.html" class="sidebar-link">多线程</a></li><li><a href="/blog/java/java_study/IO.html" class="sidebar-link">输入输出流</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="oop面向对象"><a href="#oop面向对象" class="header-anchor">#</a> OOP面向对象</h1> <p></p><div class="table-of-contents"><ul><li><a href="#oop面向对象">OOP面向对象</a><ul><li><a href="#_1-类和对象">1 类和对象</a><ul><li><a href="#_1-1什么是面向对象">1.1什么是面向对象</a></li><li><a href="#_1-2-类和对象的关系">1.2 类和对象的关系</a></li><li><a href="#_1-3-单一职责原则">1.3 单一职责原则</a></li><li><a href="#_1-4-不同类之间的交互">1.4 不同类之间的交互</a></li><li><a href="#_1-5-对象实例化">1.5 对象实例化</a></li><li><a href="#_1-6-构造方法">1.6 构造方法</a><ul><li><a href="#_1-6-1-构造方法名必须和类名相同-实例化时，会调用构造方法-的例子：">1.6.1 构造方法名必须和类名相同.实例化时，会调用构造方法 的例子：</a></li><li><a href="#_1-6-2-构造函数分有参和无参，实例化new的时候，根据有无参数，调用不同的构造函数；类内调用方法可以省this：">1.6.2 构造函数分有参和无参，实例化new的时候，根据有无参数，调用不同的构造函数；类内调用方法可以省this：</a></li><li><a href="#_1-6-3-构造函数间可以相互调用，但类方法不能直接调用构造方法">1.6.3 构造函数间可以相互调用，但类方法不能直接调用构造方法</a></li></ul></li><li><a href="#_1-7-this">1.7 this</a></li><li><a href="#"></a></li></ul></li><li><a href="#_2-封装">2 封装</a><ul><li><a href="#_2-1-什么是封装">2.1 什么是封装</a></li><li><a href="#_2-2-封装的实现">2.2 封装的实现</a></li><li><a href="#_2-3-static-静态信息符">2.3 static 静态信息符</a><ul><li><a href="#_2-3-1-static-静态属性">2.3.1 static 静态属性</a></li><li><a href="#_2-3-2-static-静态方法">2.3.2 static 静态方法</a></li><li><a href="#_2-3-3-static-不允许的情况">2.3.3 static 不允许的情况</a></li></ul></li><li><a href="#_2-4-代码块">2.4 代码块</a><ul><li><a href="#_2-4-1-代码块的执行顺序">2.4.1 代码块的执行顺序</a></li></ul></li><li><a href="#_2-5包">2.5包</a><ul><li><a href="#_2-5-1-package包名">2.5.1 package包名</a></li><li><a href="#_2-5-2-导入包">2.5.2 导入包</a></li></ul></li></ul></li><li><a href="#_3-继承">3 继承</a><ul><li><a href="#_3-1-继承的特点">3.1 继承的特点</a></li><li><a href="#_3-2-继承的实现">3.2 继承的实现</a></li><li><a href="#_3-3-方法重载">3.3 方法重载</a></li><li><a href="#_3-4-方法重写">3.4 方法重写</a></li><li><a href="#_3-5-访问修饰符的分类">3.5 访问修饰符的分类</a></li><li><a href="#_3-6-super">3.6 super</a></li><li><a href="#_3-7-继承的初始化顺序">3.7 继承的初始化顺序</a></li><li><a href="#_3-8-子类中调用父类构造方法">3.8 子类中调用父类构造方法</a></li><li><a href="#_3-9-super-pk-this">3.9 super pk this</a></li><li><a href="#_3-10-final">3.10 final</a></li><li><a href="#_3-11-注解">3.11 注解</a></li></ul></li></ul></li></ul></div><p></p> <h2 id="_1-类和对象"><a href="#_1-类和对象" class="header-anchor">#</a> 1 类和对象</h2> <p>万物皆可对象</p> <h3 id="_1-1什么是面向对象"><a href="#_1-1什么是面向对象" class="header-anchor">#</a> 1.1什么是面向对象</h3> <p>面向对象：关注现实事物各方面的信息，从对象的角度出发，根据事物的特征来进行程序设计。</p> <ol><li>类是模子，确定对象将会有的特征（属性）和行为（方法）</li> <li>对象是类的实例表现</li> <li>类是对象的类型</li> <li>对象是特定类型的数据</li></ol> <hr> <h3 id="_1-2-类和对象的关系"><a href="#_1-2-类和对象的关系" class="header-anchor">#</a> 1.2 类和对象的关系</h3> <ol><li>类是抽象的概念，是模板</li> <li>对象是一个看得到、摸得着的具体实体</li></ol> <hr> <h3 id="_1-3-单一职责原则"><a href="#_1-3-单一职责原则" class="header-anchor">#</a> 1.3 单一职责原则</h3> <p>也叫单一功能原则，建议每个类有且只有要给引起功能变化的原因。也就是一个类只有一个功能。如果一个类中承担的功能越多，交融、耦合的程度越高，
+被复用的可能性越低。</p> <p>所以，将不同功能职责放到不同的类中，也就是说把不同引发功能变化的原因封装到不同类中。就出现了拆分。</p> <hr> <h3 id="_1-4-不同类之间的交互"><a href="#_1-4-不同类之间的交互" class="header-anchor">#</a> 1.4 不同类之间的交互</h3> <p>java的搜索机制：当主方法运行的时候，现在自己所在的类里查找相关的类是否存在。如果不存在，就向上找同一个包里的类。</p> <hr> <h3 id="_1-5-对象实例化"><a href="#_1-5-对象实例化" class="header-anchor">#</a> 1.5 对象实例化</h3> <p>声明对象和实例化对象是在内存两个不同空间里的进行的。
+0. 声明对象，如 Cat one; 是在内存栈空间里开辟了一个区域</p> <ol><li>实例化对象，如 new Cat one; 是在内存堆空间里开辟空间，完成对象初始化操作</li></ol> <hr> <p>java程序是运行在jvm虚拟机上的，jvm是java程序和操作系统的桥梁，因为jvm的存在，java可以实现平台无关性。而java的内存管理机制分配，是基于jvm来进行的。</p> <ol><li>栈是内存里的一块区域，主要保存局部变量的值；</li> <li>堆是也是内存里的另一块区域，主要用来保存动态产生的数据，如new出来的实例化对象。</li></ol> <hr> <p><img src="/blog/assets/img/duizhan.1eeec592.png" alt=""></p> <ol><li>a是基本数据类型，ta只在栈中开辟一块空间储存。</li> <li>one是引用类型数据，ta占用栈和堆两个空间，栈存储指向堆的具体空间的地址。</li> <li>栈和堆是如何关联。通过“=”赋值符号</li></ol> <div class="language- extra-class"><pre class="language-text"><code>Cat one = new Cat();
+Cat tow = one;
+</code></pre></div><ol><li>Cat one在栈中开辟一个内存空间；</li> <li>new Cat在堆中开辟一个内存空间；</li> <li>Cat one = new Cat();将堆里的存储空间存储到栈的对象one中，也叫对象引用。</li> <li>Cat tow = one;将引用信息复制存放到two中，two也有one的操作权。</li></ol> <hr> <h3 id="_1-6-构造方法"><a href="#_1-6-构造方法" class="header-anchor">#</a> 1.6 构造方法</h3> <p>构造方法也称 构造函数，构造器，通过构造方法完成对象的初始化设置。</p> <ol><li>构造方法名必须和类名相同.实例化时，会调用构造方法。</li> <li>构造方法没有返回值</li> <li>调用时必须用new。</li> <li>当没有指定构造方法时，系统会自动添加无参而定构造方法。如没有声明&quot;Cat.sleep()&quot;方法，但调用了，ta自动是null</li> <li>无参构造方法和有参构造方法可以同时出现</li> <li>构造方法是不能被类内方法直接调用的</li></ol> <hr> <h4 id="_1-6-1-构造方法名必须和类名相同-实例化时，会调用构造方法-的例子："><a href="#_1-6-1-构造方法名必须和类名相同-实例化时，会调用构造方法-的例子：" class="header-anchor">#</a> 1.6.1 构造方法名必须和类名相同.实例化时，会调用构造方法 的例子：</h4> <div class="language- extra-class"><pre class="language-text"><code>public class Cat {
+    public Cat(){    //构造方法名必须和类名相同   
+        System.out.println(&quot;zaoshanghao lcs&quot;);
+    }
+
+    public void run(){
+        System.out.println(&quot;小猫快跑&quot;);
+    }
+	
+}
+</code></pre></div><hr> <h4 id="_1-6-2-构造函数分有参和无参，实例化new的时候，根据有无参数，调用不同的构造函数；类内调用方法可以省this："><a href="#_1-6-2-构造函数分有参和无参，实例化new的时候，根据有无参数，调用不同的构造函数；类内调用方法可以省this：" class="header-anchor">#</a> 1.6.2 构造函数分有参和无参，实例化new的时候，根据有无参数，调用不同的构造函数；类内调用方法可以省this：</h4> <div class="language- extra-class"><pre class="language-text"><code>public class Cat {
+    String name;
+    int month;
+    double weight;
+    String species;
+
+    public Cat(){
+        System.out.println(&quot;无参构造器&quot;);
+    }
+
+    public Cat(String name){
+        System.out.println(&quot;有参构造器&quot;);
+        this.name = name;
+        run();     //  同一个类中调用，不屑this也可以
+        this.run();
+    }
+
+    public void Cat(){
+        System.out.println(&quot;我只是一个普通方法，名字恰巧叫Cat&quot;);
+    }
+    public void run(){
+        System.out.println(this.name);
+    }
+
+    public void eat(){
+        System.out.println(&quot;小猫吃鱼&quot;);
+    }
+}
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>public class ADAS {
+    public static void main(String[] args) {
+        Cat cat1 = new Cat();  //无参构造函数
+        Cat cat2 = new Cat(&quot;lllqqq&quot;);  //有参构造函数
+        cat2.Cat();
+    }
+}
+
+/*
+无参构造器
+有参构造器
+lllqqq
+lllqqq
+我只是一个普通方法，名字恰巧叫Cat
+*/
+</code></pre></div><hr> <h4 id="_1-6-3-构造函数间可以相互调用，但类方法不能直接调用构造方法"><a href="#_1-6-3-构造函数间可以相互调用，但类方法不能直接调用构造方法" class="header-anchor">#</a> 1.6.3 构造函数间可以相互调用，但类方法不能直接调用构造方法</h4> <div class="language- extra-class"><pre class="language-text"><code>public class Cat {
+    String name;
+    int month;
+    double weight;
+    String species;
+
+    public Cat(){
+        System.out.println(&quot;无参构造器&quot;);
+    }
+
+    public Cat(String name){
+        this();  //对this的调用必须是构造器中的第一个语句
+//        this(&quot;lcs2&quot;,11);//报错对this的调用必须是构造器中的第一个语句，,估计也说明了this()只能有一个
+        System.out.println(&quot;有1个参构造器&quot;);
+        this.name = name;
+        this.run();
+    }
+	
+    public Cat(String name,int month){
+        this.name = name;
+        this.month = month;
+        System.out.println(&quot;有2个参数的构造器&quot;);
+        System.out.println(this.name);
+    }
+
+    public void Cat(){
+        System.out.println(&quot;我只是一个普通方法，名字恰巧叫Cat&quot;);
+    }
+    public void run(){
+        System.out.println(this.name);
+    }
+
+    public void eat(){
+        System.out.println(&quot;小猫吃鱼&quot;);
+    }
+}
+</code></pre></div><hr> <h3 id="_1-7-this"><a href="#_1-7-this" class="header-anchor">#</a> 1.7 this</h3> <blockquote><p>就近原则</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>public class Cat {
+    String name;
+	
+    public Cat(String name){
+        name = name;
+    }
+}
+</code></pre></div><ol><li>在这个有参数的构造方法的 name = name 的赋值语句中，按照就近原则，前面name就是传进来的name,name = name就是自己赋值给自己。</li> <li>但对象中并没有 &quot;X.name&quot;属性。</li> <li>当没有要赋值的变量时，才会扩大范围去找。就是解决1中例子。</li> <li>除了解决1通过修改参数名来解决，还可以通过this关键字。this代表当前对象。</li> <li>this的当前对象是？对调用，谁就是当前对象。就是 new XX()那个。</li></ol> <hr> <blockquote><p>解决1：更改与属性名不同的变量名。但显然不是最优。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>public class Cat {
+    String name;
+	
+    public Cat(String Newname){
+        name = Newname;
+    }
+}
+</code></pre></div><hr> <blockquote><p>解决2：this关键字</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>public class Cat {
+    String name;
+	
+    public Cat(String name){
+        this.name = name;
+    }
+}
+</code></pre></div><hr> <blockquote><p>属性就近原则，同样在对象的方法上也是。
+run()会向上查找run方法()</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>public Cat(String name){
+    this.name = name;
+    run();
+    this.run();
+}
+</code></pre></div><hr> <h3 id=""><a href="#" class="header-anchor">#</a></h3> <h2 id="_2-封装"><a href="#_2-封装" class="header-anchor">#</a> 2 封装</h2> <h3 id="_2-1-什么是封装"><a href="#_2-1-什么是封装" class="header-anchor">#</a> 2.1 什么是封装</h3> <p>隐藏对象的信息，但留出访问的接口</p> <hr> <h3 id="_2-2-封装的实现"><a href="#_2-2-封装的实现" class="header-anchor">#</a> 2.2 封装的实现</h3> <p>实现步骤：</p> <ol><li>修改属性的可见性：设为 private</li> <li>创建getter/setter方法：设为 public用于属性的读写</li> <li>在getter/setter方法中加入属性控制语句，对属性值的合法性进行判断。如性别输入只能男和女，数字输入只能是正数</li></ol> <hr> <p>1 private实现属性类内隐藏</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.animal;
+
+public class Cat {
+    private String name;  //
+    public int weight;
+    public Cat(String name,int weight){
+        this.name = name;
+        this.weight = weight;
+    }
+	
+	public void setName(String name){   //无返回值 void
+        this.name = name;
+    }
+
+    public String getName(){  //返回值
+        return this.name;
+    }
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import com.lcs.animal.Cat;
+
+/**
+ * author lcs
+ */
+public class ADAS {
+    public static void main(String[] args) {
+        Cat cat2 = new Cat(&quot;lllqqq&quot;,66);
+        System.out.println(cat2.weight);
+        System.out.println(cat2.name);   //由于name是私有属性，只能在类内使用，实例化后调用也是会报错的
+    }
+}
+</code></pre></div><hr> <p>2 带参构造函数实例化也可以完成对象的属性设定，在构造方法中可以进行setter操作</p> <div class="language- extra-class"><pre class="language-text"><code>public class Cat {
+    private String name;
+    public int weight;
+    public Cat(String name,int weight){
+        this.setName(name);
+        this.weight = weight;
+    }
+
+    public void setName(String name){   //无返回值 void
+        if(name != &quot;666&quot;){
+            System.out.println(&quot;输入的名字必须为666&quot;);
+        }else{
+            this.name = name;
+        }
+    }
+
+    public String getName(){  //返回值
+        return this.name;
+    }
+}
+</code></pre></div><hr> <h3 id="_2-3-static-静态信息符"><a href="#_2-3-static-静态信息符" class="header-anchor">#</a> 2.3 static 静态信息符</h3> <p>生命周期：类加载时产生，销毁时释放。生命周期长</p> <hr> <h4 id="_2-3-1-static-静态属性"><a href="#_2-3-1-static-静态属性" class="header-anchor">#</a> 2.3.1 static 静态属性</h4> <p>Static 静态属性：</p> <ol><li>无论实例化多少个对象，staitc静态成员都是同一个内存空间，只有对象销毁时，内存才会释放；</li> <li>所以其属性可以通过实例化后属性访问、也可以通过类属性访问，但是同样值；</li></ol> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.animal;
+public class Cat{
+	public static int price;
+}
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import com.lcs.animal.Cat;
+public class ADAS {
+    public static void main(String[] args) {
+        Cat cat2 = new Cat();
+        cat2.price = 100;
+        System.out.println(cat2.price);
+        System.out.println(Cat.price);
+    }
+}
+
+</code></pre></div><hr> <h4 id="_2-3-2-static-静态方法"><a href="#_2-3-2-static-静态方法" class="header-anchor">#</a> 2.3.2 static 静态方法</h4> <ol><li>与静态属性类似，静态方法可以通过类方法、实例化后对象名调用。推荐  类.静态成员</li> <li>静态方法中不能直接访问同一个类中的非静态成员，只能调用同一个类中的静态成员。</li> <li>静态方法中不能使用this</li></ol> <hr> <h4 id="_2-3-3-static-不允许的情况"><a href="#_2-3-3-static-不允许的情况" class="header-anchor">#</a> 2.3.3 static 不允许的情况</h4> <ol><li>static+类</li></ol> <div class="language- extra-class"><pre class="language-text"><code>public static class xxx{
+	//不可以对静态类
+}
+</code></pre></div><ol start="2"><li>局部变量使用static</li></ol> <div class="language- extra-class"><pre class="language-text"><code>public Cat(){
+	static int temp = 1;  //不允许局部变量使用static，可以用final
+}
+</code></pre></div><ol start="3"><li>静态方法/快中不能使用this</li></ol> <hr> <h3 id="_2-4-代码块"><a href="#_2-4-代码块" class="header-anchor">#</a> 2.4 代码块</h3> <p>代码块用大括号{}</p> <h4 id="_2-4-1-代码块的执行顺序"><a href="#_2-4-1-代码块的执行顺序" class="header-anchor">#</a> 2.4.1 代码块的执行顺序</h4> <ol><li>普通代码块：代码块出现在方法里的，是普通代码块，执行顺序是 按顺序执行</li> <li>构造代码块：在类中定义的代码块是 构造代码块。构造代码块：创建对象时调用，优先于构造方法执行。构造代码块可以有多个，按构造代码块顺序执行</li> <li>静态代码块：类加载调用时，</li> <li>无论产生多少实例对象，静态代码块只执行一次！</li></ol> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.animal;
+
+public class Cat {
+    public static int price;
+    public Cat(){
+        System.out.println(&quot;我是构造函数&quot;);
+    }
+	
+	public void run(String name){
+		{//普通代码块}
+	}
+	
+    { //构造代码块
+        System.out.println(&quot;我是构造代码块&quot;);  //先输出
+    }
+	
+	static{  //静态代码块
+        System.out.println(&quot;jius gan&quot;);
+    }
+}
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import com.lcs.animal.Cat;
+
+/**
+ * author lcs
+ */
+public class ADAS {
+    public static void main(String[] args) {
+        Cat cat1 = new Cat();
+        Cat cat2 = new Cat();  //无论产生多少实例对象，静态代码块只执行一次！
+    }
+}
+</code></pre></div><p>值得注意的是，静态代码块不能访问非静态成员，若是想在静态代码块中访问非静态成员，需要实例化</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.animal;
+
+public class Cat {
+    public static int price;
+    public int lcs = 66;
+
+    public Cat(){
+//        System.out.println(&quot;我是构造函数&quot;);
+    }
+
+
+    static{
+
+        price = 1000;
+        System.out.println(price); // 1000
+//      System.out.println(lcs);  //报错，同上讲，静态方法不能访问非静态成员。
+
+//        若是想在静态代码块中访问非静态成员，需要实例化
+        Cat tem = new Cat();
+        System.out.println(tem.lcs); //66
+    }
+}
+
+</code></pre></div><hr> <h3 id="_2-5包"><a href="#_2-5包" class="header-anchor">#</a> 2.5包</h3> <p>管理java文件、解决同名文件冲突</p> <h4 id="_2-5-1-package包名"><a href="#_2-5-1-package包名" class="header-anchor">#</a> 2.5.1 package包名</h4> <ol><li>必须放在java源文件中的第一行</li> <li>一个java源文件中只能由一个package语句</li> <li>报名全部英文小写</li> <li>命名方式：域名倒序+模块+功能  package com.lcs.animal;</li></ol> <hr> <h4 id="_2-5-2-导入包"><a href="#_2-5-2-导入包" class="header-anchor">#</a> 2.5.2 导入包</h4> <p>improt 包名.类名</p> <div class="language- extra-class"><pre class="language-text"><code>import com.lcs.*           //导入包中所有类
+
+import com.lcs.nihao       //导入保重指定类
+</code></pre></div><hr> <h2 id="_3-继承"><a href="#_3-继承" class="header-anchor">#</a> 3 继承</h2> <p>类与类的关系</p> <h3 id="_3-1-继承的特点"><a href="#_3-1-继承的特点" class="header-anchor">#</a> 3.1 继承的特点</h3> <ol><li>一种类与类之间的关系</li> <li>使用已存在的类的定义作为基础建立新类</li> <li>新类的定义可以增加新的数据或新的功能，也可以用父类的功能，但不能选择性地继承父类</li> <li>单继承：一个子类只能继承一个父类</li> <li>子类可以访问父类非私有private成员</li> <li>父类不能访问子类成员</li></ol> <hr> <h3 id="_3-2-继承的实现"><a href="#_3-2-继承的实现" class="header-anchor">#</a> 3.2 继承的实现</h3> <p>通过extends</p> <div class="language- extra-class"><pre class="language-text"><code>class 子类 extends 父类{
+	...
+}
+
+</code></pre></div><hr> <h3 id="_3-3-方法重载"><a href="#_3-3-方法重载" class="header-anchor">#</a> 3.3 方法重载</h3> <ol><li>出现在同一个类中</li> <li>方法名相同，参数列表不同（参数顺序、个数、类型）</li> <li>方法返回值、访问修饰符任意</li> <li>与方法的 参数名 无关</li></ol> <hr> <h3 id="_3-4-方法重写"><a href="#_3-4-方法重写" class="header-anchor">#</a> 3.4 方法重写</h3> <ol><li>出现在有继承关系的子类中</li> <li>方法名相同，参数列表相同（参数顺序、个数、类型）</li> <li>与方法的参数名无关</li> <li>访问修饰符，访问范围需要大于等于父类的访问范围(3.5中图片)；</li> <li>当方法返回值是void或基本数据类型时，子类方法的返回值必须与父类的一致；但返回值是引用类型时，可以是父类或子类</li> <li>父类的构造函数 不允许继承、不允许重写</li></ol> <p>重写的概念一般用在 方法重写，但属性重写也可以。</p> <hr> <h3 id="_3-5-访问修饰符的分类"><a href="#_3-5-访问修饰符的分类" class="header-anchor">#</a> 3.5 访问修饰符的分类</h3> <ol><li>private :只允许在本类中进行访问；</li> <li>public :允许在任意位置访问</li> <li>protected :允许在当前类、同包子类/非子类、跨包子类调用；跨包非子类不允许；</li> <li>默认 :允许在当前类、同包子类/非子类调用;跨包子类不允许调用。</li></ol> <p><img src="/blog/assets/img/static.21f74298.png" alt=""></p> <hr> <h3 id="_3-6-super"><a href="#_3-6-super" class="header-anchor">#</a> 3.6 super</h3> <p>使用场景：
+当子类重写了方法，但是子类中又想调用父类的方法时，可以通过super关键字来调用父类方法。
+同样，可以访问父类的属性</p> <div class="language- extra-class"><pre class="language-text"><code>super.方法()   、属性
+
+</code></pre></div><h3 id="_3-7-继承的初始化顺序"><a href="#_3-7-继承的初始化顺序" class="header-anchor">#</a> 3.7 继承的初始化顺序</h3> <ol><li>父类静态成员（访问修饰符不影响成员加载顺序，跟书写位置有关）</li> <li>子类静态成语</li> <li>父类对象构造</li> <li>子类对象构造</li></ol> <hr> <h3 id="_3-8-子类中调用父类构造方法"><a href="#_3-8-子类中调用父类构造方法" class="header-anchor">#</a> 3.8 子类中调用父类构造方法</h3> <ol><li>子类的构造的过程中必须调用父类的构造方法，默认调用父类无参构造方法；</li> <li>如果子类构造方法中你没有显式（super调用别的构造方法）标注，而父类又没有无参的构造方法，则编译出错；</li> <li>super只能在构造方法中使用；</li> <li>但可以通过super()调用父类构造方法，即super可以调用父类指定构造方法；</li> <li>super()必须放在子类构造方法有效代码第一行；</li></ol> <p>假如父类构造方法中，有带参构造方法 和 无参构造方法，那么子类继承父类情况下，子类实例化时能否通过有无参数来选择执行父类的代参/无参赌构造方法呢？</p> <p>加入通过 Cat one = new Cat(&quot;xx&quot;,1); 这种是不行的。实例化时，子类构造方法默认调用的是父类无参构造方法。</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.animal;
+
+public class Animal {
+    public Animal(){
+        System.out.println(&quot;父类无参构造方法&quot;);
+    }
+
+    public Animal(String name,int month){
+        System.out.println(&quot;父类代参构造方法&quot;);
+    }
+    static{
+        System.out.println(&quot;父类静态构造方法&quot;);
+    }
+}
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>package com.lcs.animal;
+
+public class Cat extends Animal {
+
+    public Cat(){
+        System.out.println(&quot;子类无参构造函数&quot;);
+    }
+
+    public Cat(String name,int month){
+        System.out.println(&quot;子类带参构造函数&quot;);
+    }
+}
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>import com.lcs.animal.Cat;
+
+/**
+ * author lcs
+ */
+public class ADAS {
+    public static void main(String[] args) {
+        Cat cat1 = new Cat(&quot;lcs&quot;,1);
+    }
+}
+
+
+/*
+父类静态构造方法
+父类无参构造方法
+子类带参构造函数
+*/
+</code></pre></div><p>但，也是可以调用父类的带参构造，通过super   完成指定构造方法的调用</p> <div class="language- extra-class"><pre class="language-text"><code>package com.lcs.animal;
+
+public class Cat extends Animal {
+
+    public Cat(){
+        System.out.println(&quot;子类无参构造函数&quot;);
+    }
+
+    public Cat(String name,int month){
+        super(name,month);
+        System.out.println(&quot;子类带参构造函数&quot;);
+    }
+}
+
+/*
+父类静态构造方法
+父类代参构造方法
+子类带参构造函数
+*/
+</code></pre></div><hr> <h3 id="_3-9-super-pk-this"><a href="#_3-9-super-pk-this" class="header-anchor">#</a> 3.9 super pk this</h3> <blockquote><p>this：当前对象的引用</p></blockquote> <ol><li>访问当前类的成员方法、属性、构造方法；</li> <li>不能在静态方法中使用</li> <li>在构造方法中调用this()，就是调用无参构造方法；</li></ol> <blockquote><p>super：父类对象的引用</p></blockquote> <ol><li>访问父类成员方法、属性；</li> <li>不能在静态方法中使用</li></ol> <p>构造方法中调用this必须放到第一行，也就是说：构造方法调用时，super和this不能同时出现；</p> <hr> <h3 id="_3-10-final"><a href="#_3-10-final" class="header-anchor">#</a> 3.10 final</h3> <p>final位置不是固定的</p> <div class="language- extra-class"><pre class="language-text"><code>public final Animal(){}
+
+// final 和 public 的位置可以换，写在class前面就行了
+
+final public Animal(){}
+</code></pre></div><hr> <blockquote><p>final修饰变量表示不允许修改</p></blockquote> <ol><li>final + class final修饰类表示不允许被继承。</li></ol> <hr> <blockquote><p>final修饰方法</p></blockquote> <ol><li>final + 方法：该方法不允许被子类重写，但可以继承；final不能修饰构造方法；</li> <li>final 和 public 的位置可以换，写在class前面就行了；</li></ol> <hr> <blockquote><p>final修饰变量表示不允许修改</p></blockquote> <ol><li>方法内局部变量使用final ：只要在具体被使用之前进行赋值即可，一旦赋值不允许被修改；</li> <li>类成员属性使用final ： 赋值过程：1、定义直接初始化 2构造方法里完成初始化 3构造代码块完成</li> <li>引用类型的变量:初始化之后不能再只想另一个对象；但对象的内容是可变的</li></ol> <hr> <blockquote><p>配合static使用，如配置信息</p></blockquote> <p>不想成员被修改，可以通过 static+final 实现</p> <div class="language- extra-class"><pre class="language-text"><code>public static final String URL = &quot;www.lcs.com&quot;
+</code></pre></div><hr> <h3 id="_3-11-注解"><a href="#_3-11-注解" class="header-anchor">#</a> 3.11 注解</h3> <p>JDK1.5版本引入的特性。可以声明再包、类、属性、方法、局部变量、方法参数等的前面，用来对这些元素进行说明，注释</p> <p>按照运行机制分</p> <ol><li>源码注解    ： @Override</li> <li>编译时注解</li> <li>运行时注解</li></ol> <p>按照来源分</p> <ol><li>来自JDK的注解   ： @Override</li> <li>来自第三方的注解</li> <li>我们自己定义的注解</li></ol> <hr></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/java/java_study/env.html" class="prev">
+        Java环境搭建与基本语法
+      </a></span> <span class="next"><a href="/blog/java/java_study/Design.html">
+        设计模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.7a4660d2.js" defer></script><script src="/blog/assets/js/2.85e08d05.js" defer></script><script src="/blog/assets/js/21.262a03c1.js" defer></script>
+  </body>
+</html>

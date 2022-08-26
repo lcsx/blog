@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mysql事务 | 欢迎回来 ！</title>
+    <meta name="description" content="lcsx">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.ee874cfe.css" as="style"><link rel="preload" href="/blog/assets/js/app.7a4660d2.js" as="script"><link rel="preload" href="/blog/assets/js/2.85e08d05.js" as="script"><link rel="preload" href="/blog/assets/js/35.af78c18d.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.573da17f.js"><link rel="prefetch" href="/blog/assets/js/11.5a02348c.js"><link rel="prefetch" href="/blog/assets/js/12.d8c9c1bd.js"><link rel="prefetch" href="/blog/assets/js/13.e09bb963.js"><link rel="prefetch" href="/blog/assets/js/14.d23ca837.js"><link rel="prefetch" href="/blog/assets/js/15.c4683e2a.js"><link rel="prefetch" href="/blog/assets/js/16.c660c97d.js"><link rel="prefetch" href="/blog/assets/js/17.49bf184a.js"><link rel="prefetch" href="/blog/assets/js/18.9be995ca.js"><link rel="prefetch" href="/blog/assets/js/19.df144b24.js"><link rel="prefetch" href="/blog/assets/js/20.5aad5a93.js"><link rel="prefetch" href="/blog/assets/js/21.262a03c1.js"><link rel="prefetch" href="/blog/assets/js/22.7fed5ac6.js"><link rel="prefetch" href="/blog/assets/js/23.6aa0be70.js"><link rel="prefetch" href="/blog/assets/js/24.09d96859.js"><link rel="prefetch" href="/blog/assets/js/25.418504a4.js"><link rel="prefetch" href="/blog/assets/js/26.f0584d72.js"><link rel="prefetch" href="/blog/assets/js/27.cd44913e.js"><link rel="prefetch" href="/blog/assets/js/28.4f5c209f.js"><link rel="prefetch" href="/blog/assets/js/29.2dcd5c40.js"><link rel="prefetch" href="/blog/assets/js/3.11e700f0.js"><link rel="prefetch" href="/blog/assets/js/30.d2e1f594.js"><link rel="prefetch" href="/blog/assets/js/31.7b1f9108.js"><link rel="prefetch" href="/blog/assets/js/32.f4856997.js"><link rel="prefetch" href="/blog/assets/js/33.f6007bb0.js"><link rel="prefetch" href="/blog/assets/js/34.974aeb16.js"><link rel="prefetch" href="/blog/assets/js/36.0a0639ee.js"><link rel="prefetch" href="/blog/assets/js/37.3a26ab2f.js"><link rel="prefetch" href="/blog/assets/js/38.ba809f55.js"><link rel="prefetch" href="/blog/assets/js/39.fb48ae1b.js"><link rel="prefetch" href="/blog/assets/js/4.31720545.js"><link rel="prefetch" href="/blog/assets/js/40.639ac403.js"><link rel="prefetch" href="/blog/assets/js/41.182c195e.js"><link rel="prefetch" href="/blog/assets/js/42.bd60b723.js"><link rel="prefetch" href="/blog/assets/js/43.7f4ee63e.js"><link rel="prefetch" href="/blog/assets/js/44.1345cf6d.js"><link rel="prefetch" href="/blog/assets/js/45.f0b98685.js"><link rel="prefetch" href="/blog/assets/js/46.97e7267e.js"><link rel="prefetch" href="/blog/assets/js/47.2c6a6d63.js"><link rel="prefetch" href="/blog/assets/js/48.faebaa80.js"><link rel="prefetch" href="/blog/assets/js/49.49af56c0.js"><link rel="prefetch" href="/blog/assets/js/5.232758e0.js"><link rel="prefetch" href="/blog/assets/js/50.b6235237.js"><link rel="prefetch" href="/blog/assets/js/51.8bb71e61.js"><link rel="prefetch" href="/blog/assets/js/52.a8d8e7ae.js"><link rel="prefetch" href="/blog/assets/js/53.259ab2d4.js"><link rel="prefetch" href="/blog/assets/js/54.a1620682.js"><link rel="prefetch" href="/blog/assets/js/55.15b38884.js"><link rel="prefetch" href="/blog/assets/js/56.408630af.js"><link rel="prefetch" href="/blog/assets/js/57.b6ac7546.js"><link rel="prefetch" href="/blog/assets/js/58.82664ed4.js"><link rel="prefetch" href="/blog/assets/js/59.339098b4.js"><link rel="prefetch" href="/blog/assets/js/6.0bf13852.js"><link rel="prefetch" href="/blog/assets/js/60.56bec4a5.js"><link rel="prefetch" href="/blog/assets/js/61.1d5e0a93.js"><link rel="prefetch" href="/blog/assets/js/62.caa7d838.js"><link rel="prefetch" href="/blog/assets/js/63.b2935415.js"><link rel="prefetch" href="/blog/assets/js/64.27d92569.js"><link rel="prefetch" href="/blog/assets/js/65.f84cda40.js"><link rel="prefetch" href="/blog/assets/js/66.1585871d.js"><link rel="prefetch" href="/blog/assets/js/67.dd596334.js"><link rel="prefetch" href="/blog/assets/js/68.7f108fcc.js"><link rel="prefetch" href="/blog/assets/js/69.e67a606a.js"><link rel="prefetch" href="/blog/assets/js/7.1e456cb7.js"><link rel="prefetch" href="/blog/assets/js/70.7ca5af58.js"><link rel="prefetch" href="/blog/assets/js/71.9ec68011.js"><link rel="prefetch" href="/blog/assets/js/72.50a3a3b0.js"><link rel="prefetch" href="/blog/assets/js/73.e2564842.js"><link rel="prefetch" href="/blog/assets/js/74.b0c6fc38.js"><link rel="prefetch" href="/blog/assets/js/8.3c5dcc01.js"><link rel="prefetch" href="/blog/assets/js/9.33061631.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.ee874cfe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://vuejs.org/images/logo.png" alt="欢迎回来 ！" class="logo"> <span class="site-name can-hide">欢迎回来 ！</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link router-link-active">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/blog/DMP/" class="nav-link">
+  DMP
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/resfulApi/" class="nav-link">
+  模拟数据
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java" class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/java/tingshu/" class="nav-link">
+  小慕听书
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/java_study/env/" class="nav-link">
+  Java Study
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/xml/" class="nav-link">
+  XML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/java/JDBC/" class="nav-link">
+  JDBC
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Python" class="dropdown-title"><span class="title">Python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/Python/python_study/" class="nav-link">
+  python基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/basicKnowledge/" class="nav-link">
+  一些基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/dataAnalys/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/zhihu/basis/" class="nav-link">
+  网络资料
+</a></li><li class="dropdown-item"><!----> <a href="/blog/Python/code/" class="nav-link">
+  code
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="MySQL" class="dropdown-title"><span class="title">MySQL</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mysql/mysql_study/" class="nav-link router-link-active">
+  MySQL基础
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/mysql/mysql_study/" class="sidebar-link">MySQL基础</a></li><li><a href="/blog/mysql/mysql_study/sql_1.html" class="sidebar-link">mysql基本查询</a></li><li><a href="/blog/mysql/mysql_study/sql_2.html" class="sidebar-link">mysql高级查询</a></li><li><a href="/blog/mysql/mysql_study/DML.html" class="sidebar-link">MYSQL【增删改】</a></li><li><a href="/blog/mysql/mysql_study/methods.html" class="sidebar-link">mysql基本函数</a></li><li><a href="/blog/mysql/mysql_study/transaction.html" class="active sidebar-link">mysql事务</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/mysql/mysql_study/transaction.html#_1-数据库事务机制" class="sidebar-link">1 数据库事务机制</a></li><li class="sidebar-sub-header"><a href="/blog/mysql/mysql_study/transaction.html#_2-数据导出与导入" class="sidebar-link">2 数据导出与导入</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mysql事务"><a href="#mysql事务" class="header-anchor">#</a> mysql事务</h1> <p></p><div class="table-of-contents"><ul><li><a href="#mysql事务">mysql事务</a><ul><li><a href="#_1-数据库事务机制">1 数据库事务机制</a><ul><li><a href="#_1-1-undo和redo日志">1.1 undo和redo日志</a></li><li><a href="#_1-2-事务机制">1.2 事务机制</a><ul><li><a href="#_1-2-1-开启事务机制【start-transaction】">1.2.1 开启事务机制【START TRANSACTION】</a></li><li><a href="#_1-2-2-acid">1.2.2 ACID</a></li></ul></li><li><a href="#_1-3-事务的隔离">1.3 事务的隔离</a><ul><li><a href="#_1-3-1-买票【read-uncommitted】">1.3.1 买票【READ UNCOMMITTED】</a></li><li><a href="#_1-3-2-银行转账【read-committed】">1.3.2 银行转账【READ COMMITTED】</a></li><li><a href="#_1-3-3-用户下单了，但支付前商品涨价了【repeatable-read】">1.3.3 用户下单了，但支付前商品涨价了【repeatable read】</a></li><li><a href="#事务序列化">事务序列化</a></li></ul></li></ul></li><li><a href="#_2-数据导出与导入">2 数据导出与导入</a><ul><li><a href="#_2-1-数据导出与备份的区别">2.1 数据导出与备份的区别</a></li><li><a href="#_2-2-sql文件的导出与导入">2.2 SQL文件的导出与导入</a><ul><li><a href="#_2-2-1-导出sql文件【mysqldump】">2.2.1 导出SQL文件【mysqldump】</a></li><li><a href="#_2-2-2-导入sql文件【source】">2.2.2 导入SQL文件【source】</a></li></ul></li><li><a href="#txt文档的导入与导出【速度快】">TXT文档的导入与导出【速度快】</a></li></ul></li></ul></li></ul></div><p></p> <h2 id="_1-数据库事务机制"><a href="#_1-数据库事务机制" class="header-anchor">#</a> 1 数据库事务机制</h2> <h3 id="_1-1-undo和redo日志"><a href="#_1-1-undo和redo日志" class="header-anchor">#</a> 1.1 undo和redo日志</h3> <p>数据的写入直接操作数据文件是非常危险的事情。如sql语句在执行过程中，系统重启，会影响存储过程，哪些记录修改与否不得而知。</p> <p>mysql总共有5种日志，其中只有redo和undo日志与事务有关。</p> <p>日志就是数据文件的副本</p> <p>sql语句要操作什么数据，mysql先拷贝到undo日志中，增删改查等操作记录到redo日志中。</p> <p>如果这些操作没什么问题，redo日志就会同步到数据库。即使有意外情况，如服务器死机、断电，当mysql重启后继续按redo日志执行同步即可。</p> <p>如果不想继续执行同步，根据undo日志，将事务回滚，数据文件回复到事务之前的状态了。</p> <h3 id="_1-2-事务机制"><a href="#_1-2-事务机制" class="header-anchor">#</a> 1.2 事务机制</h3> <p>RDBMS(关系数据库管理系统) 其实就是 SQL语句 + 事务(ACID)</p> <p>事务是一个或者多个SQL语句组成的整体，要么全部执行成功，要么全部执行失败。</p> <p>使用场景：秒杀商品，但没支付。那么事务要回滚，而不能提交。</p> <h4 id="_1-2-1-开启事务机制【start-transaction】"><a href="#_1-2-1-开启事务机制【start-transaction】" class="header-anchor">#</a> 1.2.1 开启事务机制【START TRANSACTION】</h4> <p>【默认情况下】mysql执行 <em>每条</em> SQL语句都会自动开启和提交事务</p> <p>【多条SQL纳入到一个事务下】 要手动管理事务</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">START</span> <span class="token keyword">TRANSACTION</span>
+<span class="token keyword">SQL</span> 语句
+<span class="token punctuation">[</span><span class="token keyword">COMMIT</span> <span class="token operator">|</span> <span class="token keyword">ROLLBACK</span><span class="token punctuation">]</span>
+</code></pre></div><div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">START</span> TRANSCATION<span class="token punctuation">;</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> t_emp<span class="token punctuation">;</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> t_dept<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> t_emp<span class="token punctuation">;</span>        
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> t_dept<span class="token punctuation">;</span>
+<span class="token comment"># 事务没有提交，修改都是在日志文件中，操作记录在redo日志中</span>
+<span class="token comment"># 所以select查询语句也是到redo日志中查询数据，结果是无数据</span>
+<span class="token comment"># 但是真实的数据表中是有数据的，打开navicat可以看到表中仍有数据</span>
+
+<span class="token comment"># 提交事务</span>
+<span class="token keyword">COMMIT</span><span class="token punctuation">;</span>
+<span class="token comment"># 回滚事务</span>
+<span class="token comment"># ROLLBACK;</span>
+</code></pre></div><hr> <h4 id="_1-2-2-acid"><a href="#_1-2-2-acid" class="header-anchor">#</a> 1.2.2 ACID</h4> <ol><li>原子性：一个事务中的所有操作要么全部完成，要么全部失败。事务执行后，不允许停留在某个状态。</li> <li>一致性：不管在任何给定的时间、并发事务有多少，事务必须保证运行结果的一致性。</li> <li>隔离性：要求事务不受其他并发事务的影响，如同在给定的时间内，该事务是数据库唯一运行的事物。</li> <li>持久性。事务一旦提交，结果便是永久性的。即使发生宕机，仍然可以依靠事务日志完成数据的持久化。</li></ol> <hr> <h3 id="_1-3-事务的隔离"><a href="#_1-3-事务的隔离" class="header-anchor">#</a> 1.3 事务的隔离</h3> <table><thead><tr><th>序号</th> <th>隔离级别</th> <th>功能</th></tr></thead> <tbody><tr><td>1</td> <td>read uncommitted</td> <td>读取未提交数据</td></tr> <tr><td>2</td> <td>read committed</td> <td>读取已提交数据</td></tr> <tr><td>3</td> <td>repeatable read</td> <td>重复读取</td></tr> <tr><td>3</td> <td>serializable</td> <td>序列化</td></tr></tbody></table> <p>没有通用的事务隔离，要根据业务实际设置。</p> <h4 id="_1-3-1-买票【read-uncommitted】"><a href="#_1-3-1-买票【read-uncommitted】" class="header-anchor">#</a> 1.3.1 买票【READ UNCOMMITTED】</h4> <p><img src="/blog/assets/img/mysql_2.b0a21779.jpg" alt=""></p> <ol><li>A事务看到1A坐席状态“未售出”，便update语句修改 记录的状态“已售出”，但没有提交事务；</li> <li>由于事务隔离，B事务也看到1A坐席状态“未售出”，update语句修改 记录的状态“已售出”，并很快提交事务。此时数据文件发生改变了。</li> <li>此时，引发A事务发生回滚事件。虽然没有引起数据错误，但是频繁的购买失败用户体验不好。</li> <li>此场景下，应该允许当前事务可以读取其他事务的状态。B事务发现A事务购买了1A坐席，B事务可以购买其他坐席。</li></ol> <p>所以，👆用read uncommitted【读取未提交数据】</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SET</span> <span class="token keyword">SESSION</span> <span class="token keyword">TRANSACTION</span> <span class="token keyword">ISOLATION</span> <span class="token keyword">LEVEL</span> <span class="token keyword">READ</span> <span class="token keyword">UNCOMMITTED</span><span class="token punctuation">;</span>
+<span class="token comment"># SET SESSION 设置当前会话的隔离级别  非全局的</span>
+</code></pre></div><blockquote><p>navicat面板1</p></blockquote> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">START</span> TRANSCATION<span class="token punctuation">;</span>
+<span class="token keyword">UPDATE</span> t_emp 
+<span class="token keyword">SET</span> sal<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>navicat面板2</p></blockquote> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">START</span> TRANSCATION<span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> ename<span class="token punctuation">,</span>sal <span class="token keyword">FROM</span> t_emp<span class="token punctuation">;</span>
+</code></pre></div><p>顺序执行，看出2中查询的数据是未修改的。</p> <blockquote><p>修改navicat面板2</p></blockquote> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SET</span> <span class="token keyword">SESSION</span> <span class="token keyword">TRANSACTION</span> <span class="token keyword">ISOLATION</span> <span class="token keyword">LEVEL</span> <span class="token keyword">READ</span> <span class="token keyword">UNCOMMITTED</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> ename<span class="token punctuation">,</span>sal <span class="token keyword">FROM</span> t_emp<span class="token punctuation">;</span>
+<span class="token keyword">COMMIT</span><span class="token punctuation">;</span>
+</code></pre></div><p>此时，可以看到面板1的数据了</p> <hr> <h4 id="_1-3-2-银行转账【read-committed】"><a href="#_1-3-2-银行转账【read-committed】" class="header-anchor">#</a> 1.3.2 银行转账【READ COMMITTED】</h4> <p>事务A 向Scottz转账1000----&gt; Scottz账户5000 &lt;---- 事务b支出100</p> <p>Scottz账户有5000，此时A事务转1000给scottz，但还没来及做任何操作时，事务B支出100。</p> <p>如果A、B都正常commit，是不会有差错的。但当B事务有回滚操作时，就没有100的支出。如果允许A事务读取B事务的临时数据，那么结果是5900【少了100】。</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SET</span> <span class="token keyword">SESSION</span> <span class="token keyword">TRANSACTION</span> <span class="token keyword">ISOLATION</span> <span class="token keyword">LEVEL</span> <span class="token keyword">READ</span> <span class="token keyword">COMMITTED</span><span class="token punctuation">;</span>
+<span class="token comment"># sql...</span>
+</code></pre></div><hr> <h4 id="_1-3-3-用户下单了，但支付前商品涨价了【repeatable-read】"><a href="#_1-3-3-用户下单了，但支付前商品涨价了【repeatable-read】" class="header-anchor">#</a> 1.3.3 用户下单了，但支付前商品涨价了【repeatable read】</h4> <p>事务A 下单 ----&gt; 商品价格350 &lt;---- 事务b 涨价</p> <p>按照下单价格支付。</p> <p>我们希望当前事务的执行不受其他事务影响。甚至其他事务的提交的结果也不影响当前事务。</p> <p>【repeatable read】代表事务在执行中，反复读取数据，得到的结果是一致的，不会收到其他事务影响。</p> <blockquote><p>navicat面板1</p></blockquote> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment"># 设置隔离级别</span>
+<span class="token keyword">SET</span> <span class="token keyword">SESSION</span> <span class="token keyword">TRANSACTION</span> <span class="token keyword">ISOLATION</span> <span class="token keyword">LEVEL</span> <span class="token keyword">REPEATABLE</span> <span class="token keyword">READ</span><span class="token punctuation">;</span>  <span class="token comment">#1</span>
+<span class="token comment"># 开启事务  </span>
+<span class="token keyword">START</span> <span class="token keyword">TRANSACTION</span><span class="token punctuation">;</span>  <span class="token comment">#2</span>
+<span class="token keyword">SELECT</span> empno<span class="token punctuation">,</span>ename<span class="token punctuation">,</span>sal <span class="token keyword">FROM</span> t_temp<span class="token punctuation">;</span>  <span class="token comment">#3</span>
+<span class="token keyword">COMMIT</span><span class="token punctuation">;</span>  <span class="token comment">#4</span>
+</code></pre></div><blockquote><p>navicat面板2</p></blockquote> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">START</span> <span class="token keyword">TRANSACTION</span><span class="token punctuation">;</span>  <span class="token comment">#1</span>
+<span class="token keyword">UPDATE</span> t_emp  <span class="token comment">#2</span>
+<span class="token keyword">SET</span> sal<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>  <span class="token comment">#3</span>
+<span class="token keyword">COMMIT</span><span class="token punctuation">;</span>     <span class="token comment">#4</span>
+</code></pre></div><p>面板1、2随机交替执行，只要面板2中commi比面板1的select先执行，面板1 select查询出的结果就已被面板2的修改了，与预想的不一样。</p> <p>因为undo日志记录，需要操作数据才会有，也就是 面板1需要一开始就执行select，然后即使面板2commit了，也不会影响面板1select查询的结果。</p> <hr> <h4 id="事务序列化"><a href="#事务序列化" class="header-anchor">#</a> 事务序列化</h4> <p>由于事务并发执行所带来的各种问题，前三种隔离级别只适用再某些业务场景中，但是序列化的隔离性，让事务逐一执行，就不会产生上述问题了。</p> <div class="custom-block warning"><p class="custom-block-title">事务序列化降低数据库并发性</p> <p>一旦设置事务序列化，当前会话需要等待其他事务执行结束才会执行，不再出现并发事务。虽然可以避免业务场景问题，但会导致并发性下降。所以很少使用。</p></div> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SET</span> <span class="token keyword">SESSION</span> <span class="token keyword">TRANSACTION</span> <span class="token keyword">ISOLATION</span> <span class="token keyword">LEVEL</span> <span class="token keyword">SERIALIZABLE</span><span class="token punctuation">;</span> 
+</code></pre></div><hr> <h2 id="_2-数据导出与导入"><a href="#_2-数据导出与导入" class="header-anchor">#</a> 2 数据导出与导入</h2> <h3 id="_2-1-数据导出与备份的区别"><a href="#_2-1-数据导出与备份的区别" class="header-anchor">#</a> 2.1 数据导出与备份的区别</h3> <p>数据导出：导出的纯粹是业务数据
+数据备份，备份的是数据文件、日志文件、索引文件等。【分：全量备份、增量备份（只备份变动的部分）】</p> <hr> <h3 id="_2-2-sql文件的导出与导入"><a href="#_2-2-sql文件的导出与导入" class="header-anchor">#</a> 2.2 SQL文件的导出与导入</h3> <p>数据导出可以分：</p> <ol><li>SQL文档【数据量少时推荐】</li> <li>文本文档【大】</li></ol> <hr> <h4 id="_2-2-1-导出sql文件【mysqldump】"><a href="#_2-2-1-导出sql文件【mysqldump】" class="header-anchor">#</a> 2.2.1 导出SQL文件【mysqldump】</h4> <p>mysqldump 把业务数据导出成SQL文件，包括表结构</p> <div class="language-sell extra-class"><pre class="language-text"><code># mysqldump -uroot -p [no-data] 逻辑库&gt;路径
+mysqldump -uroot -p demo&gt;D:/MBA/demo.sql
+</code></pre></div><p>加上 no-data 只导出表结构。不加[no-data] 就是表结构跟业务数据都导出</p> <hr> <h4 id="_2-2-2-导入sql文件【source】"><a href="#_2-2-2-导入sql文件【source】" class="header-anchor">#</a> 2.2.2 导入SQL文件【source】</h4> <p>需要再mysql命令行中</p> <div class="language-sell extra-class"><pre class="language-text"><code># 先登陆数据库
+mysql -uroot -p
+# &quot;-p&quot;代表用密码登陆
+
+sql &gt; USE demo;
+sql &gt; SOURCE xx.sql;
+</code></pre></div><h3 id="txt文档的导入与导出【速度快】"><a href="#txt文档的导入与导出【速度快】" class="header-anchor">#</a> TXT文档的导入与导出【速度快】</h3> <p>需要先导出表结构，再导出txt文件</p> <p>导入的时候，先导入表结构.sql文件，再导入txt文件</p> <p>注意附加选项【第一个数据行】，并设置对应字段。</p> <div class="custom-block tip"><p class="custom-block-title">乱码</p> <p>由于字符集原因，可能会有中文字符乱码，不过不影响导入</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/mysql/mysql_study/methods.html" class="prev">
+        mysql基本函数
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.7a4660d2.js" defer></script><script src="/blog/assets/js/2.85e08d05.js" defer></script><script src="/blog/assets/js/35.af78c18d.js" defer></script>
+  </body>
+</html>
